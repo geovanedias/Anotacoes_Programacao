@@ -1,0 +1,13 @@
+{
+  "Appearance@@bg@@dark": "#1C1A26",
+  "Appearance@@accent@@dark": "#9442FF",
+  "Appearance@@bg_highlight@@dark": "#8C93B2",
+  "Appearance@@red1@@dark": "#FF5A66",
+  "Appearance@@magenta@@dark": "#9A62FF",
+  "Editor@@h1-color@@dark": "#00AE06",
+  "Editor@@h2-color@@dark": "#FFEE24",
+  "Editor@@h3-color@@dark": "#3173FF",
+  "Editor@@h4-color@@dark": "#FF0949",
+  "Editor@@h5-color@@dark": "#00A5FF",
+  "Editor@@h6-color@@dark": "#FF4E00"
+}
