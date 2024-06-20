@@ -1,0 +1,1 @@
+Este comando te dá todas as informações de como o python está instalado na máquina. 
