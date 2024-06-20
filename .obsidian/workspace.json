@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Output/print.md",
+                "file": "help.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Output/print.md",
+                "file": "help.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Output/print.md",
+                "file": "help.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Output/print.md"
+                "file": "help.md"
               }
             }
           }
@@ -149,9 +149,9 @@
   },
   "active": "3d91b0e2e27d0d80",
   "lastOpenFiles": [
+    "Output/print.md",
     "python -m site.md",
     "help.md",
-    "Output/print.md",
     "Input/teste.md",
     "Sem título",
     "Input",

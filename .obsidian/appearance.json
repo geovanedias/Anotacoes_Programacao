@@ -1,3 +1,5 @@
 {
-  "cssTheme": "Tokyo Night"
+  "cssTheme": "Tokyo Night",
+  "accentColor": "#863de6",
+  "showViewHeader": true
 }
