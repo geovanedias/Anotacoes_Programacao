@@ -11,8 +11,12 @@
             "id": "3d91b0e2e27d0d80",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Output/print.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Output/print.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Output/print.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Output/print.md"
+              }
             }
           }
         ]
@@ -141,6 +149,7 @@
   },
   "active": "3d91b0e2e27d0d80",
   "lastOpenFiles": [
+    "Input/teste.md",
     "python -m site.md",
     "Output/print.md",
     "Sem título",
