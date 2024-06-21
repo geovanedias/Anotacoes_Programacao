@@ -9,7 +9,7 @@ Para descobrir qual o caminho que aquela linguagem utiliza, pode ser usado os co
 No Linux:
 	`wich <linguagem>` 
 
-No Window: 
+No Windows: 
 	`ls env:` no PowerShell 
 	`SET` no cmd
 
