@@ -6,6 +6,10 @@ Shebang é o nome que se dá para o indicador de qual endereço (absoluto) estam
 Geralmente é comumente usado em OS do tipo Unix mas outros sistemas operacionais também fazem uso.
 
 Para descobrir qual o caminho que aquela linguagem utiliza, pode ser usado os comandos
-No Linux: `wich <linguagem>` 
+No Linux:
+	`wich <linguagem>` 
 
-No Window: `ls env:` no PowerShell 
+No Window: 
+	`ls env:` no PowerShell 
+	`SET` no cmd
+
