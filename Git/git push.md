@@ -1,1 +1,0 @@
-Empurra todos as mudanças feitas com o [[git commit -p]]. 

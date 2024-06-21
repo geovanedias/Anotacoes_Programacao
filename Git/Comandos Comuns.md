@@ -1,6 +1,6 @@
 ### `git status` 
 Para verificar o estado dos arquivos e se existem mudanças a aplicar no repositório.
-	
+	Alternativamente pode ser usado o [[git diff]]
 ### `git add` 
 Para adicionar arquivos novos e adicionar mudanças em arquivos existentes
 ### `git commit` 
