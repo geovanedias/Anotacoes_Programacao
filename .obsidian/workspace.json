@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "3d91b0e2e27d0d80",
+            "id": "971eb4b8b4717643",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "help.md",
+                "file": "Utilidades/SHEBANG.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "help.md",
+                "file": "Utilidades/SHEBANG.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "help.md",
+                "file": "Utilidades/SHEBANG.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "help.md"
+                "file": "Utilidades/SHEBANG.md"
               }
             }
           }
@@ -147,13 +147,14 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "3d91b0e2e27d0d80",
+  "active": "971eb4b8b4717643",
   "lastOpenFiles": [
+    "Utilidades/help.md",
+    "Utilidades/python -m site.md",
+    "Utilidades/SHEBANG.md",
     "Output/print.md",
-    "python -m site.md",
-    "help.md",
     "Input/teste.md",
-    "Sem título",
+    "Utilidades",
     "Input",
     "Output",
     "create a link.md",
