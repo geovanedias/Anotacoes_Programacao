@@ -11,12 +11,8 @@
             "id": "e9cac4f47fb38150",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Git/Comandos Comuns.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "graph",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Git/Comandos Comuns.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Git/Comandos Comuns.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Git/Comandos Comuns.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -149,17 +141,17 @@
   },
   "active": "e9cac4f47fb38150",
   "lastOpenFiles": [
+    "Python/Utilidades/SHEBANG.md",
+    "Python/Utilidades/python -m site.md",
+    "Python/Utilidades/help.md",
+    "Python/Output/print.md",
+    "Git/Comandos Comuns.md",
     "Git/git diff.md",
     "Git/git config.md",
     "Git/git commit -p.md",
-    "Git/Comandos Comuns.md",
     "Git/git push.md",
     "Git/git status.md",
-    "Python/Utilidades/help.md",
     "Python/Input/teste.md",
-    "Python/Utilidades/SHEBANG.md",
-    "Python/Utilidades/python -m site.md",
-    "Python/Output/print.md",
     "Sem título 1.md",
     "Git",
     "Python",
