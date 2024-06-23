@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Git/git commit -p.md",
+                "file": "Git/gitignore.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Git/git commit -p.md",
+                "file": "Git/gitignore.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Git/git commit -p.md",
+                "file": "Git/gitignore.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Git/git commit -p.md"
+                "file": "Git/gitignore.md"
               }
             }
           }
@@ -149,15 +149,16 @@
   },
   "active": "e9cac4f47fb38150",
   "lastOpenFiles": [
+    "Git/Comandos Comuns.md",
+    "Git/gitignore.md",
+    "Git/git commit -p.md",
     "Git/Renomear um repositório.md",
     "Python/Utilidades/SHEBANG.md",
     "Python/Utilidades/python -m site.md",
     "Python/Utilidades/help.md",
     "Python/Output/print.md",
-    "Git/Comandos Comuns.md",
     "Git/git diff.md",
     "Git/git config.md",
-    "Git/git commit -p.md",
     "Git/git push.md",
     "Git/git status.md",
     "Python/Input/teste.md",
