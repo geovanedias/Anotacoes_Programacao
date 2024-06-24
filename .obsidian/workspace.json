@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Git/Comandos Comuns.md",
+                "file": "Python/Utilidades/SHEBANG.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Git/Comandos Comuns.md",
+                "file": "Python/Utilidades/SHEBANG.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Git/Comandos Comuns.md",
+                "file": "Python/Utilidades/SHEBANG.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Git/Comandos Comuns.md"
+                "file": "Python/Utilidades/SHEBANG.md"
               }
             }
           }
@@ -147,10 +147,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "263422808165a2ee",
+  "active": "50a104dadeb84963",
   "lastOpenFiles": [
-    "Git/git commit -p.md",
     "Git/git config.md",
+    "Git/Comandos Comuns.md",
+    "Git/git commit -p.md",
     "Git/git diff.md",
     "Git/gitignore.md",
     "Git/Renomear um repositório.md",
@@ -163,7 +164,6 @@
     "Python/Utilidades",
     "Python/Output",
     "Python",
-    "Git/Comandos Comuns.md",
     "Git",
     "Utilidades/help.md",
     "Utilidades/python -m site.md",
