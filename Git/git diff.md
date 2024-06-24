@@ -1,0 +1,1 @@
+Mostra as diferenças entre a versão guardada na nuvem e o repositório local.

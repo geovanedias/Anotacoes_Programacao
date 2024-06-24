@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Utilidades/SHEBANG.md",
+                "file": "conflict-files-obsidian-git.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Utilidades/SHEBANG.md",
+                "file": "conflict-files-obsidian-git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Utilidades/SHEBANG.md",
+                "file": "conflict-files-obsidian-git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Utilidades/SHEBANG.md"
+                "file": "conflict-files-obsidian-git.md"
               }
             }
           }
@@ -149,9 +149,24 @@
   },
   "active": "971eb4b8b4717643",
   "lastOpenFiles": [
+    "conflict-files-obsidian-git.md",
+    "Utilidades/SHEBANG.md",
+    "Python/Utilidades/SHEBANG.md",
+    "Python/Utilidades/python -m site.md",
+    "Python/Utilidades/help.md",
+    "Python/Output/print.md",
+    "Python/Utilidades",
+    "Python/Output",
+    "Python",
+    "Git/Renomear um repositório.md",
+    "Git/gitignore.md",
+    "Git/git diff.md",
+    "Git/git config.md",
+    "Git/Comandos Comuns.md",
+    "Git/git commit -p.md",
+    "Git",
     "Utilidades/help.md",
     "Utilidades/python -m site.md",
-    "Utilidades/SHEBANG.md",
     "Output/print.md",
     "Input/teste.md",
     "Utilidades",
