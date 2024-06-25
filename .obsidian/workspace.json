@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "afee0809f1c1756f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Git/gitignore.md",
+                "file": "conflict-files-obsidian-git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Git/gitignore.md",
+                "file": "conflict-files-obsidian-git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Git/gitignore.md"
+                "file": "conflict-files-obsidian-git.md"
               }
             }
           }
@@ -147,11 +160,13 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "e9cac4f47fb38150",
+  "active": "afee0809f1c1756f",
   "lastOpenFiles": [
+    "Git/gitignore.md",
+    "conflict-files-obsidian-git.md",
+    "Python/Utilidades/Cortar textos(string).md",
     "Git/Renomear um repositório.md",
     "Python/Utilidades/SHEBANG.md",
-    "Git/gitignore.md",
     "Git/Comandos Comuns.md",
     "Git/git commit -p.md",
     "Python/Utilidades/python -m site.md",
