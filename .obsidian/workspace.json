@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Python/Utilidades/Cortar textos(string).md",
+                "file": "Git/git config.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Python/Utilidades/Cortar textos(string).md",
+                "file": "Git/git config.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Python/Utilidades/Cortar textos(string).md",
+                "file": "Git/git config.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Python/Utilidades/Cortar textos(string).md"
+                "file": "Git/git config.md"
               }
             }
           }
@@ -149,8 +149,8 @@
   },
   "active": "50a104dadeb84963",
   "lastOpenFiles": [
-    "Python/Utilidades/help.md",
     "Python/Utilidades/Cortar textos(string).md",
+    "Python/Utilidades/help.md",
     "Python/Utilidades/python -m site.md",
     "Python/Utilidades/SHEBANG.md",
     "Git/git config.md",
