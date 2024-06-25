@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Python/Utilidades/SHEBANG.md",
+                "file": "Git/gitignore.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Python/Utilidades/SHEBANG.md",
+                "file": "Git/gitignore.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Python/Utilidades/SHEBANG.md",
+                "file": "Git/gitignore.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Python/Utilidades/SHEBANG.md"
+                "file": "Git/gitignore.md"
               }
             }
           }
@@ -147,13 +147,13 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "263422808165a2ee",
+  "active": "e9cac4f47fb38150",
   "lastOpenFiles": [
+    "Git/Renomear um repositório.md",
+    "Python/Utilidades/SHEBANG.md",
     "Git/gitignore.md",
     "Git/Comandos Comuns.md",
     "Git/git commit -p.md",
-    "Git/Renomear um repositório.md",
-    "Python/Utilidades/SHEBANG.md",
     "Python/Utilidades/python -m site.md",
     "Python/Utilidades/help.md",
     "Python/Output/print.md",
