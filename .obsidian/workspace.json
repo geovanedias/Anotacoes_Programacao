@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "1b2eb69562da8045",
+        "id": "4be421bffc02fd9e",
         "type": "tabs",
         "children": [
           {
-            "id": "14f0909bed31233d",
+            "id": "8f8a7550a7275693",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Git/gitignore.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Git/gitignore.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Git/gitignore.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Git/gitignore.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -147,19 +139,19 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "14f0909bed31233d",
+  "active": "8f8a7550a7275693",
   "lastOpenFiles": [
+    "Git/Comandos Comuns.md",
+    "Git/git commit -p.md",
+    "Git/gitignore.md",
     "Python/Utilidades/Ambiente Virtual.md",
     "Python/Utilidades/SHEBANG.md",
     "Python/Utilidades/python -m site.md",
     "Python/Utilidades/Módulos.md",
     "Python/Utilidades/help().md",
     "Python/Utilidades/Cortar textos(string).md",
-    "Git/gitignore.md",
     "conflict-files-obsidian-git.md",
     "Git/Renomear um repositório.md",
-    "Git/Comandos Comuns.md",
-    "Git/git commit -p.md",
     "Python/Output/print.md",
     "Git/git diff.md",
     "Git/git config.md",
