@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "8f8a7550a7275693",
+            "id": "6ff7ca0349449194",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Python/Utilidades/Ambiente Virtual.md",
+                "file": "Python/Utilidades/pip.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Python/Utilidades/Ambiente Virtual.md",
+                "file": "Python/Utilidades/pip.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Python/Utilidades/Ambiente Virtual.md",
+                "file": "Python/Utilidades/pip.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Python/Utilidades/Ambiente Virtual.md"
+                "file": "Python/Utilidades/pip.md"
               }
             }
           }
@@ -147,12 +147,13 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "8f8a7550a7275693",
+  "active": "6ff7ca0349449194",
   "lastOpenFiles": [
-    "Git/gitignore.md",
-    "Python/Utilidades/Ambiente Virtual.md",
-    "Git/Comandos Comuns.md",
     "Git/git commit -p.md",
+    "Python/Utilidades/pip.md",
+    "Python/Utilidades/Ambiente Virtual.md",
+    "Git/gitignore.md",
+    "Git/Comandos Comuns.md",
     "Python/Utilidades/SHEBANG.md",
     "Python/Utilidades/python -m site.md",
     "Python/Utilidades/Módulos.md",
