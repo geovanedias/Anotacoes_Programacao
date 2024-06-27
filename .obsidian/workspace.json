@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Python/Utilidades/pip.md",
+                "file": "Python/Utilidades/IPython.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Python/Utilidades/pip.md",
+                "file": "Python/Utilidades/IPython.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Python/Utilidades/pip.md",
+                "file": "Python/Utilidades/IPython.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Python/Utilidades/pip.md"
+                "file": "Python/Utilidades/IPython.md"
               }
             }
           }
@@ -149,8 +149,9 @@
   },
   "active": "6ff7ca0349449194",
   "lastOpenFiles": [
-    "Git/git commit -p.md",
     "Python/Utilidades/pip.md",
+    "Python/Utilidades/IPython.md",
+    "Git/git commit -p.md",
     "Python/Utilidades/Ambiente Virtual.md",
     "Git/gitignore.md",
     "Git/Comandos Comuns.md",
