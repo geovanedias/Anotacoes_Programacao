@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Python/Utilidades/Ambiente Virtual.md",
+                "file": "Git/gitignore.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Python/Utilidades/Ambiente Virtual.md",
+                "file": "Git/gitignore.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Python/Utilidades/Ambiente Virtual.md",
+                "file": "Git/gitignore.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Python/Utilidades/Ambiente Virtual.md"
+                "file": "Git/gitignore.md"
               }
             }
           }
@@ -149,12 +149,12 @@
   },
   "active": "14f0909bed31233d",
   "lastOpenFiles": [
+    "Python/Utilidades/Ambiente Virtual.md",
     "Python/Utilidades/SHEBANG.md",
     "Python/Utilidades/python -m site.md",
     "Python/Utilidades/Módulos.md",
     "Python/Utilidades/help().md",
     "Python/Utilidades/Cortar textos(string).md",
-    "Python/Utilidades/Ambiente Virtual.md",
     "Git/gitignore.md",
     "conflict-files-obsidian-git.md",
     "Git/Renomear um repositório.md",
