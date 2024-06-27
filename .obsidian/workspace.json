@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "9aa3bf1d679290aa",
+        "id": "1b2eb69562da8045",
         "type": "tabs",
         "children": [
           {
-            "id": "e9cac4f47fb38150",
+            "id": "14f0909bed31233d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Git/gitignore.md",
+                "file": "Python/Utilidades/Ambiente Virtual.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Git/gitignore.md",
+                "file": "Python/Utilidades/Ambiente Virtual.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Git/gitignore.md",
+                "file": "Python/Utilidades/Ambiente Virtual.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Git/gitignore.md"
+                "file": "Python/Utilidades/Ambiente Virtual.md"
               }
             }
           }
@@ -147,17 +147,19 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "e9cac4f47fb38150",
+  "active": "14f0909bed31233d",
   "lastOpenFiles": [
-    "conflict-files-obsidian-git.md",
-    "Git/gitignore.md",
-    "Python/Utilidades/Cortar textos(string).md",
-    "Git/Renomear um repositório.md",
     "Python/Utilidades/SHEBANG.md",
+    "Python/Utilidades/python -m site.md",
+    "Python/Utilidades/Módulos.md",
+    "Python/Utilidades/help().md",
+    "Python/Utilidades/Cortar textos(string).md",
+    "Python/Utilidades/Ambiente Virtual.md",
+    "Git/gitignore.md",
+    "conflict-files-obsidian-git.md",
+    "Git/Renomear um repositório.md",
     "Git/Comandos Comuns.md",
     "Git/git commit -p.md",
-    "Python/Utilidades/python -m site.md",
-    "Python/Utilidades/help.md",
     "Python/Output/print.md",
     "Git/git diff.md",
     "Git/git config.md",
