@@ -11,3 +11,5 @@ Ele também oferece auto complete ao usar `tab` para mostrar o seletor.
 
 `dir(<classe>)`
 mostra tudo que pode ser feito com aquele objeto.
+
+Continuar --> tipos de dados
