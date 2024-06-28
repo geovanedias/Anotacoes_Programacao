@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Python/Utilidades/IPython.md",
+                "file": "Python/Anotações.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Python/Utilidades/IPython.md",
+                "file": "Python/Anotações.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Python/Utilidades/IPython.md",
+                "file": "Python/Anotações.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Python/Utilidades/IPython.md"
+                "file": "Python/Anotações.md"
               }
             }
           }
@@ -149,8 +149,9 @@
   },
   "active": "6ff7ca0349449194",
   "lastOpenFiles": [
-    "Python/Utilidades/pip.md",
     "Python/Utilidades/IPython.md",
+    "Python/Anotações.md",
+    "Python/Utilidades/pip.md",
     "Git/git commit -p.md",
     "Python/Utilidades/Ambiente Virtual.md",
     "Git/gitignore.md",
