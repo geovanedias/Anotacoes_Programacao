@@ -18,20 +18,20 @@
       "query": "path:Python  ",
       "color": {
         "a": 1,
-        "rgb": 3783936
+        "rgb": 49696
       }
     }
   ],
   "collapse-display": false,
   "showArrow": false,
   "textFadeMultiplier": 0,
-  "nodeSizeMultiplier": 0.923852714227697,
-  "lineSizeMultiplier": 1.85781778800596,
+  "nodeSizeMultiplier": 1,
+  "lineSizeMultiplier": 1,
   "collapse-forces": false,
-  "centerStrength": 0.315418979287938,
-  "repelStrength": 9.34073372140246,
+  "centerStrength": 0.518713248970312,
+  "repelStrength": 10,
   "linkStrength": 1,
-  "linkDistance": 256,
+  "linkDistance": 250,
   "scale": 0.6316046762907496,
-  "close": false
+  "close": true
 }

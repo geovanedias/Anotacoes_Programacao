@@ -3,5 +3,7 @@
   "showInlineTitle": true,
   "alwaysUpdateLinks": true,
   "autoPairBrackets": true,
-  "foldHeading": false
+  "foldHeading": false,
+  "attachmentFolderPath": "assets",
+  "showUnsupportedFiles": true
 }
