@@ -1,5 +1,7 @@
 {
   "showRibbon": true,
   "showInlineTitle": true,
-  "alwaysUpdateLinks": true
+  "alwaysUpdateLinks": true,
+  "autoPairBrackets": true,
+  "foldHeading": false
 }
