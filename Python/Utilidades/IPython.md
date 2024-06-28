@@ -8,3 +8,6 @@ Para instalar pode ser usado o pip:
 Além disso o IPython possui uma ajuda mais completa usando `?` ou `??` ao invés de usar [[help()]]
 
 Ele também oferece auto complete ao usar `tab` para mostrar o seletor.
+
+`dir(<classe>)`
+mostra tudo que pode ser feito com aquele objeto.
