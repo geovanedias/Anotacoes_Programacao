@@ -17,7 +17,9 @@ classe, categoria e tipo são as mesmas coisas
 ##### float
 ##### bool
 Em Python o booleano deve ser escrito iniciando em letra maiúscula, como em `True` e `False`.
-Além disso um texto vazio também é considerado um booleano negativo. Ex: `"" == False` 
+Além disso um texto vazio também é considerado um booleano negativo. Ex: `"" == False`.
+Qualquer número inteiro é considerado True e todo 0  é considerado False.
 ##### NoneType
-
+Também chamado de Valor Nulo. Usado para definir um valor que não foi estabelecido ainda para um objeto (semelhante ao `NULL` em linguagem SQL).
+É um objeto de característica *singleton*, que quer dizer que somente um único objeto NoneType é criado na memória independentemente de quantos objetos fazerem uso dele, todos terão o mesmo id na memória.
 
