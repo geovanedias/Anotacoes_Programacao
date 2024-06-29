@@ -1,4 +1,9 @@
 {
   "showRibbon": true,
-  "showInlineTitle": true
+  "showInlineTitle": true,
+  "alwaysUpdateLinks": true,
+  "autoPairBrackets": true,
+  "foldHeading": false,
+  "attachmentFolderPath": "assets",
+  "showUnsupportedFiles": true
 }

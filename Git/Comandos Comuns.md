@@ -12,3 +12,9 @@ Para confirmar uma alteração e marcar um **checkpoint** no histórico do rep
 Para enviar as mudanças locais para o GitHub
 ### `git pull` 
 Para baixar mudanças do GitHub para o local
+
+
+### `git config`
+Usado para fazer as configurações no git.
+	ver [[git config]]
+

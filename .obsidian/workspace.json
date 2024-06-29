@@ -13,20 +13,18 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Git/gitignore.md",
+                "file": "Python/Anotações.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "ab3101b306053479",
+            "id": "ffce88c6894a779d",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.6.5"
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ],
@@ -96,7 +94,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Git/gitignore.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +110,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Git/gitignore.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -135,17 +131,23 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Git/gitignore.md"
-              }
+              "state": {}
+            }
+          },
+          {
+            "id": "6e163f58b7390e4d",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -158,10 +160,16 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "ab3101b306053479",
+  "active": "ffce88c6894a779d",
   "lastOpenFiles": [
     "conflict-files-obsidian-git.md",
+    "Python/Anotações.md",
     "Git/gitignore.md",
+    "Python/Utilidades/pip.md",
+    "Python/Utilidades/help().md",
+    "Python/Utilidades/Módulos.md",
+    "Python/Utilidades/IPython.md",
+    "Python/Utilidades/Ambiente Virtual.md",
     "Python/Utilidades/Cortar textos(string).md",
     "Git/Renomear um repositório.md",
     "Python/Utilidades/SHEBANG.md",
