@@ -13,4 +13,11 @@ classe, categoria e tipo são as mesmas coisas
 		ex: `int.bit_lengt()` 
 
 
-### int
+##### int
+##### float
+##### bool
+Em Python o booleano deve ser escrito iniciando em letra maiúscula, como em `True` e `False`.
+Além disso um texto vazio também é considerado um booleano negativo. Ex: `"" == False` 
+##### NoneType
+
+
