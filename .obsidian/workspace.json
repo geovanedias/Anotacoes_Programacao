@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "5d00adf9d287b94f",
+        "id": "4be421bffc02fd9e",
         "type": "tabs",
         "children": [
           {
-            "id": "4eb2f56fda1863d0",
+            "id": "6ff7ca0349449194",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Python/Utilidades/IPython.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -76,6 +80,35 @@
         "type": "tabs",
         "children": [
           {
+            "id": "eaa4a6ba37dedfaf",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Python/Utilidades/IPython.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "537588e5ff96cca9",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Python/Utilidades/IPython.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
             "id": "d815c425c680aa27",
             "type": "leaf",
             "state": {
@@ -83,6 +116,16 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "d1e311e636301880",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Python/Utilidades/IPython.md"
               }
             }
           }
@@ -103,23 +146,23 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "4eb2f56fda1863d0",
+  "active": "6ff7ca0349449194",
   "lastOpenFiles": [
+    "Python/Utilidades/SHEBANG.md",
     "Python/Anotações.md",
-    "conflict-files-obsidian-git.md",
-    "Git/gitignore.md",
     "Python/Utilidades/pip.md",
-    "Python/Utilidades/help().md",
-    "Python/Utilidades/Módulos.md",
+    "Python/Utilidades/python -m site.md",
+    "assets",
+    "Git/git commit -p.md",
+    "Git/Comandos Comuns.md",
     "Python/Utilidades/IPython.md",
     "Python/Utilidades/Ambiente Virtual.md",
+    "Git/gitignore.md",
+    "Python/Utilidades/Módulos.md",
+    "Python/Utilidades/help().md",
     "Python/Utilidades/Cortar textos(string).md",
+    "conflict-files-obsidian-git.md",
     "Git/Renomear um repositório.md",
-    "Python/Utilidades/SHEBANG.md",
-    "Git/Comandos Comuns.md",
-    "Git/git commit -p.md",
-    "Python/Utilidades/python -m site.md",
-    "Python/Utilidades/help.md",
     "Python/Output/print.md",
     "Git/git diff.md",
     "Git/git config.md",
