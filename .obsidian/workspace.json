@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Python/Utilidades/IPython.md",
+                "file": "Python/Utilidades/Ambiente Virtual.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Python/Utilidades/IPython.md",
+                "file": "Python/Utilidades/Ambiente Virtual.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Python/Utilidades/IPython.md",
+                "file": "Python/Utilidades/Ambiente Virtual.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Python/Utilidades/IPython.md"
+                "file": "Python/Utilidades/Ambiente Virtual.md"
               }
             }
           }
@@ -133,7 +133,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -148,14 +149,14 @@
   },
   "active": "6ff7ca0349449194",
   "lastOpenFiles": [
+    "Python/Utilidades/IPython.md",
+    "Python/Utilidades/pip.md",
     "Python/Utilidades/SHEBANG.md",
     "Python/Anotações.md",
-    "Python/Utilidades/pip.md",
     "Python/Utilidades/python -m site.md",
     "assets",
     "Git/git commit -p.md",
     "Git/Comandos Comuns.md",
-    "Python/Utilidades/IPython.md",
     "Python/Utilidades/Ambiente Virtual.md",
     "Git/gitignore.md",
     "Python/Utilidades/Módulos.md",
