@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Python/Output/Strings/for.md",
+                "file": "Python/Output/Strings/Interpolação Clássica.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Python/Output/Strings/for.md",
+                "file": "Python/Output/Strings/Interpolação Clássica.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Python/Output/Strings/for.md",
+                "file": "Python/Output/Strings/Interpolação Clássica.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Python/Output/Strings/for.md"
+                "file": "Python/Output/Strings/Interpolação Clássica.md"
               }
             }
           }
@@ -149,8 +149,8 @@
   },
   "active": "6ff7ca0349449194",
   "lastOpenFiles": [
-    "Python/Output/Strings/Interpolação Clássica.md",
     "Python/Output/Strings/for.md",
+    "Python/Output/Strings/Interpolação Clássica.md",
     "Python/Output/Strings/print.md",
     "Python/Output/Strings",
     "Python/Utilidades/Ambiente Virtual.md",
