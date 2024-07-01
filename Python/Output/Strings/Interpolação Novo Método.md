@@ -14,7 +14,8 @@ msg = "Olá,  {} você é o jogador número {:03d} e possúi {:.2f} pontos."
 msg.format("Bruno", 11, 987.3)
 ```
 
-Lembrando que, diferente do método antigo, 
+Lembrando que, diferente do método antigo, ao usar esse método é possível não só nomear como reordenar as posições no texto conforme for necessário necessário. Nomear os ou dar índices de posições são mandatórios para uma boa prática desse método.
+
 Fontes:
 - Dentro do terminal é possível utilizar um [[help()]] com o parâmetro `"FORMATTING"`
 - [pyformat](https://pyformat.info/): para uma documentação mais simples e clara sobre o novo e antigo método de formatação.
