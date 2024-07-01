@@ -4,8 +4,17 @@ Semelhante a [[Interpolação Clássica]], utiliza um método parecido para orga
  Ex:
 ```Python
 msg = "Olá,  {} você é o jogador número {} e possúi {} pontos."
+msg.format("Bruno", 11, 987.3)
 ```
 
+A forma de formatação é basicamente a mesma do método clássico. O que muda é que agora é colocado a formatação diretamente no texto para ter um controle mais específico do formato adquirido, utilizando dois pontos `:` para indicar que é um código de formatação.
+Ex:
+```python
+msg = "Olá,  {} você é o jogador número {:03d} e possúi {:.2f} pontos."
+msg.format("Bruno", 11, 987.3)
+```
+
+Lembrando que, diferente do método antigo, 
 Fontes:
 - Dentro do terminal é possível utilizar um [[help()]] com o parâmetro `"FORMATTING"`
 - [pyformat](https://pyformat.info/): para uma documentação mais simples e clara sobre o novo e antigo método de formatação.
