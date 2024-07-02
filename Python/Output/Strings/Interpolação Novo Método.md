@@ -21,3 +21,4 @@ Fontes:
 - [pyformat](https://pyformat.info/): para uma documentação mais simples e clara sobre o novo e antigo método de formatação.
 - [docs.python.org/2](https://docs.python.org/2/library/stdtypes.html#string-formatting): para a documentação completa do método usado no python2.
 - [docs.python.org/3](https://docs.python.org/3/library/string.html#string-formatting): para a documentação usada no python3.
+ 
