@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Python/Output/Strings/Interpolação Novo Método.md",
+                "file": "2024-07-02.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Python/Output/Strings/Interpolação Novo Método.md",
+                "file": "2024-07-02.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Python/Output/Strings/Interpolação Novo Método.md",
+                "file": "2024-07-02.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,16 +125,24 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Python/Output/Strings/Interpolação Novo Método.md"
+                "file": "2024-07-02.md"
               }
             }
+          },
+          {
+            "id": "626b5af48aba05d9",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -147,10 +155,11 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "6ff7ca0349449194",
+  "active": "626b5af48aba05d9",
   "lastOpenFiles": [
-    "Python/Output/Strings/Interpolação Clássica.md",
     "Python/Output/Strings/Interpolação Novo Método.md",
+    "2024-07-02.md",
+    "Python/Output/Strings/Interpolação Clássica.md",
     "Python/Output/Strings/for.md",
     "Python/Output/Strings/print.md",
     "Python/Output/Strings",
@@ -180,7 +189,6 @@
     "Python/Utilidades",
     "Python/Input",
     "Python/Output",
-    "create a link.md",
-    "Welcome.md"
+    "create a link.md"
   ]
 }
