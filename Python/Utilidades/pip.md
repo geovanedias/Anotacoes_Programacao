@@ -13,4 +13,4 @@ Ex:
 python -m pip install ipython
 ```
    Comando para instalar a ferramenta [[IPython]]
-   
+ 
