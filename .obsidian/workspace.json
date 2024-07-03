@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Python/Output/Strings/Interpolação Novo Método.md",
+                "file": "Python/Utilidades/python -m site.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Python/Output/Strings/Interpolação Novo Método.md",
+                "file": "Python/Utilidades/python -m site.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Python/Output/Strings/Interpolação Novo Método.md",
+                "file": "Python/Utilidades/python -m site.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Python/Output/Strings/Interpolação Novo Método.md"
+                "file": "Python/Utilidades/python -m site.md"
               }
             }
           }
@@ -147,26 +147,27 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "6ff7ca0349449194",
+  "active": "263422808165a2ee",
   "lastOpenFiles": [
-    "Python/Output/Strings/Interpolação Clássica.md",
+    "2024-07-01.md",
+    "Python/Utilidades/python -m site.md",
+    "Python/Utilidades/help().md",
+    "Python/Utilidades/IPython.md",
+    "Python/Utilidades/Módulos.md",
+    "Python/Utilidades/Ambiente Virtual.md",
+    "Python/Utilidades/Cortar textos(string).md",
+    "Python/Anotações.md",
+    "Python/Utilidades/SHEBANG.md",
     "Python/Output/Strings/Interpolação Novo Método.md",
+    "Python/Output/Strings/Interpolação Clássica.md",
     "Python/Output/Strings/for.md",
     "Python/Output/Strings/print.md",
     "Python/Output/Strings",
-    "Python/Utilidades/Ambiente Virtual.md",
-    "Python/Utilidades/IPython.md",
     "Python/Utilidades/pip.md",
-    "Python/Utilidades/SHEBANG.md",
-    "Python/Anotações.md",
-    "Python/Utilidades/python -m site.md",
     "assets",
     "Git/git commit -p.md",
     "Git/Comandos Comuns.md",
     "Git/gitignore.md",
-    "Python/Utilidades/Módulos.md",
-    "Python/Utilidades/help().md",
-    "Python/Utilidades/Cortar textos(string).md",
     "conflict-files-obsidian-git.md",
     "Git/Renomear um repositório.md",
     "Git/git diff.md",
@@ -180,7 +181,6 @@
     "Python/Utilidades",
     "Python/Input",
     "Python/Output",
-    "create a link.md",
-    "Welcome.md"
+    "create a link.md"
   ]
 }
