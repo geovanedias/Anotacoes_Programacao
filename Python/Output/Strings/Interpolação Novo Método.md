@@ -1,6 +1,6 @@
 Método que utiliza ==templates== e ==placeholders== para facilitar a criação de strings longas de forma mais automatizada. Também pode ser usada como alternativa ao método [[print]].
 
-Semelhante a [[Interpolação Clássica]], utiliza um método parecido para organizar a string que será gerada. Porém, ao invés do símbolo de % são usados chaves `{}` sem espaços no local onde o texto será trocado.
+Semelhante a [[Interpolação Clássica]], utiliza um método parecido para organizar a string que será gerada. Porém, ao invés do símbolo de % são usados chaves `{}` sem espaços no local onde o texto será trocado. E para imprimir a mensagem é chamado o método `.format` conforme o exemplo abaixo:
 
  Ex:
 ```Python
