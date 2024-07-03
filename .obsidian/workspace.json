@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Python/Output/Strings/f-string.md",
+                "file": "Python/Anotações.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Python/Output/Strings/f-string.md",
+                "file": "Python/Anotações.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Python/Output/Strings/f-string.md",
+                "file": "Python/Anotações.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Python/Output/Strings/f-string.md"
+                "file": "Python/Anotações.md"
               }
             }
           },
@@ -157,26 +157,26 @@
   },
   "active": "6ff7ca0349449194",
   "lastOpenFiles": [
-    "Python/Output/Strings/Interpolação Novo Método.md",
+    "Python/Utilidades/SHEBANG.md",
+    "Python/Utilidades/python -m site.md",
+    "Python/Utilidades/pip.md",
+    "Python/Utilidades/Módulos.md",
+    "Python/Utilidades/IPython.md",
+    "Python/Utilidades/Cortar textos(string).md",
+    "Python/Output/Strings/print.md",
     "Python/Output/Strings/f-string.md",
+    "Python/Output/Strings/Interpolação Novo Método.md",
     "Python/Utilidades/Ambiente Virtual.md",
     "2024-07-02.md",
     "Python/Output/Strings/Interpolação Clássica.md",
     "Python/Output/Strings/for.md",
-    "Python/Output/Strings/print.md",
     "Python/Output/Strings",
-    "Python/Utilidades/IPython.md",
-    "Python/Utilidades/pip.md",
-    "Python/Utilidades/SHEBANG.md",
     "Python/Anotações.md",
-    "Python/Utilidades/python -m site.md",
     "assets",
     "Git/git commit -p.md",
     "Git/Comandos Comuns.md",
     "Git/gitignore.md",
-    "Python/Utilidades/Módulos.md",
     "Python/Utilidades/help().md",
-    "Python/Utilidades/Cortar textos(string).md",
     "conflict-files-obsidian-git.md",
     "Git/Renomear um repositório.md",
     "Git/git diff.md",
