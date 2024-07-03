@@ -142,7 +142,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -157,9 +158,9 @@
   },
   "active": "6ff7ca0349449194",
   "lastOpenFiles": [
-    "Python/Utilidades/Ambiente Virtual.md",
-    "Python/Output/Strings/f-string.md",
     "Python/Output/Strings/Interpolação Novo Método.md",
+    "Python/Output/Strings/f-string.md",
+    "Python/Utilidades/Ambiente Virtual.md",
     "2024-07-02.md",
     "Python/Output/Strings/Interpolação Clássica.md",
     "Python/Output/Strings/for.md",
