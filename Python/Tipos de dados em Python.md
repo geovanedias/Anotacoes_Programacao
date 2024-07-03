@@ -54,6 +54,14 @@ x = coordenada[0]
 y = coordenada[1]
 z = coordenada[2]
 ```
-_Alternadamente pode ser usado a seguinte sintaxe para automatizar esse processo, a quantidade de objetos devem ser iguais_
+
+Alternadamente pode ser usado a seguinte sintaxe para automatizar esse processo, a quantidade de objetos devem ser iguais
 	`x, y, z = coordenada`
+
+Além disso pode ser usado um asterisco `*` para associar todos os outros objetos a uma única variável.
+```
+pontos = x, y, z
+x, *_ = pontos
+```
+_Por convenção, todo objeto em uma underline é considerado descartável para aquele programa_
 
