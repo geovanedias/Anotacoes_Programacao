@@ -6,5 +6,6 @@
   "foldHeading": false,
   "attachmentFolderPath": "assets",
   "showUnsupportedFiles": true,
-  "showLineNumber": false
+  "showLineNumber": false,
+  "foldIndent": false
 }

@@ -6,15 +6,18 @@ Em python tudo que começa com `0b` é um numero binário.
 
 classe, categoria e tipo são as mesmas coisas
 
+---
 ### Dados primários / Scalar 
-   Representam um único valor.
+Representam um único valor associado a um objeto.
 `dir(<type>)`
 	 Mostra todos os métodos que podem ser usado com aquele tipo. Onde os métodos que não possuírem dunder(`__`) são métodos que "podem" ser chamado diretamente com o objeto.
 		ex: `int.bit_lengt()` 
 
 
 ##### int
+números inteiros
 ##### float
+decimais
 ##### bool
 Em Python o booleano deve ser escrito iniciando em letra maiúscula, como em `True` e `False`.
 Além disso um texto vazio também é considerado um booleano negativo. Ex: `"" == False`.
@@ -29,6 +32,7 @@ type(nulo)
 NoneType
 ```
 
+---
 ### Dados compostos
 
 ##### Tuple / tupla
@@ -38,3 +42,5 @@ Ex
 dados = "Eu", 25, True, None, 3.25
 ('Eu', 25, True, None, 3.25)
 ```
+
+Todos os métodos de  [[Cortar textos(string)]] funcionam normalmente e da mesma forma para tuplas.

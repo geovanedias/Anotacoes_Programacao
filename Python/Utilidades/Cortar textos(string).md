@@ -9,3 +9,8 @@ x = txt.split(", ")
 print(x)
 ['Olá', 'mundo']
 ```
+
+---
+## Métodos de cortes / slicing
+
+| Método | Resultado

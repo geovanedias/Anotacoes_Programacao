@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Python/Utilidades/pip.md",
+                "file": "Python/Utilidades/Cortar textos(string).md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Python/Utilidades/pip.md",
+                "file": "Python/Utilidades/Cortar textos(string).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Python/Utilidades/pip.md",
+                "file": "Python/Utilidades/Cortar textos(string).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Python/Utilidades/pip.md"
+                "file": "Python/Utilidades/Cortar textos(string).md"
               }
             }
           },
@@ -157,14 +157,16 @@
   },
   "active": "6ff7ca0349449194",
   "lastOpenFiles": [
+    "Python/Tipos de dados em Python.md",
+    "Git/Renomear um repositório.md",
+    "Git/gitignore.md",
+    "Git/git diff.md",
+    "Git/git config.md",
+    "Git/git commit -p.md",
+    "Git/Comandos Comuns.md",
+    "Python/Utilidades/pip.md",
     "Python/Utilidades/python -m site.md",
     "Python/Utilidades/SHEBANG.md",
-    "Git/Comandos Comuns.md",
-    "Git/git commit -p.md",
-    "Git/git config.md",
-    "Git/git diff.md",
-    "Git/gitignore.md",
-    "Git/Renomear um repositório.md",
     "Python/Output/Strings/f-string.md",
     "Python/Output/Strings/for.md",
     "Python/Output/Strings/Interpolação Clássica.md",
@@ -175,8 +177,6 @@
     "Python/Utilidades/help().md",
     "Python/Utilidades/IPython.md",
     "Python/Utilidades/Módulos.md",
-    "Python/Utilidades/pip.md",
-    "Python/Anotações.md",
     "2024-07-02.md",
     "Python/Output/Strings",
     "assets",
