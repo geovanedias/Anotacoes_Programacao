@@ -4,8 +4,13 @@ pip é um sistema de gerenciamento de pacotes padrão usado para instalar e gere
 
 É altamente recomendado que seja feito a atualização do pip quando for instalar algum pacote através dele. Pode ser atualizado através do comando:
 
-`python -m pip install --upgrade pip`
+```
+python -m pip install --upgrade pip
+```
 
 Ex:
-   `python -m pip install ipython`
-   Comando para instalar a ferramenta [[IPython]] 
+```
+python -m pip install ipython
+```
+   Comando para instalar a ferramenta [[IPython]]
+   

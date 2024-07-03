@@ -6,5 +6,10 @@
   "foldHeading": false,
   "attachmentFolderPath": "assets",
   "showUnsupportedFiles": true,
+<<<<<<< HEAD
   "promptDelete": false
+=======
+  "showLineNumber": false,
+  "foldIndent": false
+>>>>>>> origin/main
 }

@@ -18,8 +18,20 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "3d96dabfd6b43cc7",
+            "type": "leaf",
+            "state": {
+              "type": "diff-view",
+              "state": {
+                "file": ".obsidian/app.json",
+                "staged": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +97,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Python/Utilidades/python -m site.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +113,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Python/Utilidades/python -m site.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,17 +134,23 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Python/Utilidades/python -m site.md"
-              }
+              "state": {}
+            }
+          },
+          {
+            "id": "8a3350d5fb5ccf3c",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 622.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -147,10 +163,13 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "263422808165a2ee",
+  "active": "3d96dabfd6b43cc7",
   "lastOpenFiles": [
-    "2024-07-01.md",
+    "conflict-files-obsidian-git.md",
     "Python/Utilidades/python -m site.md",
+    "Python/Tipos de dados em Python.md",
+    "Python/Output/Strings/f-string.md",
+    "2024-07-01.md",
     "Python/Utilidades/help().md",
     "Python/Utilidades/IPython.md",
     "Python/Utilidades/Módulos.md",
@@ -168,19 +187,16 @@
     "Git/git commit -p.md",
     "Git/Comandos Comuns.md",
     "Git/gitignore.md",
-    "conflict-files-obsidian-git.md",
     "Git/Renomear um repositório.md",
     "Git/git diff.md",
     "Git/git config.md",
     "Git/git push.md",
     "Git/git status.md",
     "Python/Input/teste.md",
-    "Sem título 1.md",
     "Git",
     "Python",
     "Python/Utilidades",
     "Python/Input",
-    "Python/Output",
-    "create a link.md"
+    "Python/Output"
   ]
 }
