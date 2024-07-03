@@ -23,7 +23,11 @@ Qualquer número inteiro é considerado True e todo 0  é considerado False.
 Também chamado de Valor Nulo. Usado para definir um valor que não foi estabelecido ainda para um objeto (semelhante ao `NULL` em linguagem SQL).
 É um objeto de característica *singleton*, que quer dizer que somente um único objeto NoneType é criado na memória independentemente de quantos objetos fazerem uso dele, todos terão o mesmo id na memória.
 
-
+```
+nulo = None
+type(nulo)
+NoneType
+```
 
 ### Dados compostos
 
@@ -31,5 +35,6 @@ Também chamado de Valor Nulo. Usado para definir um valor que não foi estabele
 Lista de objetos organizados entre parênteses separados por vírgula
 Ex
 ```python
-dados = "Eu", 25, True, None
+dados = "Eu", 25, True, None, 3.25
+('Eu', 25, True, None, 3.25)
 ```

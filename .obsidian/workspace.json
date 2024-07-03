@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Python/Anotações.md",
+                "file": "Python/Utilidades/pip.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Python/Anotações.md",
+                "file": "Python/Utilidades/pip.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Python/Anotações.md",
+                "file": "Python/Utilidades/pip.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Python/Anotações.md"
+                "file": "Python/Utilidades/pip.md"
               }
             }
           },
@@ -157,30 +157,30 @@
   },
   "active": "6ff7ca0349449194",
   "lastOpenFiles": [
-    "Python/Utilidades/SHEBANG.md",
     "Python/Utilidades/python -m site.md",
-    "Python/Utilidades/pip.md",
-    "Python/Utilidades/Módulos.md",
-    "Python/Utilidades/IPython.md",
-    "Python/Utilidades/Cortar textos(string).md",
-    "Python/Output/Strings/print.md",
-    "Python/Output/Strings/f-string.md",
-    "Python/Output/Strings/Interpolação Novo Método.md",
-    "Python/Utilidades/Ambiente Virtual.md",
-    "2024-07-02.md",
-    "Python/Output/Strings/Interpolação Clássica.md",
-    "Python/Output/Strings/for.md",
-    "Python/Output/Strings",
-    "Python/Anotações.md",
-    "assets",
-    "Git/git commit -p.md",
+    "Python/Utilidades/SHEBANG.md",
     "Git/Comandos Comuns.md",
-    "Git/gitignore.md",
-    "Python/Utilidades/help().md",
-    "conflict-files-obsidian-git.md",
-    "Git/Renomear um repositório.md",
-    "Git/git diff.md",
+    "Git/git commit -p.md",
     "Git/git config.md",
+    "Git/git diff.md",
+    "Git/gitignore.md",
+    "Git/Renomear um repositório.md",
+    "Python/Output/Strings/f-string.md",
+    "Python/Output/Strings/for.md",
+    "Python/Output/Strings/Interpolação Clássica.md",
+    "Python/Output/Strings/Interpolação Novo Método.md",
+    "Python/Output/Strings/print.md",
+    "Python/Utilidades/Ambiente Virtual.md",
+    "Python/Utilidades/Cortar textos(string).md",
+    "Python/Utilidades/help().md",
+    "Python/Utilidades/IPython.md",
+    "Python/Utilidades/Módulos.md",
+    "Python/Utilidades/pip.md",
+    "Python/Anotações.md",
+    "2024-07-02.md",
+    "Python/Output/Strings",
+    "assets",
+    "conflict-files-obsidian-git.md",
     "Git/git push.md",
     "Git/git status.md",
     "Python/Input/teste.md",
