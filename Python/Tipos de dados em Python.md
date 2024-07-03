@@ -36,11 +36,11 @@ NoneType
 ### Dados compostos
 
 ##### Tuple / tupla
-Lista de objetos organizados entre parênteses separados por vírgula
+Lista de objetos ==IMUTÁVEIS== organizados entre parênteses separados por vírgula
 Ex
 ```python
 dados = "Eu", 25, True, None, 3.25
 ('Eu', 25, True, None, 3.25)
 ```
 
-Todos os métodos de  [[Cortar textos(string)]] funcionam normalmente e da mesma forma para tuplas.
+Todos os métodos de  [[Cortar textos(string)]] funcionam normalmente e da mesma forma para tuplas. 

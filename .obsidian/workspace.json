@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Python/Utilidades/Cortar textos(string).md",
+                "file": "Python/Tipos de dados em Python.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Python/Utilidades/Cortar textos(string).md",
+                "file": "Python/Tipos de dados em Python.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Python/Utilidades/Cortar textos(string).md",
+                "file": "Python/Tipos de dados em Python.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Python/Utilidades/Cortar textos(string).md"
+                "file": "Python/Tipos de dados em Python.md"
               }
             }
           },
@@ -157,6 +157,7 @@
   },
   "active": "6ff7ca0349449194",
   "lastOpenFiles": [
+    "Python/Utilidades/Cortar textos(string).md",
     "Python/Tipos de dados em Python.md",
     "Git/Renomear um repositório.md",
     "Git/gitignore.md",
@@ -173,7 +174,6 @@
     "Python/Output/Strings/Interpolação Novo Método.md",
     "Python/Output/Strings/print.md",
     "Python/Utilidades/Ambiente Virtual.md",
-    "Python/Utilidades/Cortar textos(string).md",
     "Python/Utilidades/help().md",
     "Python/Utilidades/IPython.md",
     "Python/Utilidades/Módulos.md",
