@@ -44,3 +44,16 @@ dados = "Eu", 25, True, None, 3.25
 ```
 
 Todos os métodos de  [[Cortar textos(string)]] funcionam normalmente e da mesma forma para tuplas. 
+
+Para desempacotar tuplas é necessário criar novas variáveis, normalmente associando o conteúdo de cada índice a um nome que representa aquele conteúdo.
+
+Ex:
+```:n
+coordenada = (5, 3, 1)
+x = coordenada[0]
+y = coordenada[1]
+z = coordenada[2]
+```
+_Alternadamente pode ser usado a seguinte sintaxe para automatizar esse processo, a quantidade de objetos devem ser iguais_
+	`x, y, z = coordenada`
+
