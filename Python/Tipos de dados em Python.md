@@ -26,7 +26,7 @@ Qualquer número inteiro é considerado True e todo 0  é considerado False.
 Também chamado de Valor Nulo. Usado para definir um valor que não foi estabelecido ainda para um objeto (semelhante ao `NULL` em linguagem SQL).
 É um objeto de característica *singleton*, que quer dizer que somente um único objeto NoneType é criado na memória independentemente de quantos objetos fazerem uso dele, todos terão o mesmo id na memória.
 
-```
+```python
 nulo = None
 type(nulo)
 NoneType
@@ -48,7 +48,7 @@ Todos os métodos de  [[Cortar textos(string)]] funcionam normalmente e da mesma
 Para desempacotar tuplas é necessário criar novas variáveis, normalmente associando o conteúdo de cada índice a um nome que representa aquele conteúdo.
 
 Ex:
-```:n
+```python
 coordenada = (5, 3, 1)
 x = coordenada[0]
 y = coordenada[1]
@@ -56,12 +56,22 @@ z = coordenada[2]
 ```
 
 Alternadamente pode ser usado a seguinte sintaxe para automatizar esse processo, a quantidade de objetos devem ser iguais
-	`x, y, z = coordenada`
+
+```python
+# desempacotar
+x, y, z = coordenada
+```
 
 Além disso pode ser usado um asterisco `*` para associar todos os outros objetos a uma única variável.
-```
-pontos = x, y, z
-x, *_ = pontos
+```python
+# ignorar elementos (será atribuito apenas o x)
+x, *_ = coord
+
+# pegar apenas o primeiro e o último elemento
+x, *_, y = coord
 ```
 _Por convenção, todo objeto em uma underline é considerado descartável para aquele programa_
+
+---
+### Listas
 
