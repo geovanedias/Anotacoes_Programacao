@@ -79,10 +79,24 @@ Semelhantes a Arrays/Vetores/Matrizes de outras linguagens de programação.
 	É utilizada criando uma variável com a atribuição de colchetes `[]` e pode ser criada vazia para ser preenchida depois.
 
 ```python
-lista = []
+users = []
 ```
 
-As listas possuem menos métodos que as Tuplas, mas com a diferença que podem ser alteradas constantemente.
- append()  count()   insert()  reverse()
-               clear()   extend()  pop()     sort()
-               copy()    index()   remove()
+As listas possuem menos métodos que as Tuplas, mas com a diferença que podem ser alteradas constantemente. Listas possuem apenas os seguintes métodos:
+
+```
+append()  count()  insert()  reverse()  clear()  extend()  pop()  sort()  copy()  index()  remove()
+```
+
+O método ==`append()`== é o método a ser usado para inserir objetos em determinada lista, apenas um objeto por vez:
+```python
+users.append("Bruno")
+users.append("João")
+users.append("Alice")...
+```
+
+==`insert()`== é usado para inserir um objeto em uma posição específica sem que seja necessário substituir algum item na lista, esse método vai aumentar o tamanho da lista em `1`:
+```python
+users.insert(2, "Karla")
+
+```
