@@ -82,8 +82,9 @@ Semelhantes a Arrays/Vetores/Matrizes de outras linguagens de programação.
 users = []
 ```
 
-As listas possuem menos métodos que as Tuplas, mas com a diferença que podem ser alteradas constantemente. Listas possuem apenas os seguintes métodos:
+As listas possuem alguns dos métodos das Tuplas, mas com a diferença que podem ser alteradas constantemente. As formas de percorrer Listas e Tuplas são as mesmas.
 
+Listas possuem alguns dos seguintes métodos:
 ```
 append()  count()  insert()  reverse()  clear()  extend()  pop()  sort()  copy()  index()  remove()
 ```
@@ -91,12 +92,26 @@ append()  count()  insert()  reverse()  clear()  extend()  pop()  sort()  copy()
 O método ==`append()`== é o método a ser usado para inserir objetos em determinada lista, apenas um objeto por vez:
 ```python
 users.append("Bruno")
-users.append("João")
 users.append("Alice")...
 ```
 
 ==`insert()`== é usado para inserir um objeto em uma posição específica sem que seja necessário substituir algum item na lista, esse método vai aumentar o tamanho da lista em `1`:
 ```python
+users.insert(0, "Miguel")
 users.insert(2, "Karla")
-
+users
+['Miguel', 'Bruno', 'Karla', 'Alice']
 ```
+
+==`remove`==, assim como os outros métodos mais *óbvios* são usados para removerem objetos das listas.
+	`users.remove(Alice)` removerá Alice da lista
+
+---
+
+Listas e Tuplas podem ser somadas através do método `__add__` ou do método `extend()`;
+```python
+users + outra_lista = listas_somadas
+users.extend(outra_lista)
+users += outra_lista
+```
+
