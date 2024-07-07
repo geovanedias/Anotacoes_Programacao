@@ -33,9 +33,10 @@ NoneType
 ```
 
 ---
-### Dados compostos
+## Dados compostos
 
-##### Tuple / tupla
+### Tuple / tupla
+
 Lista de objetos ==IMUTÁVEIS== organizados entre parênteses separados por vírgula
 Ex
 ```python
@@ -80,6 +81,7 @@ Semelhantes a Arrays/Vetores/Matrizes de outras linguagens de programação.
 
 ```python
 users = []
+colors = ["red", "green", "blue"]
 ```
 
 As listas possuem alguns dos métodos das Tuplas, mas com a diferença que podem ser alteradas constantemente. As formas de percorrer Listas e Tuplas são as mesmas.
@@ -113,3 +115,4 @@ users.extend(outra_lista)
 users += outra_lista
 ```
 
+---
