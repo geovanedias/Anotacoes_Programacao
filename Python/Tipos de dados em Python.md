@@ -75,3 +75,14 @@ _Por convenção, todo objeto em uma underline é considerado descartável para 
 ---
 ### Listas
 
+Semelhantes a Arrays/Vetores/Matrizes de outras linguagens de programação. 
+	É utilizada criando uma variável com a atribuição de colchetes `[]` e pode ser criada vazia para ser preenchida depois.
+
+```python
+lista = []
+```
+
+As listas possuem menos métodos que as Tuplas, mas com a diferença que podem ser alteradas constantemente.
+ append()  count()   insert()  reverse()
+               clear()   extend()  pop()     sort()
+               copy()    index()   remove()
