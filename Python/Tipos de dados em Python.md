@@ -7,7 +7,7 @@ Em python tudo que começa com `0b` é um numero binário.
 classe, categoria e tipo são as mesmas coisas
 
 ---
-### Dados primários / Scalar 
+## Dados primários / Scalar 
 Representam um único valor associado a um objeto.
 `dir(<type>)`
 	 Mostra todos os métodos que podem ser usado com aquele tipo. Onde os métodos que não possuírem dunder(`__`) são métodos que "podem" ser chamado diretamente com o objeto.
@@ -116,3 +116,14 @@ users += outra_lista
 ```
 
 ---
+
+## Conjuntos
+
+Cria-se um conjunto através do método `set`, onde é passado como conteúdo um objeto iterável.
+O método também não garante a ordem e não permite objetos repetidos.
+Outros métodos também podem ser usados para criar um conjunto mas por boa prática é recomendado que sempre que for criado um conjunto seja utilizado explicitamente o argumento `set` como é mostrado no exemplo:
+
+```python
+conjunto1 = set([1, 2, 3, 4, 5])
+```
+
