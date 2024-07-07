@@ -6,7 +6,9 @@ Do inglês, Virtual environment , é um módulo que cria automaticamente uma pas
 
 O ambiente virtual deve ser ativado manualmente (por padrão) toda vez que você for rodar um script python. Para ativar este ambiente virtual deve ser usado o método:
 
-	source .venv/bin/activate
+```
+source .venv/bin/activate
+```
 
 No Linux pode ser usado o comando `wich python` para visualizar qual o diretório ativo do ambiente python está sendo usado no momento.
 Também é possível configurar alguns terminais para utilizar os ambientes virtuais automaticamente, porém sempre é indicado que se verifique manualmente mesmo que esteja previamente configurado desta forma. 
