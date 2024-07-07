@@ -103,10 +103,8 @@ users
 ['Miguel', 'Bruno', 'Karla', 'Alice']
 ```
 
-==`remove`==, assim como os outros métodos mais *óbvios* são usados para removerem objetos das listas.
+==`remove`==, assim como os outros métodos mais *óbvios* são usados para removerem objetos das listas. Caso haja algum valor repetido na lista o método vai percorrer a lista a partir do índice `0` até achar o primeiro objeto que esteja de acordo com o parâmetro dado e então ira deletá-lo.
 	`users.remove(Alice)` removerá Alice da lista
-
----
 
 Listas e Tuplas podem ser somadas através do método `__add__` ou do método `extend()`;
 ```python
