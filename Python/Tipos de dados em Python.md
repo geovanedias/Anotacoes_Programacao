@@ -120,7 +120,7 @@ users += outra_lista
 ## Conjuntos
 
 Cria-se um conjunto através do método `set`, onde é passado como conteúdo um objeto iterável.
-O método também não garante a ordem e não permite objetos repetidos.
+O método também <u>não garante a ordem</u> e <u>não permite objetos repetidos</u>.
 Outros métodos também podem ser usados para criar um conjunto mas por boa prática é recomendado que sempre que for criado um conjunto seja utilizado explicitamente o argumento `set` como é mostrado no exemplo:
 
 ```python
