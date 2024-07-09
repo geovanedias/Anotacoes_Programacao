@@ -137,7 +137,21 @@ conjunto_a.union(conjunto_b)
 **Interseção** é feito com o operador `&`  ou através do método `.intersection`: 
 ```python
 conjunto_a & conjunto_b
+
 conjunto_a.intersection(conjunto_b)
 ```
 
-A **diferença** é feita utilizando o operador `-` ou pelo método 
+A **diferença** é feita utilizando o operador `-` ou pelo método `.difference`
+```python
+conjuinto_a - conjunto_b
+
+conjunto_a.difference(conjunto_b)
+```
+
+Diferença simétrica são todos os valores que estão unicamente entre os dois conjuntos mas que não fazem parte do conjunto união; Para usar a diferença simétrica pode ser feita através do operador `^` ou pelo método `.symmetric_difference`
+```python
+conjunto_a ^ conjunto_b
+
+conjunto_a.symmetric_difference(conjunto_b)
+```
+
