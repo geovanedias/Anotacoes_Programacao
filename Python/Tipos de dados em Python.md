@@ -127,13 +127,17 @@ Outros métodos também podem ser usados para criar um conjunto mas por boa prá
 conjunto1 = set([1, 2, 3, 4, 5])
 ```
 
-A união entre conjuntos é feita através do operador pipe `|` :
+A **união** entre conjuntos é feita através do operador pipe `|` ou então do método `.union`: 
 ```python
-set(conjunto_a) | set(conjunto_b)
-```
-ou então do método `.union`: 
-```python
-set(conjunto_a).union(set(conjunto_b))
+conjunto_a | conjunto_b
+
+conjunto_a.union(conjunto_b)
 ```
 
-13:20 - intercessão 
+**Interseção** é feito com o operador `&`  ou através do método `.intersection`: 
+```python
+conjunto_a & conjunto_b
+conjunto_a.intersection(conjunto_b)
+```
+
+A **diferença** é feita utilizando o operador `-` ou pelo método 
