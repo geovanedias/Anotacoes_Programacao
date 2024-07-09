@@ -127,3 +127,13 @@ Outros métodos também podem ser usados para criar um conjunto mas por boa prá
 conjunto1 = set([1, 2, 3, 4, 5])
 ```
 
+A união entre conjuntos é feita através do operador pipe `|` :
+```python
+set(conjunto_a) | set(conjunto_b)
+```
+ou então do método `.union`: 
+```python
+set(conjunto_a).union(set(conjunto_b))
+```
+
+13:20 - intercessão 
