@@ -155,3 +155,6 @@ conjunto_a ^ conjunto_b
 conjunto_a.symmetric_difference(conjunto_b)
 ```
 
+---
+## Dicionários
+
