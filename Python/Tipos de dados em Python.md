@@ -194,4 +194,17 @@ cliente.items()
 dict_items([('cod', 123), ('cidade', 'Viana')])
 ```
 
+Para inserir um dicionário dentro de outro é usado o método `.update` ou através do desempacotamento `{**dict1, **dict2}`
+```python
+extra = {"pais": "Portugal"}
+cliente.update(extra)
+{**cliente, **extra}
 
+cliente
+ {'cod': 123, 'cidade': 'Viana', 'pais': 'Portugal'}
+```
+
+Para criar um novo dicionário, juntando esses exemplos, será necessário desempacotar ambos:
+```python
+final = {**cliente, **extra}
+```
