@@ -158,4 +158,26 @@ conjunto_a.symmetric_difference(conjunto_b)
 ---
 ## Dicionários
 
-Possui características parecidas com Listas e Tuplas, é um objeto mutável, iterável e implementa algoritmos Hash Table. Utiliza um estrutura de dados baseada em pared de Chave e Valores.
+Possui características parecidas com Listas e Conjuntos(não é permitido chaves duplicadas) onde é utilizado um estrutura de dados baseada em pares de Chave e Valores. Dicionário é um objeto mutável, iterável e implementa algoritmos Hash Table. 
+>As chaves devem ser compatíveis com as Hash Tables
+
+Para criar dicionário é usado colchetes onde cada chave e valor é separado por `:`
+Ex:
+```python
+cliente = {"nome": "Bruno", "cod": 123}
+
+# Pesquisando o nome do cliente:
+cliente["nome"]
+ 'Bruno'
+
+# Incuindo novas chaves e valores(também serve para atualizar uma chave):
+cliente["cidade"] = "Viana"
+cliente
+ {'nome': 'Bruno', 'cod': 123, 'cidade': 'Viana'}
+
+# Removendo chaves no dicionário:
+del cliente["nome"]
+cliente
+ {'cod': 123, 'cidade': 'Viana'}
+```
+
