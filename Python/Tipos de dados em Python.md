@@ -158,3 +158,4 @@ conjunto_a.symmetric_difference(conjunto_b)
 ---
 ## Dicionários
 
+Possui características parecidas com Listas e Tuplas, é um objeto mutável, iterável e implementa algoritmos Hash Table. Utiliza um estrutura de dados baseada em pared de Chave e Valores.
