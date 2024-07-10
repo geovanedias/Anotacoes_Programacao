@@ -208,3 +208,10 @@ Para criar um novo dicionário, juntando esses exemplos, será necessário desem
 ```python
 final = {**cliente, **extra}
 ```
+
+As iterações `for` no dicionário retorna apenas as chaves. Para imprimir os valores é necessário usar chaves `[]` depois do dicionário.
+Ex:
+```python
+for chave in cliente:
+	print(chave, ":", cliente[chave])
+```
