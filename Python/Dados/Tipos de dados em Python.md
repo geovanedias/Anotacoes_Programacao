@@ -198,21 +198,6 @@ cliente.items()
 dict_items([('cod', 123), ('cidade', 'Viana')])
 ```
 
-Para inserir um dicionário dentro de outro é usado o método `.update` ou através do desempacotamento `{**dict1, **dict2}`
-```python
-extra = {"pais": "Portugal"}
-cliente.update(extra)
-{**cliente, **extra}
-
-cliente
- {'cod': 123, 'cidade': 'Viana', 'pais': 'Portugal'}
-```
-
-Para criar um novo dicionário, juntando esses exemplos, será necessário desempacotar ambos:
-```python
-final = {**cliente, **extra}
-```
-
 
 ### Métodos de Lookup
 
@@ -239,7 +224,81 @@ dict_items([("nome", "Bruno"), ("cidade", "Viana")])
 As iterações `for` no dicionário retorna apenas as chaves. Para imprimir os valores é necessário usar chaves `[]` depois do dicionário.
 Ex:
 ```python
-for chave in cliente:
-	print(chave, ":", cliente[chave])
+# apenas chaves
+for key in cliente:
+    print(key)
+
+nome
+cidade
+
+
+# Buscando os valores com subscrição
+for key in cliente:
+    print(key, "-->", cliente[key])
+
+nome-->Bruno
+cidade-->Viana
+
+
+# Com desenpacotamento de tuplas
+for key, value in cliente.items():
+    print(key, "-->", value)
+
+nome-->Bruno
+cidade-->Viana
+```
+
+
+### Combinando 2 dicionários
+
+Para inserir um dicionário dentro de outro é usado o método `.update` ou através do desempacotamento `{**dict1, **dict2}`
+```python
+# informacao original
+cliente = {"nome": "Bruno", "cidade": "Viana"}
+
+# informacao adicional
+extra = {"pais": "Portugal"}
+
+# Informação final
+# Para criar um novo dicionário, juntando esses exemplos, será necessário desempacotar ambos:
+final = {**cliente, **extra}
+
+print(final)
+ {'cod': 123, 'cidade': 'Viana', 'pais': 'Portugal'}
+```
+
+Ou fazendo `update` in place.
+
+```python
+# informacao original
+cliente = {"nome": "Bruno", "cidade": "Viana"}
+
+# informacao adicional
+extra = {"pais": "Portugal"}
+
+# Cliente atualizado
+cliente.update(extra)
+print(cliente)
+{"nome": "Bruno", "cidade": "Viana", "pais": "Portugal"}
+```
+
+## Erros
+
+Caso uma chave não exista no dicionário o Python estoura um erro chamado `KeyError`
+
+```python
+print(cliente["telefone"])
+...
+KeyError 'telefone'
+```
+
+Para evitar o erro podemos usar o método `get` que busca a chave e caso não exista retorna um valor padrão que inicialmente é `None`
+
+```python
+print(cliente.get("telefone"))
+'None'
+
+print(cliente.get("telefone", "191"))
+'191'
 ```
 
