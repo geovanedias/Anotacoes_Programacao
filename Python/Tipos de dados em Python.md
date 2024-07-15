@@ -159,6 +159,7 @@ conjunto_a.symmetric_difference(conjunto_b)
 ## Dicionários
 
 Possui características parecidas com Listas e Conjuntos(não é permitido chaves duplicadas) onde é utilizado um estrutura de dados baseada em pares de Chave e Valores. Dicionário é um objeto mutável, iterável e implementa algoritmos Hash Table. 
+Sua manipulação permite realizar operações CRUD
 >- As chaves devem ser compatíveis com as Hash Tables
 >- Todas as manipulações de strings podem ser feitas com os valores quando pesquisados
 
