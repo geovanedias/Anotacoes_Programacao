@@ -1,4 +1,4 @@
-## Dicionários
+[[Tipos de dados em Python]] usado para criar e manipular dados semelhante ao que é encontrado nas linguagens de bancos de dados.
 
 Possui características parecidas com Listas e Conjuntos(não é permitido chaves duplicadas) onde é utilizado um estrutura de dados baseada em pares de Chave e Valores. Dicionário é um objeto mutável, iterável e implementa algoritmos Hash Table. 
 Sua manipulação permite realizar operações CRUD
