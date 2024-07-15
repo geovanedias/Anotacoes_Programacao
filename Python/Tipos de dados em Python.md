@@ -172,12 +172,15 @@ cliente = {"nome": "Bruno", "cod": 123}
 cliente["nome"]
  'Bruno'
 
-# Incuindo novas chaves e valores(também serve para atualizar uma chave):
+# CRIAR novas chaves e valores(também serve para ATUALIZAR uma chave):
 cliente["cidade"] = "Viana"
-cliente
- {'nome': 'Bruno', 'cod': 123, 'cidade': 'Viana'}
+cliente["nome] = "Bruno Rocha"
 
-# Removendo chaves no dicionário:
+# LER os valores de uma chave:
+cliente
+ {'nome': 'Bruno Rocha', 'cod': 123, 'cidade': 'Viana'}
+
+# DELETAR chaves no dicionário:
 del cliente["nome"]
 cliente
  {'cod': 123, 'cidade': 'Viana'}
@@ -208,6 +211,29 @@ cliente
 Para criar um novo dicionário, juntando esses exemplos, será necessário desempacotar ambos:
 ```python
 final = {**cliente, **extra}
+```
+
+
+### Métodos de Lookup
+
+Obter uma lista de chaves:
+```python
+cliente = {"nome": "Bruno", "cidade": "Viana"}
+
+cliente.keys()
+dict_keys(["nome", "cidade"])
+```
+
+Obter uma lista de valores
+```python
+cliente.values()
+dict_keys(["Bruno", "Viana"])
+```
+
+Obter uma lista de tuplas contendo chave e valor
+```python
+cliente.items()
+dict_items([("nome", "Bruno"), ("cidade", "Viana")])
 ```
 
 As iterações `for` no dicionário retorna apenas as chaves. Para imprimir os valores é necessário usar chaves `[]` depois do dicionário.
