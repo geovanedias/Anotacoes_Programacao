@@ -144,3 +144,5 @@ print(cliente.get("telefone", "191"))
 '191'
 ```
 
+#### Dict Like Object
+Alguns métodos podem realizar interfaces e protocolos semelhantes aos dicionários mesmo não sendo um necessariamente. 

@@ -10,3 +10,5 @@ Esse método recebe um objeto do formato string, sendo necessário transformar o
 idade = int(input("Qual a sua idade? "\n))
 ```
 
+`.strip` pode ser usado para remover espaços em branco do começo e final do `input()`.
+
