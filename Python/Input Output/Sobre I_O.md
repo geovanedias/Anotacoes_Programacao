@@ -91,41 +91,50 @@ Uma outra utilidade para a `input` é bloquear a execução do programa até q
 
 ## CLI Arguments
 
-Outra forma de ler informações para dentro de um script é através de argumentos de CLI quando usamos uma ferramenta de terminal é comum passarmos parametros para dentro do programa, como por exemplo:
+Outra forma de ler informações para dentro de um script é através de argumentos de CLI quando usamos uma ferramenta de terminal é comum passarmos parâmetros para dentro do programa, como por exemplo:
 
-python --version
-python -c 'comando'
+`python --version`
+`python -c 'comando'`
 
-Repare que além do programa `python` passamos os parametros `--version` e o `-c 'comando'`.
+Repare que além do programa `python` passamos os parâmetros `--version` e o `-c 'comando'`.
 
 Em nossos próprios scripts podemos ler essas informações através do módulo `sys`
 
-`programa.py`
+No `programa.py`:
 
+```
 import sys
 print(sys.argv)
+```
 
-No terminal
+No terminal:
 
+```
 $ python programa.py argumento1 argumento2 --nome=Bruno
 ['programa.py', 'argumento1', 'argumento2', '--nome=Bruno']
+```
 
 A lista `sys.argv` irá coletar os argumentos passados para o programa, sendo que o nome do programa estará sempre na primeira posição, se quisermos considerar apenas os argumentos passados após o nome do programa podemos fazer um fatiamento desta lista.
 
-`programa.py`
+No `programa.py`:
 
+```
 import sys
 print(sys.argv[1:])  # começando no elemento 1 (ignorando o 0)
+```
 
-No terminal
+No terminal:
 
+```
 $ python programa.py argumento1 argumento2 --nome=Bruno
 ['argumento1', 'argumento2', '--nome=Bruno']
+```
 
 Cada item da nossa lista de argumentos será um objeto do tipo `str` portanto podemos usar qualquer operação válida com textos, por exemplo, podemos transformar os argumentos passados pelo CLI em um dicionário.
 
 `programa.py`
 
+```
 import sys
 argumentos = {}
 for arg in sys.argv[1:]:
@@ -133,11 +142,14 @@ for arg in sys.argv[1:]:
     argumentos[chave.lstrip('-').strip()] = valor.strip()
 
 print(argumentos)
+```
 
 Ao executar o programa acima obtemos:
 
+```
 $ python programa.py --nome=Bruno --idade=15 --cidade=Viana
 {'nome': 'Bruno', 'idade': '15', 'cidade': 'Viana'}
+```
 
 Em nosso programa podemos usar este dicionário para tomar as decisões de fluxo do programa.
 
@@ -145,6 +157,7 @@ Em nosso programa podemos usar este dicionário para tomar as decisões de fluxo
 
 Assim como as variáveis de ambiente que já aprendemos em nosso primeiro script tanto os `inputs` quanto `CLI args` sempre serão lidos como texto `str` portanto pode ser necessário fazer validações e transformações, alguns exemplos.
 
+```
 # Garantir que não tenha espaços em branco no começo ou final
 valor = input("Digite um valor").strip()
 
@@ -153,5 +166,6 @@ valor = sys.argv[0].lstrip('-')
 
 # Converter texto para número inteiro
 valor - int(input("Digite um número").strip())
+```
 
 Em todos esses casos ainda precisamos nos preocupar com o tratamento de `Exceptions` mas este será o tema de uma outra aula.
