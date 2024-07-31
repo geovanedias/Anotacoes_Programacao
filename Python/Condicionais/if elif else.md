@@ -1,6 +1,6 @@
 `if`, `elif` e `else` em python funcionam da mesma forma que em outras linguagens de programação.
 
-### `if`
+### if
 ```python
 for aluno in aula_ingles:
     if aluno in sala1:
