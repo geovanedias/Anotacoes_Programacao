@@ -1,0 +1,1 @@
+Interpretador(runtime) JavaScript para rodar o código fora do navegador, sendo usado para realizar tarefas além do código de navegadores.
