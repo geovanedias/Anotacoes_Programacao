@@ -20,3 +20,9 @@ Além disso, o loop de eventos ainda conta com duas outras filas, mais relaciona
 
 1. `process.nexttick()`: resolução de promessas. Ocorre logo após a fase de encerramento de cada loop, ao invés de esperar passar por todos os outros callbacks que podem estar no loop.
 2. Outras _microtasks_ diversas.
+
+Como o Node.js sabe se o loop deve continuar no próximo tick ou se o programa deve ser encerrado? Checando se ainda existem timers ou tarefas I/O pendentes.
+
+- Se não existem, vai finalizar a aplicação;
+- Se existem, continua no loop. Por exemplo, se existem conexões abertas que mantêm o programa rodando.
+
