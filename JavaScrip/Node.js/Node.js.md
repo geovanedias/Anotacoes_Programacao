@@ -15,3 +15,8 @@ O loop de eventos é iniciado junto com a aplicação e cada loop é composto pe
 2. I/O polling: eventos de I/O que estão prontos para serem processados, como acesso a arquivos, tarefas de rede, etc) - a maior parte dos callbacks é referente a este tipo de operação e ocorre nesta fase;
 3. `setImmediate()`: um tipo de timer especial que podemos usar quando queremos que um callback seja processado imediatamente (casos de uso mais avançados);
 4. Eventos de encerramento: métodos para fechar conexões abertas, como conexões com bancos ou sockets (por exemplo o método `socket.close()`).
+
+Além disso, o loop de eventos ainda conta com duas outras filas, mais relacionadas a casos avançados de uso e que não abordaremos com detalhes aqui:
+
+1. `process.nexttick()`: resolução de promessas. Ocorre logo após a fase de encerramento de cada loop, ao invés de esperar passar por todos os outros callbacks que podem estar no loop.
+2. Outras _microtasks_ diversas.
