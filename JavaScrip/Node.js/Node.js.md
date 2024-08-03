@@ -9,3 +9,9 @@ Quando um pacote é adicionado a um projeto o `package.json` é atualizado com o
 
 # Loops de eventos
 
+O loop de eventos é iniciado junto com a aplicação e cada loop é composto pelas seguintes fases de execução:
+
+1. Callbacks dos timers expirados: são os primeiros a serem executados assim que possível - ou seja, quando a _call stack_ se encontra vazia;
+2. I/O polling: eventos de I/O que estão prontos para serem processados, como acesso a arquivos, tarefas de rede, etc) - a maior parte dos callbacks é referente a este tipo de operação e ocorre nesta fase;
+3. `setImmediate()`: um tipo de timer especial que podemos usar quando queremos que um callback seja processado imediatamente (casos de uso mais avançados);
+4. Eventos de encerramento: métodos para fechar conexões abertas, como conexões com bancos ou sockets (por exemplo o método `socket.close()`).
