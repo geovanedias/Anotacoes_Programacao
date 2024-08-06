@@ -76,6 +76,8 @@ _Por convenção, todo objeto em uma underline é considerado descartável para 
 ---
 ## Listas
 
+No âmbito das estruturas de dados, uma lista é uma entidade que permite o armazenamento e a organização de dados de maneira sequencial. Em Python, por exemplo, a implementação intrínseca de uma lista pode ser realizada através da função _**list()**_ ou mediante a inclusão de elementos entre colchetes.
+
 Semelhantes a Arrays/Vetores/Matrizes de outras linguagens de programação. 
 	É utilizada criando uma variável com a atribuição de colchetes `[]` e pode ser criada vazia para ser preenchida depois.
 
