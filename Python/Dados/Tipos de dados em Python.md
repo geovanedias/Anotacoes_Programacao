@@ -7,7 +7,7 @@ Em python tudo que começa com `0b` é um numero binário.
 classe, categoria e tipo são as mesmas coisas
 
 ---
-## Dados primários / Scalar 
+# Dados primários / Scalar 
 Representam um único valor associado a um objeto.
 `dir(<type>)`
 	 Mostra todos os métodos que podem ser usado com aquele tipo. Onde os métodos que não possuírem dunder(`__`) são métodos que "podem" ser chamado diretamente com o objeto.
@@ -33,7 +33,7 @@ NoneType
 ```
 
 ---
-## Dados compostos
+# Dados compostos
 
 ### Tuple / tupla
 
@@ -74,7 +74,7 @@ x, *_, y = coord
 _Por convenção, todo objeto em uma underline é considerado descartável para aquele programa_
 
 ---
-### Listas
+## Listas
 
 Semelhantes a Arrays/Vetores/Matrizes de outras linguagens de programação. 
 	É utilizada criando uma variável com a atribuição de colchetes `[]` e pode ser criada vazia para ser preenchida depois.
