@@ -10,7 +10,7 @@ classe, categoria e tipo são as mesmas coisas
 # Dados primários / Scalar 
 Representam um único valor associado a um objeto.
 `dir(<type>)`
-	 Mostra todos os métodos que podem ser usado com aquele tipo. Onde os métodos que não possuírem dunder(`__`) são métodos que "podem" ser chamado diretamente com o objeto.
+	 Mostra todos os métodos que podem ser usado com aquele tipo de objeto. Onde os métodos que não possuírem dunder(`__`) são métodos que "podem" ser chamado diretamente com o objeto.
 		ex: `int.bit_lengt()` 
 
 
