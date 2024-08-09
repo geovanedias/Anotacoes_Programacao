@@ -38,9 +38,8 @@ def busca(lista, valor):
 	navegar = lista.head
 	# percorre a lista em busca do valor
 	while navegar and navegar.data != valor:
-	
 		navegar = navegar.next
-	
+	# retorna o valor, pode ser usado a função de print()
 	return navegar
 ```
 
