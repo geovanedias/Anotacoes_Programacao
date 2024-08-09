@@ -39,19 +39,28 @@ class Pilha:
 	def __init__(self):
 		self.topo = None
 	def __repr__(self):
-
-return "TOPO\n%s\nRODAPÉ" % (self.topo)
+		return "TOPO\n%s\nRODAPÉ" % (self.topo)
 ```
 
 
 A classe **Pilha** será inicialmente definida com um único atributo chamado **topo**, que indica o elemento no topo da pilha. Em seguida, implementaremos um método para adicionar novos valores à pilha. Esse método, denominado `push()`, será integrado à classe Pilha:
 
 ```python
-
+def push (self, valor):
+	# Cria um novo objeto Item
+	item_novo = Item(valor)
+	# o anterior passa a ser o antigo topo
+	item_novo.anterior = self.topo
+	# o topo da pilha passa a ser o item novo
+	self.topo = item_novo
 ```
 
-
+Por último iremos implementar o método que desempilha um objeto da pilha. Esse método utiliza o comando `assert` para verificar se o topo da pilha está vazio. Se estiver, ele gerará um erro. Se a pilha tiver itens, a função altera o valor do topo, atribuindo o valor que está no atributo anterior. Vamos chamar essa função de `pop()`:
 
 ```python
-
+def pop (self): 
+	assert self.topo, "Erro: pilha vazia." 
+	# modifica o valor do topo 
+	self.topo = self.topo.anterior
 ```
+
