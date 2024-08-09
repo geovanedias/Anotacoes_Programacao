@@ -1,4 +1,4 @@
-Pilhas são listas organizadas de modo a seguir o método LIFO. A natureza inerente dos métodos associados aos objetos do tipo lista permite que sejam tratadas como pilhas. 
+Estruturas de dados do tipo LIFO (Last In, First Out), onde o último elemento adicionado é o primeiro a ser removido. Utilizadas em algoritmos de navegação, parsers e gerenciamento de recursos. A natureza inerente dos métodos associados aos objetos do tipo lista permite que sejam tratadas como pilhas. 
 
 O método `append()` é utilizado para adicionar um elemento ao final de uma lista, o que, em termos de uma pilha, corresponderia ao ato de colocar um item no topo. Por outro lado, o método `pop()`, quando invocado sem argumentos, remove e retorna o último elemento adicionado à lista. Essa funcionalidade é análoga à remoção de um item do topo de uma pilha. Portanto, é possível concluir que, através desses métodos, a estrutura de dados do tipo lista em Python pode ser utilizada para simular o comportamento de uma pilha (Mariano, 2021).
 

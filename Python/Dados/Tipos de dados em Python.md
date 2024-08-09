@@ -11,6 +11,17 @@ Por exemplo, as listas encadeadas são essenciais quando se necessita de inserç
 Além disso, as pilhas e filas são amplamente utilizadas para controlar o fluxo de execução em programas, com as pilhas apoiando a implementação de chamadas de função e as filas auxiliando na gestão de tarefas em sistemas operacionais e aplicativos de servidor (Backes, 2023). De forma similar, as tabelas de _hash_ são empregadas para buscas rápidas e eficientes, sendo um componente crítico em muitos algoritmos de indexação e banco de dados (Lambert, 2022).
 
 ---
+## Aplicações de Estruturas de Dados
+
+**Desenvolvimento web:** Dicionários são frequentemente usados para armazenar dados de sessão e informações de usuários.
+
+**Ciência de Dados:** Listas e conjuntos são essenciais para a manipulação de dados e análises estatísticas.
+
+**Desenvolvimento de Jogos:** Pilhas e Matrizes podem ser usadas para rastrear os movimentos do jogador, permitindo funcionalidades de desfazer/refazer.
+
+**Sistemas Operacionais:** Filas são fundamentais na gestão de processos e na implementação de schedulers. 
+
+---
 # Dados primários / Scalar 
 Representam um único valor associado a um objeto.
 `dir(<objeto>)`

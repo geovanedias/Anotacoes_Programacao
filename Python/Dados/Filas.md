@@ -1,4 +1,5 @@
 Nos estudos de estruturas de dados, uma fila é frequentemente descrita como uma estrutura do tipo FIFO (_First-In, First-Out_), que se traduz como "primeiro a entrar, primeiro a sair" (Alves, 2021). Nessa estrutura, o elemento que é adicionado primeiro na fila será também o primeiro a ser removido e, consequentemente, o elemento adicionado por último será o último a sair.
+Aplicadas em simulações, gerenciamento de tarefas e buffering. 
 
 É possível implementar filas em Python utilizando a biblioteca `collections.deque`. No exemplo a seguir, vamos construir uma fila contendo três itens: 1) banana, 2) chocolate e 3) morango.
 
