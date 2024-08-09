@@ -6,6 +6,10 @@ Em python tudo que começa com `0b` é um numero binário.
 
 classe, categoria e tipo são as mesmas coisas
 
+Por exemplo, as listas encadeadas são essenciais quando se necessita de inserções e exclusões eficientes em qualquer posição da lista, sem a necessidade de realocar a memória, como é o caso em _arrays_ (Backes, 2023). As árvores, por outro lado, são extremamente úteis para operações de busca e ordenação de dados, como demonstrado nas árvores binárias de busca, que permitem inserções, exclusões e buscas em tempo proporcional à altura da árvore.
+
+Além disso, as pilhas e filas são amplamente utilizadas para controlar o fluxo de execução em programas, com as pilhas apoiando a implementação de chamadas de função e as filas auxiliando na gestão de tarefas em sistemas operacionais e aplicativos de servidor (Backes, 2023). De forma similar, as tabelas de _hash_ são empregadas para buscas rápidas e eficientes, sendo um componente crítico em muitos algoritmos de indexação e banco de dados (Lambert, 2022).
+
 ---
 # Dados primários / Scalar 
 Representam um único valor associado a um objeto.
