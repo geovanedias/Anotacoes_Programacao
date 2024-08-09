@@ -32,3 +32,26 @@ class Pilha:
 		return None
 ```
 
+Agora vamos **implementar** a classe **Pilha**:
+
+```python
+class Pilha:
+	def __init__(self):
+		self.topo = None
+	def __repr__(self):
+
+return "TOPO\n%s\nRODAPÉ" % (self.topo)
+```
+
+
+A classe **Pilha** será inicialmente definida com um único atributo chamado **topo**, que indica o elemento no topo da pilha. Em seguida, implementaremos um método para adicionar novos valores à pilha. Esse método, denominado `push()`, será integrado à classe Pilha:
+
+```python
+
+```
+
+
+
+```python
+
+```
