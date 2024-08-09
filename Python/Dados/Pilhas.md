@@ -24,14 +24,11 @@ class Pilha:
 		self.items = []
 
 	def empilhar(self, item):
+		self.items.append(item)
 
-self.items.append(item)
-
-def desempilhar(self):
-
-if self.items:
-
-return self.items.pop() 
-
-return None
+	def desempilhar(self):
+		if self.items:
+			return self.items.pop()
+		return None
 ```
+
