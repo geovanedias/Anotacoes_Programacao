@@ -9,7 +9,7 @@ classe, categoria e tipo são as mesmas coisas
 ---
 # Dados primários / Scalar 
 Representam um único valor associado a um objeto.
-`dir(<type>)`
+`dir(<objeto>)`
 	 Mostra todos os métodos que podem ser usado com aquele tipo de objeto. Onde os métodos que não possuírem dunder(`__`) são métodos que "podem" ser chamado diretamente com o objeto.
 		ex: `int.bit_lengt()` 
 
@@ -93,7 +93,7 @@ Listas possuem alguns dos seguintes métodos:
 append()  count()  insert()  reverse()  clear()  extend()  pop()  sort()  copy()  index()  remove()
 ```
 
-O método ==`append()`== é o método a ser usado para inserir objetos em determinada lista, apenas um objeto por vez:
+O método ==`append()`== é o método a ser usado para inserir objetos em determinada lista, apenas um objeto por vez e este objeto é inserido ao final daquela lista:
 ```python
 users.append("Bruno")
 users.append("Alice")...
