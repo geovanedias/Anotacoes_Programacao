@@ -9,5 +9,11 @@
   "Editor@@h3-color@@dark": "#3173FF",
   "Editor@@h4-color@@dark": "#FF0949",
   "Editor@@h5-color@@dark": "#00A5FF",
-  "Editor@@h6-color@@dark": "#FF4E00"
+  "Editor@@h6-color@@dark": "#FF4E00",
+  "Appearance@@orange@@light": "#D5550A",
+  "Appearance@@yellow@@light": "#D4D518",
+  "Appearance@@yellow@@dark": "#D6D727",
+  "Appearance@@orange@@dark": "#FF8237",
+  "Editor@@bold-color@@dark": "#6CCBFF",
+  "Editor@@italic-color@@dark": "#6CCBFF"
 }

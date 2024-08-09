@@ -89,7 +89,7 @@ colors = ["red", "green", "blue"]
 As listas possuem alguns dos métodos das Tuplas, mas com a diferença que podem ser alteradas constantemente. As formas de percorrer Listas e Tuplas são as mesmas.
 
 Listas possuem alguns dos seguintes métodos:
-```
+```python
 append()  count()  insert()  reverse()  clear()  extend()  pop()  sort()  copy()  index()  remove()
 ```
 
