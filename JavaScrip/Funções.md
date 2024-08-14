@@ -1,3 +1,2 @@
-`console.log();` 
-	Pode ser usado para imprimir algo no terminal ou até mesmo executar outras funções antes de executar a impressão.
+O `console.log()` é uma função disponível nos navegadores e no ambiente Node.js. Sua principal finalidade é imprimir mensagens ou valores no console do navegador ou terminal, facilitando o acompanhamento e depuração do código.
 
