@@ -37,4 +37,7 @@ O caso de operações mal formadas é uma das ocorrências mais comuns de `NaN`
 Os números hexadecimais são representados na base 16, começando com `0x` seguido pelo valor hexadecimal.
 	`0xA` = 10
 
-Octais
+### Octais
+
+Apesar de não terem uma representação direta em JavaScript, os números octais podem ser representados usando o prefixo `0o` seguido pelo valor octal.
+
