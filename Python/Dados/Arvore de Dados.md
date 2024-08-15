@@ -17,15 +17,34 @@ São árvores de busca balanceadas projetadas para buscas em discos.
 As Árvores B permitem mais de duas ramificações.
 
 Algumas das características delas são:
-- Nós com múltiplas chaves.
+- **Nós com múltiplas chaves.**
+	- A ordem de uma árvore B, definida como o número máximo de ponteiros que uma página pode ter, é estabelecida com base na capacidade máxima de chaves que uma página pode conter, garantindo que a ocupação de chaves em cada página nunca seja inferior à metade da sua capacidade total.
 - Balanceamento (automatizado).
 - Eficiência em operações de discos.
 
+A manutenção do equilíbrio na estrutura das árvores B é assegurada através da **divisão** e **fusão** de nós quando necessário, particularmente durante **inserções** e **remoções**. Essa capacidade de ajuste garante o *balanceamento contínuo* da árvore, otimizando o acesso aos dados armazenados.
+
 >As chaves devem sempre ser sempre em ordem crescentes e com um limite máximo definido.
 
-# Quad-trees
+O processo de inserção em uma árvore B começa pela localização da página adequada para a nova chave, verificando-se a existência de espaço disponível. Se houver espaço, a chave é inserida de forma ordenada. Na eventualidade de a página estar cheia, procede-se à sua divisão, ou "split", criando uma nova página que alojará metade dos elementos da página original. Essa divisão exige que uma das chaves ascenda ao nível superior para manter a integridade estrutural da árvore, garantindo a correta referência às páginas divididas.
 
-É o método que divide um espaço em quadrantes de forma recursiva. 
+A inserção em uma árvore B segue uma série de passos para localizar o local apropriado para a nova chave e garantir que a árvore permaneça balanceada. 
+
+**Localização da página apropriada:** inicialmente, percorre-se a árvore a partir da raiz, seguindo os ponteiros adequados, para encontrar a página (nó) onde a nova chave deve ser inserida.
+
+**Inserção na página:** se a página encontrada tem espaço para a nova chave, a chave é inserida mantendo a ordem das chaves na página.
+
+**Divisão da página (**_**split**_**):** se a página estiver cheia, ela é dividida ao meio, criando uma nova página. Uma chave da página original é movida para o nó pai para servir como ponto de separação entre as duas novas páginas.
+
+**Remoção de uma chave da folha:** se a chave a ser removida está em uma folha e a folha tem chaves suficientes, simplesmente remove-se a chave. 
+
+**Remoção de uma chave de um nó interno:** se o nó não é uma folha, há várias estratégias para lidar com a remoção, como substituir a chave por seu predecessor ou sucessor imediato, ou, se necessário, fundir nós.
+
+
+# Quadtree
+
+É o método que divide um espaço em quadrantes de forma recursiva. A quadtree é uma estrutura de dados em árvore em que cada nó interno possui exatamente quatro filhos,
+
 Características: 
 - Divisão Espacial
 - Eficiência Espacial
