@@ -11,3 +11,23 @@ Em uma estrutura de dados em árvore, as conexões entre os vértices, conhecida
 
 #### Em árvores binárias, cada nó pode ter no máximo dois filhos, que são referenciados como filho esquerdo e filho direito.
 
+# Arvores B
+
+São árvores de busca balanceadas projetadas para buscas em discos.
+As Árvores B permitem mais de duas ramificações.
+
+Algumas das características delas são:
+- Nós com múltiplas chaves.
+- Balanceamento (automatizado).
+- Eficiência em operações de discos.
+
+>As chaves devem sempre ser sempre em ordem crescentes e com um limite máximo definido.
+
+# Quad-trees
+
+É o método que divide um espaço em quadrantes de forma recursiva. 
+Características: 
+- Divisão Espacial
+- Eficiência Espacial
+- Busca Rápida
+
