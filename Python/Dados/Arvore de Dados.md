@@ -14,7 +14,7 @@ Em uma estrutura de dados em árvore, as conexões entre os vértices, conhecida
 # Arvores B
 
 São árvores de busca balanceadas projetadas para buscas em discos.
-As *Árvores B* permitem mais de duas ramificações.
+As Árvores B permitem mais de duas ramificações.
 
 Algumas das características delas são:
 - **Nós com múltiplas chaves.**
