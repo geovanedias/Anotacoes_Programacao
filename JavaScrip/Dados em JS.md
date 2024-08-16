@@ -1,4 +1,6 @@
-Em JS tem que ter um certo cuidado para não realizar funções que, por exemplo, somem inteiros com strings. Afinal o JS não verifica se existe um algoritmo inválido, ele apenas executa o que for mais conveniente, digamos assim.
+Em JS tem que ter um certo cuidado para não realizar funções que, por exemplo, somem inteiros com strings. Afinal o JS não verifica se existe um algoritmo inválido, ele apenas executa o que for mais conveniente, digamos assim. 
+
+>Mais detalhes em [[Variáveis]] e [[String]].
 
 ```js
 let soma = 2 + '7'
