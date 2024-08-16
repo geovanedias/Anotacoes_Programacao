@@ -20,6 +20,13 @@
         "a": 1,
         "rgb": 49696
       }
+    },
+    {
+      "query": "path:JavaScrip  ",
+      "color": {
+        "a": 1,
+        "rgb": 16771584
+      }
     }
   ],
   "collapse-display": false,
@@ -33,5 +40,5 @@
   "linkStrength": 1,
   "linkDistance": 250,
   "scale": 1.1092170081582216,
-  "close": false
+  "close": true
 }
