@@ -72,3 +72,11 @@ console.log(valorNumero);
 // Saída: 20 (valor convertido para inteiro usando parseInt)
 ```
 
+## Null e Undefined
+
+**Null** representa normalmente a **ausência intencional** de algum valor, ou seja, não há o telefone da pessoa estudante no cadastro.
+
+O **undefined** é normalmente o **tipo assumido pelo JavaScript** quando uma variável não está associada a nenhum valor no momento em que o código foi executado. Ela pode ser associada a um valor posteriormente ao momento em que passamos por essa linha.
+
+>Normalmente, o undefined dá uma dica de que alguma operação não ocorreu como deveria, porque não retorna um valor, mas sim "undefined"; ou de que o código está tentando pegar algum valor que não está acessível naquele momento; ou é o resultado de alguma função que não tem `return`.
+
