@@ -47,5 +47,3 @@ console.log(valorNumero);
 
 ---
 
-
-
