@@ -80,3 +80,7 @@ O **undefined** é normalmente o **tipo assumido pelo JavaScript** quando um
 
 >Normalmente, o undefined dá uma dica de que alguma operação não ocorreu como deveria, porque não retorna um valor, mas sim "undefined"; ou de que o código está tentando pegar algum valor que não está acessível naquele momento; ou é o resultado de alguma função que não tem `return`.
 
+## Symbol
+
+É um dos tipos primitivos em JavaScript, introduzido no ES6 (ECMAScript 2015), e representa um identificador **único e imutável**. Símbolos são frequentemente utilizados para criar *propriedades de objeto que são únicas e não interferem com outras propriedades existentes*.
+
