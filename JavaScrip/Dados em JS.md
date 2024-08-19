@@ -5,19 +5,23 @@ Em JS tem que ter um certo cuidado para não realizar funções que, por exemplo
 ```js
 let soma = 2 + '7'
 
->>> 27
+>> 27
 ```
 
 Para contornar isso é possível usar um parse para transformar aquela int em um numeral.
 
 ```js
 const notaQuartoBi = Number.parseInt('7');
+// Number é usado para tentar transformar aquele objeto em um numeral
+// .parseInt = parâmetro passado para explicitar que aquele numeral é um inteiro
 ```
 
+---
 ## float
 
 Em float usamos o argumento `.toFixed(x)`, onde `x` é a quantidade de casas decimais, para limitar o tamanho de um float.
 
+---
 ## NaN
 
 Representa, literalmente, “not a number”, ou “não é um número”. Na maior parte dos casos, `NaN` é o valor retornado como **resultado de uma operação aritmética mal formada**, por exemplo:
@@ -43,11 +47,12 @@ Os números hexadecimais são representados na base 16, começando com `0x` segu
 
 Apesar de não terem uma representação direta em JavaScript, os números octais podem ser representados usando o prefixo `0o` seguido pelo valor octal.
 
-### Coerção e Conversão de tipos
+---
+## Coerção e Conversão de tipos
 
 Coerção e conversão de tipos são conceitos em JavaScript que envolvem a maneira como os valores são tratados e convertidos entre diferentes tipos de dados.
 
-#### Coerção de Tipos em JavaScript
+### Coerção de Tipos em JavaScript
 
 A coerção de tipos em JavaScript refere-se à **conversão automática e implícita de um tipo de dado para outro durante operações**. Isso pode acontecer em operações matemáticas, comparações ou concatenações de strings.
 
@@ -60,7 +65,7 @@ console.log(resultado);
 // Saída: '105' (o número 5 foi convertido para string e concatenado com a string ‘10’)
 ```
 
-#### Conversão de Tipos em JavaScript
+### Conversão de Tipos em JavaScript
 
 A conversão de tipos é a transformação explícita de um tipo de dado em outro. Isso pode ser feito de várias maneiras, como utilizando funções ou operadores específicos para converter um tipo em outro.
 
@@ -72,6 +77,7 @@ console.log(valorNumero);
 // Saída: 20 (valor convertido para inteiro usando parseInt)
 ```
 
+---
 ## Null e Undefined
 
 **Null** representa normalmente a **ausência intencional** de algum valor, ou seja, não há o telefone da pessoa estudante no cadastro.
@@ -80,6 +86,7 @@ O **undefined** é normalmente o **tipo assumido pelo JavaScript** quando um
 
 >Normalmente, o undefined dá uma dica de que alguma operação não ocorreu como deveria, porque não retorna um valor, mas sim "undefined"; ou de que o código está tentando pegar algum valor que não está acessível naquele momento; ou é o resultado de alguma função que não tem `return`.
 
+---
 ## Symbol
 
 É um dos tipos primitivos em JavaScript, introduzido no ES6 (ECMAScript 2015), e representa um identificador **único e imutável**. Símbolos são frequentemente utilizados para criar *propriedades de objeto que são únicas e não interferem com outras propriedades existentes*.

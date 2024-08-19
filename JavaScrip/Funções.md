@@ -9,7 +9,7 @@ console.log('A idade é:', idade);
 
 ## Number()
 Esta função converte qualquer outro tipo de dado em um tipo Number. Caso o valor não possa ser convertido, retornará `NaN`.
-#### `Number.parseInt()` e `Number.parseFloat()`
+##### `Number.parseInt()` e `Number.parseFloat()`
 
 Ambos funcionam de forma parecida, porém, `parseInt`vai tentar converter o valor em um número inteiro e `parseFloat`, em um número de ponto flutuante.
 

@@ -47,3 +47,47 @@ console.log(valorNumero);
 
 ---
 
+## Conversão para strings
+
+Assim como `Number()`, o JavaScript também disponibiliza a função global `String()` quando é necessário converter outros tipos de dado em formato de texto.
+
+```js
+String(2); // retorna '2'
+String(undefined); // retorna 'undefined'
+String(true); // retorna 'true'
+```
+
+É possível utilizar diversos métodos do JavaScript para modificar strings. Confira abaixo alguns dos mais comuns:
+
+- [`includes()`](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/String/includes)
+
+Determina se um conjunto de caracteres pode ser encontrado dentro de uma string, retornando `true` ou `false`:
+
+```js
+'estudando JavaScript'.includes('Java'); // retorna true
+```
+
+É sempre possível passar o valor a ser convertido a partir de uma variável:
+
+```js
+const texto = 'estudando JavaScript';
+texto.includes('Java'); // retorna true
+```
+
+- [`toLowerCase()`](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/String/toLowerCase)
+
+Converte todos os caracteres da string para letras minúsculas.
+
+```js
+'POR FAVOR, NÃO GRITE'.toLowerCase(); // retorna 'por favor, não grite'
+```
+
+Assim como no exemplo anterior, a string que será convertida pode estar em uma variável:
+
+```js
+const texto = 'POR FAVOR, NÃO GRITE';
+texto.toLowerCase(); // retorna 'por favor, não grite'
+```
+
+Da mesma forma que existe um método para transformar textos em minúsculas, também é possível usar [`texto.toUpperCase()`](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase) para converter em maiúsculas. 
+
