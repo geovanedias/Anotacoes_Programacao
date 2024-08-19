@@ -43,3 +43,33 @@ Os números hexadecimais são representados na base 16, começando com `0x` segu
 
 Apesar de não terem uma representação direta em JavaScript, os números octais podem ser representados usando o prefixo `0o` seguido pelo valor octal.
 
+### Coerção e Conversão de tipos
+
+Coerção e conversão de tipos são conceitos em JavaScript que envolvem a maneira como os valores são tratados e convertidos entre diferentes tipos de dados.
+
+#### Coerção de Tipos em JavaScript
+
+A coerção de tipos em JavaScript refere-se à **conversão automática e implícita de um tipo de dado para outro durante operações**. Isso pode acontecer em operações matemáticas, comparações ou concatenações de strings.
+
+```js
+let valorString = '10';
+let valorNumero = 5;
+
+let resultado = valorString + valorNumero;
+console.log(resultado); 
+// Saída: '105' (o número 5 foi convertido para string e concatenado com a string ‘10’)
+```
+
+## Conversão de Tipos em JavaScript
+
+A conversão de tipos é a transformação explícita de um tipo de dado em outro. Isso pode ser feito de várias maneiras, como utilizando funções ou operadores específicos para converter um tipo em outro.
+
+```js
+let valorString = '20';
+let valorNumero = parseInt(valorString);
+
+console.log(valorNumero); 
+// Saída: 20 (valor convertido para inteiro usando parseInt)
+```
+
+
