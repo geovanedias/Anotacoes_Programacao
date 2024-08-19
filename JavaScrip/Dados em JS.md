@@ -20,7 +20,7 @@ Em float usamos o argumento `.toFixed(x)`, onde `x` é a quantidade de casas dec
 
 ## NaN
 
-Representa, literalmente, “not a number”, ou “não é um número”. Na maior parte dos casos, `NaN` é o valor retornado como resultado de uma operação aritmética mal formada, por exemplo:
+Representa, literalmente, “not a number”, ou “não é um número”. Na maior parte dos casos, `NaN` é o valor retornado como **resultado de uma operação aritmética mal formada**, por exemplo:
 
 ```js
 console.log(5 * 'a'); // NaN
@@ -60,7 +60,7 @@ console.log(resultado);
 // Saída: '105' (o número 5 foi convertido para string e concatenado com a string ‘10’)
 ```
 
-## Conversão de Tipos em JavaScript
+#### Conversão de Tipos em JavaScript
 
 A conversão de tipos é a transformação explícita de um tipo de dado em outro. Isso pode ser feito de várias maneiras, como utilizando funções ou operadores específicos para converter um tipo em outro.
 
@@ -71,5 +71,4 @@ let valorNumero = parseInt(valorString);
 console.log(valorNumero); 
 // Saída: 20 (valor convertido para inteiro usando parseInt)
 ```
-
 
