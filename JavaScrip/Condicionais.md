@@ -42,3 +42,32 @@ if (x > 5) {
 >O operador lógico `!` quando relacionado em um número retorna objetivamente um `false`. 
 >>Portanto, quando um operador comparativo ou aritmético é usado com `true` ou `false`, é o mesmo que usar `1` ou 0 respectivamente.
 
+#### Tabela da Verdade para os Operadores Lógicos Básicos:
+
+##### Operador Lógico AND (`&&`):
+O operador && (E lógico) retorna true apenas se ambos os operandos forem true. Caso contrário, retorna false.
+
+| Expressão      | Resultado |
+| -------------- | --------- |
+| true && true   | true      |
+| true && false  | false     |
+| false && true  | false     |
+| false && false | false     |
+
+##### Operador Lógico OR (`||`):
+O operador || (OU lógico) retorna `true` se pelo menos um dos operandos for `true`. Retorna `false` apenas se ambos os operandos forem `false`.
+
+| Expressão        | Resultado |
+| ---------------- | --------- |
+| true \|\| true   | true      |
+| true \|\| false  | true      |
+| false \|\| true  | true      |
+| false \|\| false | false     |
+
+##### Operador Lógico NOT (`!`):
+O operador ! (NÃO lógico ou negação) inverte o valor do operando. Se o operando for `true`, `!` retorna `false`. Se o operando for `false`, `!` retorna `true`.
+
+| Expressão | Resultado |
+| --------- | --------- |
+| `!true`   | false     |
+| `!false`  | true      |
