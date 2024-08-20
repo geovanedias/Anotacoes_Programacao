@@ -42,3 +42,4 @@ Na busca em largura **BFS** (do inglês, *Breadth-First Search*), começamos do 
 ![[Pasted image 20240820150636.png]]
 
 No algoritmo de busca em largura, controlamos os vértices visitados usando uma fila. Adicionamos os vértices a serem visitados na fila e os removemos para determinar o próximo a ser visitado. Ao visitar um vértice, adicionamos seus vizinhos à fila. Após cada visita, retiramos o próximo vértice da fila para continuar a exploração.
+
