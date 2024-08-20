@@ -11,12 +11,9 @@ Uma das representações numéricas é a ***matriz de adjacência***, que é uma
 
 Na matriz de adjacência, os vértices são listados nas colunas e nas linhas e o número em cada célula representa a quantidade de arestas que conectam os vértices correspondentes à linha e à coluna. A representação gráfica, a algébrica e a matriz de adjacência são formas de representar grafos, sendo a matriz de adjacência uma representação computacional. Outra forma de representação computacional é a lista de adjacência. Ambas podem visualmente destacar características do grafo, como densidade e presença de _loops_. Na lista de adjacência, para cada vértice, criamos uma lista encadeada dos vértices aos quais está conectado
 
-![[Pasted image 20240820115532.png]]
+
 
 ### Grafos com custos, topológicos, direcionados e não direcionados
 
 Grafos que possuem informações de custo nas arestas são chamados de grafos ponderados, grafos com custo ou grafos valorados, podendo ser direcionados ou não.
-
-
-
 
