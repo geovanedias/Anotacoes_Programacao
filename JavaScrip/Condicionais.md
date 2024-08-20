@@ -75,3 +75,8 @@ O operador ! (NÃO lógico ou negação) inverte o valor do operando. Se o opera
 | `!true`   | false     |
 | `!false`  | true      |
 
+# Operador Ternário
+
+```js
+<condição> ? caso 'true' : caso 'false';
+```
