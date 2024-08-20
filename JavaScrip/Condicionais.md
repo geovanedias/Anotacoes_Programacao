@@ -31,4 +31,5 @@ Tabela de operadores relacionais:
 | `!=`     | Diferente de                | `5 != 6`    | `true`    |
 | `===`    | Igual a (estritamente)      | `'5' === 5` | `false`   |
 | `!==`    | Diferente de (estritamente) | `'5' !== 5` | `true`    |
+| ` \|\| ` |                             |             |           |
 
