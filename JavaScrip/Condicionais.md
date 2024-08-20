@@ -14,22 +14,27 @@ Perceba que não existe sintaxe de `elseif` em JavaScript. Entretanto, você p
 
 ```js
 if (x > 5) {
+	<codigo1>
 } else if (x > 50) {
+	<codigo3>
 } else {
+	<codigo3>
 }
 ```
 
-Tabela de operadores relacionais:
 
-| Operador | Descrição                   | Exemplo     | Resultado |
-| -------- | --------------------------- | ----------- | --------- |
-| `>`      | Maior que                   | `5 > 3`     | `true`    |
-| `<`      | Menor que                   | `2 < 4`     | `true`    |
-| `>=`     | Maior ou igual a            | `5 >= 5`    | `true`    |
-| `<=`     | Menor ou igual a            | `3 <= 2`    | `false`   |
-| `==`     | Igual a                     | `4 == 4`    | `true`    |
-| `!=`     | Diferente de                | `5 != 6`    | `true`    |
-| `===`    | Igual a (estritamente)      | `'5' === 5` | `false`   |
-| `!==`    | Diferente de (estritamente) | `'5' !== 5` | `true`    |
-| ` \|\| ` |                             |             |           |
+
+### Tabela de operadores lógicos relacionais:
+
+| Operador | Descrição                   |      Exemplo      | Resultado |
+| :------: | --------------------------- | :---------------: | :-------: |
+|   `>`    | Maior que                   |      `5 > 3`      |  `true`   |
+|   `<`    | Menor que                   |      `2 < 4`      |  `true`   |
+|   `>=`   | Maior ou igual a            |     `5 >= 5`      |  `true`   |
+|   `<=`   | Menor ou igual a            |     `3 <= 2`      |  `false`  |
+|   `==`   | Igual a                     |     `4 == 4`      |  `true`   |
+|   `!=`   | Diferente de                |     `5 != 6`      |  `true`   |
+|  `===`   | Igual a (estritamente)      |    `'5' === 5`    |  `false`  |
+|  `!==`   | Diferente de (estritamente) |    `'5' !== 5`    |  `true`   |
+|  \| \|   | Ou                          | `5>3` \| \| `2<4` |           |
 
