@@ -35,7 +35,7 @@ Na busca em profundidade, visitamos um vértice e, em seguida, recursivamente vi
 
 ### Busca em largura em Python
 
-Na busca em largura (BFS), começamos do vértice inicial e visitamos todos os vértices adjacentes. Em seguida, partimos desses vértices, repetindo o procedimento. 
+Na busca em largura **BFS** (do inglês, *Breadth-First Search*), começamos do vértice inicial e visitamos todos os vértices adjacentes. Em seguida, partimos desses vértices, repetindo o procedimento. 
 
 >É como disseminar uma notícia para os amigos mais próximos, que por sua vez a repassam aos amigos mais próximos deles, e assim por diante. Eventualmente, a notícia pode chegar a alguém que já a conhecia (vértice já visitado).
 
