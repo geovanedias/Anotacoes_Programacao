@@ -40,7 +40,10 @@ if (x > 5) {
 |   `&&`   | E                           |   `3>2 && 3<1`    |  `false`  |
 |   `!`    | não(alguma coisa)           |      `!5>3`       |    1>3    |
 >O operador lógico `!` quando relacionado em um número retorna objetivamente um `false`. 
->>Portanto, quando um operador comparativo ou aritmético é usado com `true` ou `false`, é o mesmo que usar `1` ou 0 respectivamente.
+>    Portanto, quando um operador comparativo ou aritmético é usado com `true` ou `false`, é o mesmo que usar `1` ou 0 respectivamente.
+
+>Quando for realizar uma comparação é sempre recomendado que se use `===` para que o JS compare tanto o conteúdo dos parâmetros como também os tipos de dados.
+>   O operador `==` ainda funciona mas não é tão recomendado que seja usado.
 
 #### Tabela da Verdade para os Operadores Lógicos Básicos:
 
