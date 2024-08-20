@@ -15,3 +15,6 @@ Na matriz de adjacência, os vértices são listados nas colunas e nas linhas e 
 
 Grafos que possuem informações de custo nas arestas são chamados de grafos ponderados, grafos com custo ou grafos valorados, podendo ser direcionados ou não.
 
+
+## Operações em Grafos e Algoritmos de Busca
+
