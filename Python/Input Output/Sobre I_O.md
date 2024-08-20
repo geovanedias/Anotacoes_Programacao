@@ -59,7 +59,7 @@ Assim como a saída padrão é o monitor ou terminal, a entrada padrão é sempr
 
 A interface para se comunicar com este dispositivo também está no módulo `sys`
 
-```
+```python
 >>> import sys
 >>> letras = sys.stdin.read(4)
 # Aqui o cursor fica esperando a digitação de 3 caracteres seguidos de enter
@@ -70,7 +70,7 @@ ABC<enter>
 
 A boa notícia e que não precisamos usar da forma acima, Python oferece uma abstração em cima desta interface que é a função `input` que serve para lermos a entrada a partir da digitação do usuário ou stdin do terminal.
 
-```
+```python
 >>> nome = input("Qual o seu nome?\n")
 Qual o seu nome?
 # O cursor ficará esperando digitarmos algum texto seguido de enter
@@ -83,7 +83,7 @@ A função `input` sempre irá ler as informação em formato de texto e seu a
 
 Uma outra utilidade para a `input` é bloquear a execução do programa até que o usuário pressione enter.
 
-```
+```python
 >>> print("Programa fazendo alguma coisa...")
 >>> input("Pressione enter quando quiser continuar...")
 # aqui o programa entra em `pausa` e só continua quando o usuário pressionar enter
@@ -102,14 +102,14 @@ Em nossos próprios scripts podemos ler essas informações através do módulo�
 
 No `programa.py`:
 
-```
+```python
 import sys
 print(sys.argv)
 ```
 
 No terminal:
 
-```
+```python
 $ python programa.py argumento1 argumento2 --nome=Bruno
 ['programa.py', 'argumento1', 'argumento2', '--nome=Bruno']
 ```
@@ -118,14 +118,14 @@ A lista `sys.argv` irá coletar os argumentos passados para o programa, sendo 
 
 No `programa.py`:
 
-```
+```python
 import sys
 print(sys.argv[1:])  # começando no elemento 1 (ignorando o 0)
 ```
 
 No terminal:
 
-```
+```python
 $ python programa.py argumento1 argumento2 --nome=Bruno
 ['argumento1', 'argumento2', '--nome=Bruno']
 ```
@@ -134,7 +134,7 @@ Cada item da nossa lista de argumentos será um objeto do tipo `str` portanto 
 
 `programa.py`
 
-```
+```python
 import sys
 argumentos = {}
 for arg in sys.argv[1:]:
@@ -146,7 +146,7 @@ print(argumentos)
 
 Ao executar o programa acima obtemos:
 
-```
+```python
 $ python programa.py --nome=Bruno --idade=15 --cidade=Viana
 {'nome': 'Bruno', 'idade': '15', 'cidade': 'Viana'}
 ```
@@ -157,7 +157,7 @@ Em nosso programa podemos usar este dicionário para tomar as decisões de fluxo
 
 Assim como as variáveis de ambiente que já aprendemos em nosso primeiro script tanto os `inputs` quanto `CLI args` sempre serão lidos como texto `str` portanto pode ser necessário fazer validações e transformações, alguns exemplos.
 
-```
+```python
 # Garantir que não tenha espaços em branco no começo ou final
 valor = input("Digite um valor").strip()
 
