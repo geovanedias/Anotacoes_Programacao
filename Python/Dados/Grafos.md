@@ -2,3 +2,4 @@
 
 Conforme suas propriedades, os grafos podem ser classificados em diferentes tipos. Entre eles, destacam-se os grafos não orientados, caracterizados pela ausência de direção nas conexões entre os vértices. Isso significa que as relações são **bidirecionais** e **simétricas**.
 
+Uma das representações numéricas é a ***matriz de adjacência***, que é uma representação computacional compreensível pelas linguagens de programação. Na matriz, os vértices são listados nas <u>linhas</u> e nas <u>colunas</u>. Cada célula da matriz indica quantas arestas conectam os vértices correspondentes à linha e à coluna. Os valores na diagonal principal da matriz representam os _loops_, ou seja, arestas que conectam um vértice a si mesmo. Como os grafos não direcionados têm simetria, podemos economizar memória considerando apenas metade da matriz. Além disso, podemos economizar ainda mais ao ignorar as células que representam _loops_, pois elas sempre serão zeros
