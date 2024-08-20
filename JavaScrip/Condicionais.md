@@ -36,5 +36,9 @@ if (x > 5) {
 |   `!=`   | Diferente de                |     `5 != 6`      |  `true`   |
 |  `===`   | Igual a (estritamente)      |    `'5' === 5`    |  `false`  |
 |  `!==`   | Diferente de (estritamente) |    `'5' !== 5`    |  `true`   |
-|  \| \|   | Ou                          | `5>3` \| \| `2<4` |           |
+|  \| \|   | Ou                          | `5>3` \| \| `2<4` |  `true`   |
+|   `&&`   | E                           |   `3>2 && 3<1`    |  `false`  |
+|   `!`    | não(alguma coisa)           |      `!5>3`       |    1>3    |
+>O operador lógico `!` quando relacionado em um número retorna objetivamente um `false`. 
+>>Portanto, quando um operador comparativo ou aritmético é usado com `true` ou `false`, é o mesmo que usar `1` ou 0 respectivamente.
 
