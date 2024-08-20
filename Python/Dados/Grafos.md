@@ -15,6 +15,30 @@ Na matriz de adjacência, os vértices são listados nas colunas e nas linhas e 
 
 Grafos que possuem informações de custo nas arestas são chamados de grafos ponderados, grafos com custo ou grafos valorados, podendo ser direcionados ou não.
 
-
+---
 ## Operações em Grafos e Algoritmos de Busca
 
+A busca em **largura** expande-se pelos vértices mais próximo primeiro, similarmente à propagação de uma notícia, e é utilizada em algoritmos como o de *Prim* e *Dijkstra*. 
+Já a busca em **profundidade** explora tão profundamente quanto possível ao longo de cada ramo antes de retroceder, assemelhando-se à navegação em um labirinto.
+
+### Busca em profundidade
+
+Na técnica de Busca em Profundidade, também conhecida como **DFS** (do inglês, _Depth-First Search_), adotamos a estratégia de avançar o máximo possível a partir do vértice de origem, registrando os vértices por onde passamos, continuando esse processo até que não restem mais vértices inexplorados ao longo dessa rota.
+
+![[Pasted image 20240820150211.png]]
+
+Nessa busca, adotamos a técnica de retroceder (_backtracking_), explorando novas direções a partir de cada vértice visitado, sempre que viável, prosseguindo até retornarmos ao vértice de partida. 
+
+>Esse processo é semelhante ao método utilizado para sair de um labirinto, onde você mantém contato constante com uma das paredes – nesse caso, a direita – para guiar seu caminho, retrocedendo nos becos sem saída e seguindo adiante até encontrar a saída, garantindo que não se perca.
+
+Na busca em profundidade, visitamos um vértice e, em seguida, recursivamente visitamos todos os seus vizinhos não visitados.
+
+### Busca em largura em Python
+
+Na busca em largura (BFS), começamos do vértice inicial e visitamos todos os vértices adjacentes. Em seguida, partimos desses vértices, repetindo o procedimento. 
+
+>É como disseminar uma notícia para os amigos mais próximos, que por sua vez a repassam aos amigos mais próximos deles, e assim por diante. Eventualmente, a notícia pode chegar a alguém que já a conhecia (vértice já visitado).
+
+![[Pasted image 20240820150636.png]]
+
+No algoritmo de busca em largura, controlamos os vértices visitados usando uma fila. Adicionamos os vértices a serem visitados na fila e os removemos para determinar o próximo a ser visitado. Ao visitar um vértice, adicionamos seus vizinhos à fila. Após cada visita, retiramos o próximo vértice da fila para continuar a exploração.
