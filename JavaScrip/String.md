@@ -91,3 +91,10 @@ texto.toLowerCase(); // retorna 'por favor, não grite'
 
 Da mesma forma que existe um método para transformar textos em minúsculas, também é possível usar [`texto.toUpperCase()`](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase) para converter em maiúsculas. 
 
+## Template String
+
+```js
+const nome = 'Alice';
+console.log(`Olá, meu nome é ${nome}.`);
+```
+
