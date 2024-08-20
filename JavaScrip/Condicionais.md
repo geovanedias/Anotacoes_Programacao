@@ -77,6 +77,17 @@ O operador ! (NÃO lógico ou negação) inverte o valor do operando. Se o opera
 
 # Operador Ternário
 
+O operador ternário tem esse nome pois é o único em JavaScript que utiliza três _operandos_:
+
+1. a condição, seguida do sinal `?`
+2. o código a ser executado se a condição for `true`, seguida de `:`
+3. o código a ser executado se a condição for `false`.
+
+
 ```js
-<condição> ? caso 'true' : caso 'false';
+<condição> ? <caso true> : <caso false>;
 ```
+>Observe que o sinal `?` separa a condição, enquanto o sinal `:` separa os casos `true` e `false` respectivamente.
+
+Sempre que um `if..else` tiver **apenas uma linha de retorno** o operador ternário pode ser utilizado para comprimir espaço no código.
+
