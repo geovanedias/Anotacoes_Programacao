@@ -7,7 +7,12 @@ function nome(parâmetros) {
 }
 ```
 
-Lembrando que a função pode receber n parâmetros (de 0 a n) e deve ser invocada para que seja executada.
+### Parâmetros
+
+- Os parâmetros servem como “inputs” da função, é por onde uma função recebe os valores que precisa para executar corretamente;
+- Podem ser qualquer tipo de dado válido do JavaScript: números, strings, booleanos, arrays, objetos (os dois últimos vamos estudar nos próximos cursos);
+- É possível passar qualquer quantidade de parâmetros a uma função, separados por vírgula. Caso a função não precise receber nenhum parâmetro, declare apenas `()`;
+- Os parâmetros devem ser passados para a função no momento de execução, na ordem em que estão declarados.
 
 Exemplo:
 ```js
@@ -23,6 +28,14 @@ somarDoisNumeros(2, 2);
 const resultado = somarDoisNumeros(2, 2);
 console.log(resultado);
 ```
+
+### Retorno
+
+- O valor de retorno serve como “output” da função. Ele representa o resultado final obtido após a função executar o código dentro do bloco;
+- Para que a função retorne um valor, é utilizada a palavra-chave `return` seguida do valor que se deseja “retornar”. Se nenhum valor for informado, a função por padrão retorna `undefined`;
+- A linha do retorno é ==sempre a última linha do bloco==. Qualquer código escrito abaixo dessa linha se torna _unreachable_ (“inalcançável”) para o JavaScript;
+- Nem todas as funções retornam valores; dependendo do caso, uma função pode executar diversas instruções sem a necessidade de retornar nenhum valor no final.
+
 
 
 ## console.log()
