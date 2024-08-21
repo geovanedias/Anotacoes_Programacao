@@ -85,9 +85,9 @@ O operador ternário tem esse nome pois é o único em JavaScript que utiliza tr
 
 
 ```js
-<condição> ? <caso true> : <caso false>;
+// <condição> ? <caso true> : <caso false>;
+valor < 50 ? 'valor insuficiente' : 'valor suficiente';
 ```
 >Observe que o sinal `?` separa a condição, enquanto o sinal `:` separa os casos `true` e `false` respectivamente.
 
 Sempre que um `if..else` tiver **apenas uma linha de retorno** o operador ternário pode ser utilizado para comprimir espaço no código.
-
