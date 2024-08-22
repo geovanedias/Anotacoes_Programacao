@@ -47,11 +47,12 @@ Forma prática e encurtada de escrever uma função, ideal para funções que po
 
 ```js
 let nomeVariavel = (parametro) => {função};
-
-// caso a função tenha apenas 1 retorno é possível ainda omitir a palavra reservada return, encurtando ainda mais o código.
-let nomeVariavel = (parametro) => <retorno>;
 ```
 
+Se tivermos apenas uma linha, por exemplo, para dar um `return` no `nome`, podemos escrever apenas `nome`, **suprimindo** tanto as chaves quanto a palavra-chave `return`.
+```js
+const exibeNome = (nome) => nome;
+```
 #### console.log()
 O `console.log()` é uma função disponível nos navegadores e no ambiente Node.js. Sua principal finalidade é imprimir mensagens ou valores no console do navegador ou terminal, facilitando o acompanhamento e depuração do código.
 
