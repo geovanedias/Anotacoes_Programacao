@@ -4,7 +4,7 @@ Conforme suas propriedades, os grafos podem ser classificados em diferentes tipo
 
 Uma das representações numéricas é a ***matriz de adjacência***, que é uma representação computacional compreensível pelas linguagens de programação. 
 
-- Na matriz, os vértices são listados nas <u>linhas</u> e nas <u>colunas</u>.
+- Na matriz, os vértices são listados nas *linhas* e nas *colunas*.
 - Cada célula da matriz indica quantas arestas conectam os vértices correspondentes à linha e à coluna. 
 - Os valores na diagonal principal da matriz representam os _loops_, ou seja, arestas que conectam um vértice a si mesmo. 
 - Como os ***grafos não direcionados*** têm simetria, podemos economizar memória considerando apenas metade da matriz. Além disso, podemos economizar ainda mais ao ignorar as células que representam _loops_, pois elas sempre serão zeros
@@ -72,5 +72,16 @@ Os algoritmos de caminhos mais curtos têm uma ampla gama de aplicações. Na lo
 ___
 # Detecção de Ciclos
 
-Um ciclo em um grafo é uma sequência de vértices em que o primeiro e o último vértices são os mesmos, sem repetir os demais vértices na sequência.
+Um ciclo em um grafo é uma sequência de vértices em que o primeiro e o último vértices são os mesmos, sem repetir os demais vértices na sequência.  A presença de ciclos em um grafo pode indicar *redundâncias*, *dependências* ou *inconsistências* dentro de um sistema ou uma rede modelada pelo grafo.
 
+Por exemplo, em um sistema de gerenciamento de projetos, um ciclo em um grafo de dependências de tarefas pode indicar uma impossibilidade de completar o projeto devido a uma dependência circular entre as tarefas.
+
+## Métodos de Detecção de Ciclos
+
+### Busca em profundidade (_Depth-First Search_ - DFS)
+
+A busca em profundidade (DFS) é uma técnica comum para detectar ciclos em grafos. Ela explora tão profundamente quanto possível ao longo de cada ramo antes de retroceder.
+Para grafos *não direcionados*, um ciclo é detectado se uma aresta leva a um vértice que já foi visitado.
+Para grafos *direcionados*, além de verificar vértices visitados, também precisamos considerar os ancestrais do vértice atual na árvore de busca DFS para detectar ciclos.
+
+### Algoritmo de Union-Find
