@@ -46,7 +46,10 @@ São funções que estão contidas dentro de variáveis. Diferente de funções 
 Forma prática e encurtada de escrever uma função, ideal para funções que possuem apenas uma linha e esteja dentro de outras funções (*callback function*).
 
 ```js
-let nomeVariavel = (parametro) => return ...
+let nomeVariavel = (parametro) => return <retorno>;
+
+// caso a função tenha apenas 1 retorno é possível ainda omitir a palavra reservada return, encurtando ainda mais o código.
+let nomeVariavel = (parametro) => <retorno>;
 ```
 
 #### console.log()
