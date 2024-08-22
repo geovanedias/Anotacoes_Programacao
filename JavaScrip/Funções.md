@@ -7,6 +7,8 @@ function nome(parâmetros) {
 }
 ```
 
+>Vale lembrar que funções sempre são carregadas para a memória antes de ser executada qualquer outra linha do código durante o *hoisting*. 
+
 ### Parâmetros
 
 - Os parâmetros servem como “inputs” da função, é por onde uma função recebe os valores que precisa para executar corretamente;
@@ -38,8 +40,14 @@ console.log(resultado);
 
 ### Expressão de Função
 
+São funções que estão contidas dentro de variáveis. Diferente de funções que iniciam com `function`, estas não são elevadas ao todo da execução do código quando este é compilado.
 
+### Arrow Functions
+Forma prática e encurtada de escrever uma função, ideal para funções que possuem apenas uma linha e esteja dentro de outras funções (*callback function*).
 
+```js
+let nomeVariavel = (parametro) => return ...
+```
 
 #### console.log()
 O `console.log()` é uma função disponível nos navegadores e no ambiente Node.js. Sua principal finalidade é imprimir mensagens ou valores no console do navegador ou terminal, facilitando o acompanhamento e depuração do código.
