@@ -43,3 +43,11 @@ Na busca em largura **BFS** (do inglês, *Breadth-First Search*), começamos do 
 
 No algoritmo de busca em largura, controlamos os vértices visitados usando uma fila. Adicionamos os vértices a serem visitados na fila e os removemos para determinar o próximo a ser visitado. Ao visitar um vértice, adicionamos seus vizinhos à fila. Após cada visita, retiramos o próximo vértice da fila para continuar a exploração.
 
+## Algoritmos de caminhos mais curtos
+### Algoritmo de Dijkstra
+
+O algoritmo de Dijkstra é talvez o mais conhecido e utilizado para encontrar o caminho mais curto em grafos ponderados sem arestas de peso negativo. 
+A ideia central é simples: a partir de um vértice de origem, o algoritmo explora todos os vizinhos, atualizando o custo do caminho mais curto para cada vértice. O processo se repete, escolhendo sempre o vértice com o menor custo de caminho acumulado ainda não explorado, até que todos os vértices tenham sido visitados.
+### Algoritmo de Bellman-Ford
+
+O algoritmo de Bellman-Ford estende a capacidade do algoritmo de Dijkstra ao permitir arestas de peso negativo, oferecendo também a detecção de ciclos negativos no grafo.
