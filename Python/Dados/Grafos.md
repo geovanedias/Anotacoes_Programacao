@@ -70,3 +70,4 @@ O algoritmo A* (lê-se “A _star_”, ou “A estrela”) é uma melhoria do D
 Os algoritmos de caminhos mais curtos têm uma ampla gama de aplicações. Na logística, são utilizados para otimizar as rotas de entrega. Nas telecomunicações, ajudam a encontrar a rota mais eficiente para a transmissão de dados. Em redes sociais, podem ser usados para encontrar a "distância" ou o número mínimo de conexões entre dois usuários.
 
 ___
+
