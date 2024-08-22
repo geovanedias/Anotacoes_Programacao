@@ -14,8 +14,6 @@ const citacao = `Nosso lema é ${lema}`;
 Os caracteres `\u` no início do código são **caracteres de escape** que usamos para sinalizar ao JavaScript de que estamos falando de códigos Unicode, e não de strings de texto usuais.
 
 ---
-
-
 ## Coerção de Tipos em JavaScript
 
 A coerção de tipos em JavaScript refere-se à **conversão automática e implícita de um tipo de dado para outro durante operações**. Isso pode acontecer em operações matemáticas, comparações ou concatenações de strings.
@@ -46,7 +44,6 @@ console.log(valorNumero);
 >Neste exemplo, utilizamos a função `parseInt()` para converter a string '20' em um número inteiro.
 
 ---
-
 ## Conversão para strings
 
 Assim como `Number()`, o JavaScript também disponibiliza a função global `String()` quando é necessário converter outros tipos de dado em formato de texto.
