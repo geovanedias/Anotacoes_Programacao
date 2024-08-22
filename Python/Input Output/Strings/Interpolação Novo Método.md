@@ -7,7 +7,11 @@ Semelhante a [[Interpolação Clássica]], utiliza um método parecido para orga
 msg = "Olá,  {} você é o jogador número {} e possúi {} pontos."
 msg.format("Bruno", 11, 987.3)
 ```
+
 ---
+
+### Formatação:
+
 A forma de formatação é basicamente a mesma do método clássico. O que muda é que agora é colocado a formatação diretamente no texto para ter um controle mais específico do formato adquirido, utilizando dois pontos `:` para indicar que é um código de formatação.
 
 Ex:

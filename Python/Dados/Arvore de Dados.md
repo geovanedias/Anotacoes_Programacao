@@ -12,6 +12,7 @@ Em uma estrutura de dados em árvore, as conexões entre os vértices, conhecida
 
 #### Em árvores binárias, cada nó pode ter no máximo dois filhos, que são referenciados como filho esquerdo e filho direito.
 
+---
 # Arvores B
 
 São árvores de busca balanceadas projetadas para buscas em discos.
@@ -41,7 +42,6 @@ A inserção em uma árvore B segue uma série de passos para localizar o local 
 
 **Remoção de uma chave de um nó interno:** se o nó não é uma folha, há várias estratégias para lidar com a remoção, como substituir a chave por seu predecessor ou sucessor imediato, ou, se necessário, fundir nós.
 
-
 # Quadtree
 
 É o método que divide um espaço em quadrantes de forma recursiva. A quadtree é uma estrutura de dados em árvore em que cada nó interno possui exatamente quatro filhos,
@@ -53,17 +53,16 @@ Características:
 
 # Árvores AVL
 
-#### **Altura**
+### **Altura**
 
 A altura de uma árvore é determinada pela distância mais longa da raiz até um nó folha, contabilizando o número de arestas nesse caminho. Uma árvore é considerada **balanceada** se a sua altura é proporcional ao logaritmo do número de nós, o que indica eficiência nas operações de busca, inserção e remoção (Takenaka, 2021).
 
 Independentemente da técnica aplicada, a estratégia comum em árvores balanceadas envolve realizar rotações em nós que violam as regras de balanceamento. Isso significa que, **para qualquer nó, a diferença entre as alturas de suas subárvores esquerda (E) e direita (D) não deve exceder uma unidade.** Esse critério assegura que todas as operações essenciais na árvore, como *busca*, *inserção* e *remoção*, possam ser realizadas em tempo logarítmico, otimizando a eficiência do processo.
 
-
-#### Cálculo do balanceamento de um nó
+### Cálculo do balanceamento de um nó
 O balanceamento de um nó é obtido pela diferença entre a altura de sua subárvore esquerda e a altura de sua subárvore direita.
 
-#### Inserção em Árvores AVL
+### Inserção em Árvores AVL
 
 Na inserção de dados em árvores AVL, o procedimento segue o mesmo método das árvores de busca binária (BST). Contudo, após a adição de um novo elemento, é necessário atualizar as alturas de todos os nós afetados e verificar se a árvore mantém as propriedades de uma AVL. Se a estrutura não estiver conforme os critérios de uma AVL, torna-se essencial realizar rotações específicas para restaurar o balanceamento
 

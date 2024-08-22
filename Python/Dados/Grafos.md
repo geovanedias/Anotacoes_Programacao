@@ -65,3 +65,8 @@ O algoritmo A* (lê-se “A _star_”, ou “A estrela”) é uma melhoria do D
 ---
 ## Escolha do algoritmo
 
+**A escolha de qual algoritmo utilizar depende de vários fatores, incluindo se o grafo tem arestas de peso negativo, se a busca é por um caminho mais curto entre um único par de vértices ou entre todos os pares e se a eficiência é uma preocupação primordial.**
+
+Os algoritmos de caminhos mais curtos têm uma ampla gama de aplicações. Na logística, são utilizados para otimizar as rotas de entrega. Nas telecomunicações, ajudam a encontrar a rota mais eficiente para a transmissão de dados. Em redes sociais, podem ser usados para encontrar a "distância" ou o número mínimo de conexões entre dois usuários.
+
+___

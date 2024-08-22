@@ -47,11 +47,10 @@ Nós podemos, apenas a título de curiosidade, substituir o argumento `file` p
 
 No exemplo acima o Python não irá imprimir `Hello` na tela, ao invés disso ele vai gravar `Hello` em um arquivo chamado `hello.txt` e você pode conferir com o comando `cat` no Linux.
 
-```
-$ cat hello.txt
+```shell
+cat hello.txt
 Hello
 ```
-
 
 ## Python e o sdtdin
 
