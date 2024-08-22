@@ -22,8 +22,6 @@ if (x > 5) {
 }
 ```
 
-
-
 ### Tabela de operadores lógicos relacionais:
 
 | Operador | Descrição                   |      Exemplo      | Resultado |
@@ -47,6 +45,7 @@ if (x > 5) {
 
 Ver mais em [[Operadores e Expressões]].
 
+---
 # Operador Ternário
 
 O operador ternário tem esse nome pois é o único em JavaScript que utiliza três _operandos_:
@@ -63,3 +62,4 @@ valor < 50 ? 'valor insuficiente' : 'valor suficiente';
 >Observe que o sinal `?` separa a condição, enquanto o sinal `:` separa os casos `true` e `false` respectivamente.
 
 Sempre que um `if..else` tiver **apenas uma linha de retorno** o operador ternário pode ser utilizado para comprimir espaço no código.
+
