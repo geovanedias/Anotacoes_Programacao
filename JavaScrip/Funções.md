@@ -36,9 +36,12 @@ console.log(resultado);
 - A linha do retorno é ==sempre a última linha do bloco==. Qualquer código escrito abaixo dessa linha se torna _unreachable_ (“inalcançável”) para o JavaScript;
 - Nem todas as funções retornam valores; dependendo do caso, uma função pode executar diversas instruções sem a necessidade de retornar nenhum valor no final.
 
+### Expressão de Função
 
 
-## console.log()
+
+
+#### console.log()
 O `console.log()` é uma função disponível nos navegadores e no ambiente Node.js. Sua principal finalidade é imprimir mensagens ou valores no console do navegador ou terminal, facilitando o acompanhamento e depuração do código.
 
 ```js
@@ -47,7 +50,7 @@ let idade = 25;
 console.log('A idade é:', idade);
 ```
 
-## Number()
+#### Number()
 Esta função converte qualquer outro tipo de dado em um tipo Number. Caso o valor não possa ser convertido, retornará `NaN`.
 ##### `Number.parseInt()` e `Number.parseFloat()`
 
