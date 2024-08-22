@@ -124,6 +124,7 @@ print(cliente)
 {"nome": "Bruno", "cidade": "Viana", "pais": "Portugal"}
 ```
 
+---
 ## Erros
 
 Caso uma chave não exista no dicionário o Python estoura um erro chamado `KeyError`

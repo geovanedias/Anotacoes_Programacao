@@ -43,6 +43,7 @@ Na busca em largura **BFS** (do inglês, *Breadth-First Search*), começamos do 
 
 No algoritmo de busca em largura, controlamos os vértices visitados usando uma fila. Adicionamos os vértices a serem visitados na fila e os removemos para determinar o próximo a ser visitado. Ao visitar um vértice, adicionamos seus vizinhos à fila. Após cada visita, retiramos o próximo vértice da fila para continuar a exploração.
 
+---
 ## Algoritmos de caminhos mais curtos
 ### Algoritmo de Dijkstra
 
@@ -51,3 +52,16 @@ A ideia central é simples: a partir de um vértice de origem, o algoritmo explo
 ### Algoritmo de Bellman-Ford
 
 O algoritmo de Bellman-Ford estende a capacidade do algoritmo de Dijkstra ao permitir arestas de peso negativo, oferecendo também a detecção de ciclos negativos no grafo.
+Ele opera relaxando repetidamente todas as arestas, atualizando o custo do caminho para cada vértice se um caminho mais curto for encontrado. Apesar de mais lento que o Dijkstra para grafos sem pesos negativos, o Bellman-Ford é útil em situações onde pesos negativos estão presentes. Em uma rede de trocas comerciais entre cidades, onde os custos de transporte podem variar, incluindo valores negativos (subvenções, por exemplo), o algoritmo de Bellman-Ford pode determinar o custo mínimo para enviar produtos de uma cidade a outra.
+
+### Algoritmo de Floyd-Warshall
+
+Diferente dos algoritmos anteriores, o Floyd-Warshall é usado para encontrar o caminho mais curto entre todos os pares de vértices em um grafo. Ele é ideal para aplicações que necessitam de uma visão completa das distâncias entre todos os pontos, como em análises de rede. O algoritmo opera por meio de uma abordagem de programação dinâmica, calculando iterativamente as distâncias mais curtas considerando cada vértice como um ponto intermediário possível nos caminhos.
+
+### Algoritmo A*
+
+O algoritmo A* (lê-se “A _star_”, ou “A estrela”) é uma melhoria do Dijkstra que incorpora heurísticas no processo de busca para encontrar o caminho mais curto de maneira mais eficiente. Ele é particularmente útil em buscas em espaços de estados grandes, como em mapas ou jogos, onde uma heurística bem escolhida pode significativamente acelerar a busca sem comprometer a garantia de encontrar o caminho mais curto.
+
+---
+## Escolha do algoritmo
+
