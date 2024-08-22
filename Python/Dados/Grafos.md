@@ -81,7 +81,17 @@ Por exemplo, em um sistema de gerenciamento de projetos, um ciclo em um grafo de
 ### Busca em profundidade (_Depth-First Search_ - DFS)
 
 A busca em profundidade (DFS) é uma técnica comum para detectar ciclos em grafos. Ela explora tão profundamente quanto possível ao longo de cada ramo antes de retroceder.
-Para grafos *não direcionados*, um ciclo é detectado se uma aresta leva a um vértice que já foi visitado.
-Para grafos *direcionados*, além de verificar vértices visitados, também precisamos considerar os ancestrais do vértice atual na árvore de busca DFS para detectar ciclos.
+Para grafos **não direcionados**, um ciclo é detectado se uma aresta leva a um vértice que já foi visitado.
+Para grafos **direcionados**, além de verificar vértices visitados, também precisamos considerar os ancestrais do vértice atual na árvore de busca DFS para detectar ciclos.
 
 ### Algoritmo de Union-Find
+
+Para grafos **não direcionados**, o algoritmo de Union-Find é eficaz na detecção de ciclos. Esse algoritmo gerencia um conjunto de elementos particionados em subconjuntos disjuntos e pode rapidamente determinar se a adição de uma nova aresta criaria um ciclo, verificando se os dois vértices da aresta pertencem ao mesmo subconjunto.
+
+### Detecção de Ciclos em grafos direcionados
+
+Para grafos **direcionados**, além do DFS, podemos usar algoritmos específicos como o de Tarjan, que identifica componentes fortemente conectados (subconjuntos de vértices onde cada par de vértices é mutuamente alcançável) e, consequentemente, ciclos.
+
+###### Exemplo:
+Em sistemas de controle de versão, onde diferentes versões de um arquivo dependem umas das outras, a detecção de ciclos pode ajudar a identificar dependências circulares que impedem a construção de uma versão estável do sistema.
+
