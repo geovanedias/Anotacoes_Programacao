@@ -3,6 +3,7 @@
   "accentColor": "#863de6",
   "showViewHeader": true,
   "enabledCssSnippets": [
-    "imagens"
+    "imagens",
+    "center-images"
   ]
 }

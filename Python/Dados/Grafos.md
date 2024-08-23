@@ -120,7 +120,7 @@ A centralidade de um vértice em um grafo de rede social pode indicar a influên
 
 Uma árvore geradora é uma estrutura que une todos os vértices de um grafo sem formar ciclos. Em grafos com pesos nas arestas, buscamos a árvore geradora mínima (MST, do inglês, *Minimum Spanning Tree*), que é a configuração que conecta todos os vértices com o menor custo total possível. A ideia é selecionar as arestas de menor peso que não criem ciclos até que todos os vértices estejam interligados. 
 
-### Algoritmo de Kruskal e Prim
+### Algoritmo de Kruskal
 
 O algoritmo de Kruskal, desenvolvido por Joseph Kruskal em 1956, é uma metodologia eficaz para encontrar essa árvore geradora mínima, priorizando as arestas de menor peso e evitando a formação de ciclos no processo.
 
@@ -128,4 +128,62 @@ O algoritmo de Kruskal, desenvolvido por Joseph Kruskal em 1956, é uma metodolo
 
 ![[Pasted image 20240823143921.png#center|600]]
 
+
+### Algoritmo de Prim
+
+Para implementar o algoritmo de Prim, inicia-se selecionando arbitrariamente um vértice **u** do grafo **G** para atuar como a raiz da MST. A partir desse ponto, e enquanto a MST não englobar todos os vértices de **G**, a estratégia consiste em escolher, de forma contínua, a aresta de menor custo que conecte um vértice já incluído na MST a um vértice ainda não visitado, expandindo assim a árvore até que todos os vértices sejam abrangidos. Esse processo será exemplificado nas figuras a seguir, simulando os chalés e caminhos dentro de um hotel fazenda, para demonstrar a formação da MST através da seleção criteriosa das arestas baseando-se nos menores custos.
+
+![[Pasted image 20240823151853.png#center|700]]
+
+![[Pasted image 20240823152013.png#center|700]]
+
+![[Pasted image 20240823152050.png#center|700]]
+
+![[Pasted image 20240823152133.png#center|700]]
+
+## Algoritmos de Dijkstra
+
+O algoritmo de Dijkstra, desenvolvido por Edsger Dijkstra em 1959, é projetado para encontrar o caminho de menor custo partindo de um vértice inicial até os demais vértices de um grafo.
+
+Inicialmente, define-se para cada vértice uma estimativa de distância infinita e um antecessor não definido, indicados por `[Ø, ꝏ]`, pois ainda não se conhece o caminho até eles. Para o vértice de origem **A**, ajusta-se esses valores para `[Ø, 0]`, indicando que não possui antecessor e sua distância para si mesmo é zero. Todos os vértices são então colocados em uma *fila* para que o processo de atualização das distâncias e dos antecessores seja realizado de forma *iterativa*.
+
+O algoritmo de Dijkstra é um método usado para encontrar o caminho mais curto entre um ponto de origem e todos os outros pontos em um grafo, que pode representar, por exemplo, uma rede de estradas ou uma rede de computadores.
+
+### Resumo do Funcionamento:
+
+1. **Inicialização**:
+    
+    - Define o nó de origem com uma distância de zero.
+    - Define todos os outros nós com uma distância infinita.
+    - Todos os nós são marcados como não visitados.
+2. **Escolha do Nó Mais Próximo**:
+    
+    - Escolhe o nó não visitado com a menor distância acumulada. Este será o nó "atual".
+3. **Atualização das Distâncias**:
+    
+    - Para cada vizinho do nó atual, calcula-se a distância total do nó de origem até esse vizinho, passando pelo nó atual.
+    - Se essa nova distância for menor que a distância registrada anteriormente para o vizinho, atualiza-se a distância.
+4. **Marcação do Nó como Visitado**:
+    
+    - Após verificar todos os vizinhos, o nó atual é marcado como visitado, e não será revisitado.
+5. **Repetição**:
+    
+    - Repete-se o processo para o nó não visitado com a menor distância acumulada.
+6. **Conclusão**:
+    
+    - O algoritmo termina quando todos os nós foram visitados. O resultado é a menor distância entre o nó de origem e cada um dos outros nós do grafo.
+
+O algoritmo de Dijkstra é eficiente para grafos com pesos positivos e é amplamente utilizado em sistemas de navegação e redes de computadores para otimização de rotas.
+
+Etapa inicial do Algoritmo de Dijkstra:
+
+![[Pasted image 20240823152537.png#center]]
+
+Etapa final:
+
+![[Pasted image 20240823154247.png#center]]
+
+O pseudocódigo do algoritmo de Dijkstra:
+
+![[Pasted image 20240823154319.png#center]]
 
