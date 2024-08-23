@@ -114,3 +114,8 @@ A centralidade de um vértice em um grafo de rede social pode indicar a influên
 - **Detecção de comunidades**: em redes sociais, a detecção de comunidades pode ajudar a identificar grupos de usuários com interesses semelhantes, facilitando a segmentação de mercado para campanhas publicitárias.
 - **Análise de fluxo de informação**: a teoria dos grafos permite analisar como as informações se propagam através de redes sociais, ajudando a entender a disseminação de notícias, rumores, ou campanhas virais.
 
+---
+
+## Algoritmos para Grafos
+
+
