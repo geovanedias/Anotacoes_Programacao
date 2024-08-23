@@ -152,25 +152,24 @@ O algoritmo de Dijkstra é um método usado para encontrar o caminho mais curto 
 ### Resumo do Funcionamento:
 
 1. **Inicialização**:
-    
     - Define o nó de origem com uma distância de zero.
     - Define todos os outros nós com uma distância infinita.
     - Todos os nós são marcados como não visitados.
-2. **Escolha do Nó Mais Próximo**:
-    
+      
+2. **Escolha do Nó Mais Próximo**:    
     - Escolhe o nó não visitado com a menor distância acumulada. Este será o nó "atual".
-3. **Atualização das Distâncias**:
-    
+      
+3. **Atualização das Distâncias**:    
     - Para cada vizinho do nó atual, calcula-se a distância total do nó de origem até esse vizinho, passando pelo nó atual.
     - Se essa nova distância for menor que a distância registrada anteriormente para o vizinho, atualiza-se a distância.
-4. **Marcação do Nó como Visitado**:
-    
+      
+4. **Marcação do Nó como Visitado**:    
     - Após verificar todos os vizinhos, o nó atual é marcado como visitado, e não será revisitado.
-5. **Repetição**:
-    
+      
+5. **Repetição**:    
     - Repete-se o processo para o nó não visitado com a menor distância acumulada.
-6. **Conclusão**:
-    
+      
+6. **Conclusão**:    
     - O algoritmo termina quando todos os nós foram visitados. O resultado é a menor distância entre o nó de origem e cada um dos outros nós do grafo.
 
 O algoritmo de Dijkstra é eficiente para grafos com pesos positivos e é amplamente utilizado em sistemas de navegação e redes de computadores para otimização de rotas.
