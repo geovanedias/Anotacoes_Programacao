@@ -1,5 +1,8 @@
 {
   "cssTheme": "Tokyo Night",
   "accentColor": "#863de6",
-  "showViewHeader": true
+  "showViewHeader": true,
+  "enabledCssSnippets": [
+    "imagens"
+  ]
 }

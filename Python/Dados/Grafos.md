@@ -116,6 +116,16 @@ A centralidade de um vértice em um grafo de rede social pode indicar a influên
 
 ---
 
-## Algoritmos para Grafos
+## Algoritmos de Arvores Geradoras Mínimas
+
+Uma árvore geradora é uma estrutura que une todos os vértices de um grafo sem formar ciclos. Em grafos com pesos nas arestas, buscamos a árvore geradora mínima (MST, do inglês, *Minimum Spanning Tree*), que é a configuração que conecta todos os vértices com o menor custo total possível. A ideia é selecionar as arestas de menor peso que não criem ciclos até que todos os vértices estejam interligados. 
+
+### Algoritmo de Kruskal e Prim
+
+O algoritmo de Kruskal, desenvolvido por Joseph Kruskal em 1956, é uma metodologia eficaz para encontrar essa árvore geradora mínima, priorizando as arestas de menor peso e evitando a formação de ciclos no processo.
+
+ O pseudocódigo do algoritmo de Kruskal (Figura abaixo) detalha a formação de uma árvore geradora mínima (MST) a partir de um grafo composto por vértices e arestas. Inicialmente, a MST é representada por um conjunto vazio, que em Python é indicado por *set()*. Em seguida, para cada vértice do grafo, cria-se um conjunto contendo o próprio vértice. Procede-se então à avaliação de cada aresta, seguindo uma ordem de peso crescente. Para cada aresta avaliada, compara-se os conjuntos dos vértices conectados por ela; se esses conjuntos são disjuntos (ou seja, não compartilham elementos, indicando ausência de intersecção (**∩**), conclui-se que a inclusão dessa aresta na MST não formará ciclos (Lambert, 2022). Dessa forma, a aresta é adicionada ao conjunto de arestas da MST e os conjuntos dos vértices ligados por ela são unidos, utilizando a operação de união (*union*).
+
+![[Pasted image 20240823143921.png#center|600]]
 
 
