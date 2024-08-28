@@ -31,6 +31,15 @@ const resultado = somarDoisNumeros(2, 2);
 console.log(resultado);
 ```
 
+Se você escrever um operador = após um parâmetro, seguido por uma expressão, o valor dessa expressão substituirá o argumento quando ele não for fornecido. Por exemplo, esta versão de `roundTo` torna seu segundo argumento opcional. Se você não o fornecer ou passar o valor undefined, ele assumirá como padrão o número `1` :
+
+```js
+function roundTo(n, step = 1) {
+  let remainder = n % step;
+  return n - remainder + (remainder < step / 2 ? 0 : step);
+};
+```
+
 ### Retorno
 
 - O valor de retorno serve como “output” da função. Ele representa o resultado final obtido após a função executar o código dentro do bloco;
@@ -64,7 +73,7 @@ console.log('A idade é:', idade);
 
 #### Number()
 Esta função converte qualquer outro tipo de dado em um tipo Number. Caso o valor não possa ser convertido, retornará `NaN`.
-##### `Number.parseInt()` e `Number.parseFloat()`
+###### `Number.parseInt()` e `Number.parseFloat()`
 
 Ambos funcionam de forma parecida, porém, `parseInt`vai tentar converter o valor em um número inteiro e `parseFloat`, em um número de ponto flutuante.
 
