@@ -14,3 +14,4 @@
 - Capaz de se concentrar na escrita de código específico para o projeto;
 - Pode ser estendido.
 
+Os principais benefícios de frameworks de aplicativos orientados a objetos derivam da *modularidade*, *capacidade de reutilização*, *extensibilidade* e *inversão de controle* que fornecem aos desenvolvedores. As estruturas aprimoram a modularidade, encapsulando detalhes de implementação voláteis por trás de interfaces estáveis. Além disso, a modularidade do framework ajuda a melhorar a qualidade do software ao localizar o impacto das mudanças de design e implementação, o que reduz o esforço necessário para entender e manter o software existente
