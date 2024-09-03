@@ -100,3 +100,4 @@ No contexto RL (Direita Esquerda), o filho direito (**v3**) da raiz da subárvor
 
 ![](https://s3.amazonaws.com/platos-alexandria-prod/kroton/image/66a13bfe76d0feb96aeb817a/d186c9e2-2ff0-4e28-9a49-820cccfc7fc8/original)
 
+![[Pasted image 20240902203656.png#center|650]]
