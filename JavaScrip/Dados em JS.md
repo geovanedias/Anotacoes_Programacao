@@ -117,12 +117,16 @@ Além disso, símbolos também podem ser usados para adicionar propriedades "*es
 
 ## Listas // Array
 
+Arrays em JavaScript são implementados como **objetos**.  Internamente, os índices são tratados como *chaves* (ou propriedades) de um objeto, onde cada chave é associada ao seu *valor* correspondente (o elemento do array).
+
 ```js
 const lista = [0, 1, 2, 3, 4, 5];
 console.log(lista.length);
 
 >> 6
 ```
+
+A memória em JavaScript é gerenciada automaticamente pelo mecanismo do navegador ou do ambiente de execução. Quando você cria um array e adiciona elementos a ele, o mecanismo aloca espaço na memória para armazenar esses elementos *sequencialmente*, de acordo com seus índices.
 
 #### .length
 >Serve para quantificar o tamanho de uma lista.
