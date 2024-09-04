@@ -115,3 +115,15 @@ Dado que os símbolos são únicos, mesmo quando criados com a mesma descrição
 
 Além disso, símbolos também podem ser usados para adicionar propriedades "*escondidas*" em objetos, tornando-as **inacessíveis** sem a referência direta ao símbolo correspondente. Essa prática é particularmente útil em bibliotecas ou frameworks, contribuindo para evitar colisões de nomes de propriedades.
 
+## Listas // Array
+
+```js
+const lista = [0, 1, 2, 3, 4, 5];
+console.log(lista.length);
+
+>> 6
+```
+
+#### .length
+>Serve para quantificar o tamanho de uma lista.
+
