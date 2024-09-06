@@ -62,6 +62,22 @@ Se tivermos apenas uma linha, por exemplo, para dar um `return` no `nome`, po
 ```js
 const exibeNome = (nome) => nome;
 ```
+
+- Quando há apenas um parâmetro para a função, podemos omitir os parênteses.
+- Se o corpo for uma expressão única ao invés de um bloco, aquela expressão será retornada da função.
+
+```js
+const quadrado1 = (x) => {return x * x; };
+// é o mesmo que:
+const quadrado2 = x => x * x;
+```
+
+- Quando não houver parâmetro algum, basta apenas passar um parênteses vazio:
+
+```js
+const horn = () => {console.log("Toot"); };
+```
+
 #### console.log()
 O `console.log()` é uma função disponível nos navegadores e no ambiente Node.js. Sua principal finalidade é imprimir mensagens ou valores no console do navegador ou terminal, facilitando o acompanhamento e depuração do código.
 
