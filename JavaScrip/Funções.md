@@ -51,7 +51,7 @@ function roundTo(n, step = 1) {
 
 São funções que estão contidas dentro de variáveis. Diferente de funções que iniciam com `function`, estas não são elevadas ao todo da execução do código quando este é compilado.
 
-### Arrow Functions
+## Arrow Functions
 Forma prática e encurtada de escrever uma função, ideal para funções que possuem apenas uma linha e esteja dentro de outras funções (*callback function*).
 
 ```js
@@ -92,4 +92,6 @@ Esta função converte qualquer outro tipo de dado em um tipo Number. Caso o val
 ###### `Number.parseInt()` e `Number.parseFloat()`
 
 Ambos funcionam de forma parecida, porém, `parseInt`vai tentar converter o valor em um número inteiro e `parseFloat`, em um número de ponto flutuante.
+
+## Argumentos Opicionais
 
