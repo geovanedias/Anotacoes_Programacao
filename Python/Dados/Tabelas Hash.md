@@ -6,3 +6,4 @@ Antes de avançarmos, é importante compreender como funciona uma tabela _hash_
 
 Para minimizar colisões em uma tabela _hash_, é essencial escolher uma função _hash_ adequada. O objetivo é alcançar uma distribuição uniforme, onde cada chave tem igual probabilidade de ser selecionada, idealmente distribuindo a chance de alocação para um elemento em 10% por chave, se tivermos 10 elementos, exemplificando um _hash_ uniforme simples.
 
+# ==completar==
