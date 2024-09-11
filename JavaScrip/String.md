@@ -1,3 +1,12 @@
+Comentários:
+```js
+// Comentário de uma única linha
+/*
+comentário de 
+multiplas linhas
+*/
+```
+
 Em versões mais antigas do JS era comumente usado o método tradicional de manipulação de strings. Como em:
 
 ```js
