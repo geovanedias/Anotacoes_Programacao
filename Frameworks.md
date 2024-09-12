@@ -1,5 +1,6 @@
 
 ## Definições de Framework:
+- Um framework pode ser considerado uma estrutura ou plataforma para o desenvolvimento de aplicativos ou, ainda, um conjunto de códigos pré-escritos e usados por programadores para desenvolver programas em plataformas específicas. Essas estruturas podem incluir classes e funções predefinidas com o objetivo de que o programador não precise criar o mesmo código cada vez que desenvolve um novo aplicativo (CHRISTENSSON, 2013)
 - Firesmith (1994), framework é uma coleção de classes colaborativas, que capturam os padrões em pequena escala, e de mecanismos maiores, que implementam requisitos e projetos em comum. 
 - Mattsson (1996), um framework é uma arquitetura (generativa) projetada para reutilização máxima, representada como um conjunto coletivo de classes abstratas e concretas, com potencial encapsulado e comportamento para especializações de subclasse.
 - Fujioka (2015), um framework orientado a objetos é uma arquitetura que permite a reutilização de todo o sistema ou de parte dele.
@@ -10,7 +11,7 @@
 - Evita código duplicado;
 - Código limpo e facilmente adaptável;
 - Capaz de se concentrar na escrita de código específico para o projeto;
-- Pode ser estendido.
+- Pode ser estendido com fácil reutilização de código.
 
 Os principais benefícios de frameworks de aplicativos orientados a objetos derivam da *modularidade*, *capacidade de reutilização*, *extensibilidade* e *inversão de controle* que fornecem aos desenvolvedores. As estruturas aprimoram a modularidade, encapsulando detalhes de implementação voláteis por trás de interfaces estáveis. Além disso, a modularidade do framework ajuda a melhorar a qualidade do software ao localizar o impacto das mudanças de design e implementação, o que reduz o esforço necessário para entender e manter o software existente.
 
@@ -29,4 +30,14 @@ APIs oferecem *segurança* por design, porque sua posição como intermediário 
 ## Componentes:
 
  São técnicas e práticas usadas para construir sistemas de software a partir de componentes preexistentes, adquiridos tanto por terceiros quanto pelo próprio desenvolvedor do sistema.
+
+## Diferença entre frameworks e bibliotecas
+
+A principal diferença entre uma biblioteca e um framework é a "*inversão de controle*". Ao chamar um método de biblioteca, assume-se que você está no controle. Mas, com um framework, o controle é invertido: ele é que chama você.
+
+Em um framework, todo o fluxo de controle já está lá e há muitos pontos brancos predefinidos que devem ser preenchidos com código. Um framework normalmente é mais complexo e pode conter várias bibliotecas; ele define um esqueleto, que deverá ser preenchido pelo aplicativo, o qual define seus próprios recursos para isso.
+
+Já uma biblioteca executa operações específicas e bem definidas, uma vez que é apenas uma coleção de definições de classe. O motivo é simplesmente a reutilização do código, ou seja, obtém o código que já foi escrito por outros desenvolvedores.
+
+
 
