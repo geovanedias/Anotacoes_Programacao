@@ -39,5 +39,26 @@ Em um framework, todo o fluxo de controle já está lá e há muitos pontos bran
 
 Já uma biblioteca executa operações específicas e bem definidas, uma vez que é apenas uma coleção de definições de classe. O motivo é simplesmente a reutilização do código, ou seja, obtém o código que já foi escrito por outros desenvolvedores.
 
+## Conceitos de AOP: fundamentos de _Aspect Oriented Programming_
 
+A Programação Orientada a Aspectos (AOP) complementa a Programação Orientada a Objetos (POO), fornecendo outra maneira de pensar sobre a estrutura do programa. A unidade chave de modularidade em POO é a classe, enquanto em AOP é o aspecto. Aspectos permitem a modularização de questões, como gerenciamento de transações que abrangem vários tipos e objetos.
+
+Nesse cenário, a vantagem do Spring AOP, por exemplo, é que ele fornece serviços corporativos declarativos, especialmente como um substituto para os serviços declarativos EJB (Enterprise Java Beans), o qual possui a lógica que atua sobre os dados do negócio. O mais importante desses serviços é o gerenciamento de transações declarativas, uma vez que permite aos usuários implementarem aspectos personalizados, complementando o uso de POO com AOP.
+
+Vejamos, a seguir, os conceitos e as terminologias do AOP:
+• *Aspect*: modularização de uma preocupação que permeia várias classes. O gerenciamento de transações é um bom exemplo de preocupação transversal em aplicativos Java corporativos. No Spring AOP, os aspectos são implementados através de classes regulares (abordagem baseada em esquema) ou de classes regulares com a anotação @Aspect.
+
+• *Join point*: um ponto durante a execução de um programa, como a execução de um método ou o tratamento de uma exceção. No Spring AOP, um ponto de junção sempre representa a execução de um método.
+
+• *Advice*: ação realizada por um aspecto em um ponto de junção específico. Diferentes tipos de *advices* incluem anotações "ao redor", "antes" e "depois". Muitos frameworks AOP, incluindo Spring, modelam um conselho como um interceptor, mantendo uma cadeia de interceptores em torno do ponto de junção.
+
+• *Pointcut*: um predicado que combina os pontos de junção. O conselho está associado a uma expressão de *pointcut* e é executado em qualquer ponto de junção correspondido por ele (por exemplo, a execução de um método com determinado nome). O conceito de pontos de junção, conforme correspondências com expressões de _pointcut_, é central para AOP, e Spring usa a linguagem de expressão de *pointcut AspectJ* por padrão.
+
+_• Introduction:_ declara métodos ou campos adicionais em nome de um tipo. Spring AOP permite que você introduza novas interfaces (e uma implementação correspondente) para qualquer objeto recomendado. Por exemplo, você pode usar uma introdução para fazer um _bean_ implementar uma interface *IsModified* a fim de simplificar o armazenamento em cache.
+
+_• Target object_: objeto que é aconselhado por um ou mais aspectos (também conhecido como objeto aconselhado). Uma vez que Spring AOP é implementado com proxies em tempo de execução, esse objeto sempre será um objeto com proxy.
+
+_• AOP proxy_: um objeto criado pelo framework AOP para implementar os contratos de aspecto (aconselhar execuções de métodos e assim por diante). No Spring Framework, um proxy AOP será um proxy dinâmico JDK ou um proxy CGLIB.
+
+_• Weaving_: liga aspectos com outros tipos de aplicativos ou objetos para criar um objeto recomendado. Isso pode ser feito em tempo de compilação (usando o compilador AspectJ, por exemplo), em tempo de carregamento ou em tempo de execução. O Spring AOP, como outros frameworks Java AOP puros, realiza entrelaçamento no tempo de execução.
 
