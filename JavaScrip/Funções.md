@@ -93,5 +93,9 @@ Esta função converte qualquer outro tipo de dado em um tipo Number. Caso o val
 
 Ambos funcionam de forma parecida, porém, `parseInt`vai tentar converter o valor em um número inteiro e `parseFloat`, em um número de ponto flutuante.
 
-## Argumentos Opicionais
+### Argumentos Opicionais
 
+JavaScript é extremamente liberal sobre o número de argumentos que você pode passar para uma função. Se você passar muitos, os extras serão ignorados. Se você passar poucos, os parâmetros ausentes receberão o valor undefined.
+
+Continuar em 3_functions -> Closure
+https://eloquentjavascript.net/03_functions.html

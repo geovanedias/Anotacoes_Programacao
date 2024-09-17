@@ -1,4 +1,4 @@
-## if [Sintaxe](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/if...else#sintaxe)
+# if [Sintaxe](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/if...else#sintaxe)
 
 ```js
 if (condição) {
@@ -62,4 +62,31 @@ valor < 50 ? 'valor insuficiente' : 'valor suficiente';
 >Observe que o sinal `?` separa a condição, enquanto o sinal `:` separa os casos `true` e `false` respectivamente.
 
 Sempre que um `if..else` tiver **apenas uma linha de retorno** o operador ternário pode ser utilizado para comprimir espaço no código.
+
+# Switch Case
+
+Uma alternativa mais elegante ao `else if`, onde podemos definir uma instrução padrão, `default`, caso nenhum dos casos sejam satisfeitos. 
+
+```js
+const linguagem = "Javascript" ;
+
+switch(linguagem) {
+	case "Javascript": 
+		console.log("Suas habilidades com Javascript são excepcionais");
+		break;
+	case "Python":
+		console.log("A encarnação de Python");
+        break;
+    case "Java": 
+        console.log("Coragem é a sua definição. Que maestria você tem com a linguagem!!");
+        break;
+    case "C": 
+		console.log("Prepare-se para ponteiros de ponteiros. É uma ótima escolha começar com a mãe de todas as linguagens");
+        break;
+    default:
+		console.log("Ainda não não temos familiaridade com essa tecnologia.")
+}
+```
+
+É perceptivel a adição de uma palavra `break`. Sem essa instrução, ele continuará executando todos os outros blocos de código abaixo da correspondência encontrada, causando o que conhecemos como "**Efeito Cascata** (ou *fall-through*)". Com isso o fluxo continuará para o próximo caso.
 
