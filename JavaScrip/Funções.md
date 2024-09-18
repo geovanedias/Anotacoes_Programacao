@@ -97,5 +97,4 @@ Ambos funcionam de forma parecida, porém, `parseInt`vai tentar converter o valo
 
 JavaScript é extremamente liberal sobre o número de argumentos que você pode passar para uma função. Se você passar muitos, os extras serão ignorados. Se você passar poucos, os parâmetros ausentes receberão o valor undefined.
 
-Continuar em 3_functions -> Closure
-https://eloquentjavascript.net/03_functions.html
+Se você escrever um operador = depois de um parâmetro, seguido por uma expressão, o valor dessa expressão substituirá o argumento quando ele não for fornecido.
