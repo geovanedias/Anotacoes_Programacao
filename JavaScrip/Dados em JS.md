@@ -128,6 +128,25 @@ console.log(lista.length);
 
 A memória em JavaScript é gerenciada automaticamente pelo mecanismo do navegador ou do ambiente de execução. Quando você cria um array e adiciona elementos a ele, o mecanismo aloca espaço na memória para armazenar esses elementos *sequencialmente*, de acordo com seus índices.
 
-#### .length
+#### .length()
 >Serve para quantificar o tamanho de uma lista.
+
+#### .push()
+>Usado para adicionar elementos ao final da lista
+
+#### .unshift()
+>Adiciona elementos ao inicio da lista
+
+#### .shift()
+>Remove o primeiro elemento da lista
+
+#### .pop()
+>Remove o último elemento da lista
+
+#### .splice()
+>Usado para tanto adicionar quanto remover elementos em qualquer posição determinada em uma lista
+
+```js
+// lista.splice( indice, quantidades a ser removido, elementos a serem adicionados )
+```
 
