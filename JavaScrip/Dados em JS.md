@@ -147,6 +147,12 @@ A memória em JavaScript é gerenciada automaticamente pelo mecanismo do navegad
 >Usado para tanto adicionar quanto remover elementos em qualquer posição determinada em uma lista
 
 ```js
-// lista.splice( indice, quantidades a ser removido, elementos a serem adicionados )
+// lista.splice(indice, quantidades a ser removido, elementos a serem adicionados)
+nomesAlunos 
+['Anna Luiza','Carlos Eduardo','Geovane','Silvia','Nathaly','Liz','Luanda']
+
+nomesAlunos.splice(3, 1, "Ana Carla")
+nomesAlunos
+['Anna Luiza','Carlos Eduardo','Geovane','Ana Carla','Nathaly','Liz','Luanda']
 ```
 
