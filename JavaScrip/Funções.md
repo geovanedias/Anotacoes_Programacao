@@ -17,6 +17,7 @@ function nome(parâmetros) {
 - Os parâmetros devem ser passados para a função no momento de execução, na ordem em que estão declarados.
 
 Exemplo:
+
 ```js
 // declaração da função
 function somarDoisNumeros(numA, numB) {
@@ -51,7 +52,20 @@ function roundTo(n, step = 1) {
 
 São funções que estão contidas dentro de variáveis. Diferente de funções que iniciam com `function`, estas não são elevadas ao todo da execução do código quando este é compilado.
 
+## Função Anônima
+
+É uma função que está contida dentro de uma variável/constante que a chama. Primeiro essa função é declarada, para então ser chamada por esta variável/constante.
+
+```js
+const anonima = function(parametro) {
+	console.log(parametro);
+};
+
+anonima("sumiu");
+```
+
 ## Arrow Functions
+
 Forma prática e encurtada de escrever uma função, ideal para funções que possuem apenas uma linha e esteja dentro de outras funções (*callback function*).
 
 ```js
@@ -59,6 +73,7 @@ let nomeVariavel = (parametro) => {função};
 ```
 
 Se tivermos apenas uma linha, por exemplo, para dar um `return` no `nome`, podemos escrever apenas `nome`, **suprimindo** tanto as chaves quanto a palavra-chave `return`.
+
 ```js
 const exibeNome = (nome) => nome;
 ```
@@ -79,6 +94,7 @@ const horn = () => {console.log("Toot"); };
 ```
 
 #### console.log()
+
 O `console.log()` é uma função disponível nos navegadores e no ambiente Node.js. Sua principal finalidade é imprimir mensagens ou valores no console do navegador ou terminal, facilitando o acompanhamento e depuração do código.
 
 ```js
@@ -88,6 +104,7 @@ console.log('A idade é:', idade);
 ```
 
 #### Number()
+
 Esta função converte qualquer outro tipo de dado em um tipo Number. Caso o valor não possa ser convertido, retornará `NaN`.
 ###### `Number.parseInt()` e `Number.parseFloat()`
 
