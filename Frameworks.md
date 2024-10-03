@@ -62,3 +62,10 @@ _• AOP proxy_: um objeto criado pelo framework AOP para implementar os contrat
 
 _• Weaving_: liga aspectos com outros tipos de aplicativos ou objetos para criar um objeto recomendado. Isso pode ser feito em tempo de compilação (usando o compilador AspectJ, por exemplo), em tempo de carregamento ou em tempo de execução. O Spring AOP, como outros frameworks Java AOP puros, realiza entrelaçamento no tempo de execução.
 
+## Conceito de *activity*, ciclo de vida, entrada e saída, eventos
+
+A utilização de aplicativos *mobile*, os chamados *apps*, é totalmente diferente quando comparados com os aplicativos para computadores (INTRODUÇÃO..., 2019). Os usuários desses *apps* iniciam a sua utilização de forma aleatória, fazendo com que um aplicativo possa ser inicializado de inúmeras formas. Um exemplo disso é a utilização dos e-mails, que são inicializados de forma diferentes se chamados pelos seus *apps* de origem ou por um _app_ de alguma rede social. Assim, para facilitar a iteração entre a execução das atividades de seus *apps*, a linguagem Android disponibiliza a classe _activity_.
+
+Quando um _app_ A chama outro _app_ B, o que realmente acontece, é que o _app_ A solicita a execução de uma atividade ou tela específica do _app_ B e não de todo o _app_. Assim, as atividades ou telas são consideradas o ponto de entrada da iteração dos usuários com os aplicativos.
+
+Os _apps_ como um todo são compostos por diversas telas, o que faz que cada um possibilite a execução de diversas atividades. Nesse sentido, a primeira tela que o _app_ exibe para o usuário, é denominada de atividade principal do _app_. Assim, cada atividade do _app_ pode iniciar diversas outras para realizar alguma ação diferente. Considerando o exemplo do e-mail, a primeira tela do _app_ de e-mail apresenta a caixa de entrada. A tela da caixa de entrada permite que se tenha acesso a diversas outras atividades ou telas do e-mail.
