@@ -17,4 +17,10 @@ export default function App() {
 ```
 
 ### Instalar Sass
+
+```node
+npm install sass
+```
 # Reset de estilo em React
+
+Podemos usar um arquivo global contendo apenas o reset de nossos componentes dentro da pasta `src`. Basta apenas criarmos o arquivo `global.scss`, dentro dele colocamos o nosse reset. E após isso importamos esse arquivo no `App.jsx`.
