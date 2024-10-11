@@ -48,3 +48,24 @@ A **operação do produto** aborda a forma que o software se comporta e execut
 - **Integridade:** manter e preservar a integridade dos dados e das informações manipuladas durante o seu funcionamento, evitando corrupção, perda ou acesso não autorizado.
 - **Eficiência:** desempenho do software em relação à velocidade e utilização de recursos, garantindo que as tarefas sejam executadas de forma rápida e sem atrasos excessivos.
 
+## Planejamento e Estimativa de Projetos
+
+As metodologias ágeis são **abordagens iterativas** que enfatizam a flexibilidade, a colaboração e a entrega incremental de software. Cada iteração é um ciclo curto de desenvolvimento, durante o qual uma parte funcional do software é planejada, desenvolvida, testada e entregue. Isso permite que o software seja entregue em partes funcionais ao longo do tempo, em vez de esperar até que o produto todo esteja concluído.
+
+Sommerville (2011) cita que, nas metodologias ágeis, há uma abordagem de planejamento em dois estágios, sendo eles:
+
+- **Planejamento de release:** o objetivo principal deste estágio é definir uma visão de longo prazo para o produto e determinar quais funcionalidades serão incluídas no release.
+- **Planejamento de iteração:** processo mais curto e detalhado que ocorre no início de cada iteração, também conhecida como _sprint_. O planejamento de iteração é estabelecido no _backlog_ pelo _product owner_, que seleciona as histórias de usuário para serem implementadas durante a _sprint._
+
+As estimativas são calculadas da seguinte forma: as histórias são avaliadas em termos de esforço e são atribuídos pontos de esforço, que podem variar conforme o grau de complexidade. Algumas formas para estimar são:
+
+- **Por hora:** o time estima de acordo com o esforço previsto em horas de trabalho.
+- **_Story Point_ (pontos de história):** cada história é atribuída a um número de pontos. Esses pontos não têm um valor absoluto, mas são usados para comparar histórias entre si de acordo com a complexidade. Exemplo: por tamanho (PP, P, M, G).
+
+Essas formas de estimativas podem utilizar algumas técnicas, que são:
+
+- **Estimativa baseada em histórico:** o time usa referências históricas para estimar o esforço em novas tarefas, ajudando a criar estimativas mais precisas e realistas.
+- **_Planning Poker_:** os membros da equipe discutem as histórias, fazem perguntas para esclarecimentos e, depois, selecionam uma estimativa relativa (_story point_) de forma simultânea, usando cartas com números.
+
+> O planejamento de release ou iteração estabelece um roteiro claro para o projeto. Já as estimativas visam prever o esforço necessário para concluir as demandas.
+
