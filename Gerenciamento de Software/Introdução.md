@@ -77,3 +77,13 @@ Essas formas de estimativas podem utilizar algumas técnicas, que são:
 
 >Métricas de software são medidas quantitativas utilizadas para avaliar características do desenvolvimento de software, permitindo análises objetivas e tomadas de decisão informadas (Pressman; Maxim, 2014).
 
+## Tipos de métricas
+
+- **Métricas diretas:** chamadas também de fundamentais ou básicas, são medidas quantitativas obtidas por meio da avaliação de atributos observáveis, tipicamente determinada por processos de quantificação (exemplos: custo de projeto, tempo de desenvolvimento e quantidade de defeitos encontrados).
+- **Métricas indiretas:** chamadas também de derivadas, são obtidas por meio da análise e combinação de outras métricas previamente coletadas (exemplos: complexidade, eficiência, confiabilidade, facilidade de manutenção).
+- **Métricas orientadas a tamanho:** são indicadores diretos que mensuram as dimensões dos artefatos de software relacionados ao processo pelo qual o software foi desenvolvido (exemplos: esforço, custo).
+- **Métricas orientadas por função:** representam um conjunto de técnicas para mensurar o software sob a perspectiva do usuário, estabelecendo uma visão sob a complexidade do sistema.
+- **Métricas de produtividade:** constituem um conjunto de indicadores voltados para avaliar a produção resultante do processo de engenharia de software (exemplos: número de casos de uso por iteração, número de linhas de código por dia, número de histórias de usuário concluídas por _sprint_).
+- **Métricas de qualidade:** são um conjunto de indicadores utilizados para avaliar a conformidade do software com os requisitos e padrões estabelecidos pelo cliente (exemplos: taxa de defeitos e tempo médio de correção de defeitos).
+- **Métricas técnicas:** indicadores utilizados para avaliar as características intrínsecas do software, concentrando-se nos aspectos técnicos e estruturais do código e das soluções implementadas (exemplos: complexidade ciclomática, índice de manutenibilidade).
+
