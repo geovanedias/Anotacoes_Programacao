@@ -69,3 +69,11 @@ Essas formas de estimativas podem utilizar algumas técnicas, que são:
 
 > O planejamento de release ou iteração estabelece um roteiro claro para o projeto. Já as estimativas visam prever o esforço necessário para concluir as demandas.
 
+## Erro, Falha e Defeito
+
+- **Erro de software:** no contexto do desenvolvimento de software, um erro refere-se a uma ação humana que produz um resultado incorreto ou inesperado. Erros são inerentes à natureza humana e podem ocorrer em qualquer fase do desenvolvimento. São o resultado de decisões equivocadas, interpretações errôneas ou lapsos na implementação.
+- **Defeito de software:** um defeito é a raiz das falhas e ocorre quando há uma imperfeição no código-fonte do software. É a relação entre os erros de desenvolvimento e as falhas vistas pelo usuário. Defeitos podem surgir devido a equívocos na codificação. Identificar e corrigir defeitos é essencial para aprimorar a qualidade do software.
+- **Falha de software:** uma falha ocorre quando um componente de software não executa a função esperada. É a diferença entre o observado e o esperado. Ela é a consequência visível de um erro, ou seja, que não se manifesta claramente e pode ser percebida pelo usuário final como um comportamento incorreto do sistema. As falhas são resultadas tangíveis da presença de defeitos no software e podem variar em gravidade, de pequenos incômodos a problemas críticos.
+
+>Métricas de software são medidas quantitativas utilizadas para avaliar características do desenvolvimento de software, permitindo análises objetivas e tomadas de decisão informadas (Pressman; Maxim, 2014).
+
