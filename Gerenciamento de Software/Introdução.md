@@ -87,3 +87,16 @@ Essas formas de estimativas podem utilizar algumas técnicas, que são:
 - **Métricas de qualidade:** são um conjunto de indicadores utilizados para avaliar a conformidade do software com os requisitos e padrões estabelecidos pelo cliente (exemplos: taxa de defeitos e tempo médio de correção de defeitos).
 - **Métricas técnicas:** indicadores utilizados para avaliar as características intrínsecas do software, concentrando-se nos aspectos técnicos e estruturais do código e das soluções implementadas (exemplos: complexidade ciclomática, índice de manutenibilidade).
 
+## Níveis de Teste de Software
+
+Níveis de teste, os quais são grupos de atividades de teste que são organizadas e gerenciadas em conjunto. Cada nível de teste é uma instância do processo de teste, realizado em relação ao software em um determinado estágio de desenvolvimento, desde componentes individuais até sistemas completos (CTFL Syllabus, 2023).  
+Existem sete níveis de teste de software, que são realizados em momentos diferentes do ciclo de vida do desenvolvimento de um software.
+
+1. **Teste de Unidade**: verifica o *funcionamento do menor componente* do software, como sub-rotinas, métodos e classes. É realizado pelo desenvolvedor e, geralmente, requer o uso de estruturas de teste ou frameworks de teste de unidade.
+2. **Teste de Integração**: verifica se a *interação entre os componentes* de um sistema é eficaz e não causa conflitos. É realizado pelo desenvolvedor e envolve a integração entre um ou mais componentes.
+3. **Teste de Sistema**: verifica o *sistema como um todo*, analisando o comportamento geral e seus recursos. É *realizado por uma **equipe de testes*** após a codificação completa do sistema. É realizado para verificar se o sistema atende aos requisitos definidos.
+4. **Teste de Aceitação**: verifica o *sistema como um todo*, sob o *ponto de vista do **usuário final***, concentrando-se na validação dos requisitos. É realizado pelo usuário. O foco é verificar se o sistema está pronto para ser entregue e usado.
+5. **Teste Alfa**: verifica o sistema de uma forma que ***não tenha sido planejada***, sob o ponto de vista de um seleto grupo de usuários internos. É realizado pelos usuários internos da organização, podendo incluir testadores, desenvolvedores e outros funcionários.
+6. **Teste Beta:** verifica o sistema de uma forma que *não tenha sido planejada*, sob o ponto de vista de um ***grande número de usuários***. É realizado por um subconjunto de usuários finais do sistema, que satisfaçam determinados critérios definidos pelo fornecedor do sistema.
+7. **Teste de Regressão**: verifica o sistema ***após alterações***, como correções de bugs ou implementação de novas funcionalidades. É realizado pela equipe de testes.
+
