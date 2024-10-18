@@ -25,6 +25,7 @@ npm install sass
 
 Podemos usar um arquivo global contendo apenas o reset de nossos componentes dentro da pasta `src`. Basta apenas criarmos o arquivo `global.scss`, dentro dele colocamos o nosso reset. E após isso importamos esse arquivo no `App.jsx`.
 
+---
 ## Hooks
 
 Hooks são componentes funcionais que adicionam e gerenciam estados de componentes.
@@ -61,4 +62,23 @@ export default function Hook() {
 
 --- 
 # Styled-Components
+
+É uma biblioteca de estilos baseada em CSS que permite que seja feito a estilização dentro do próprio arquivo do React.
+
+### Instalação:
+
+```shell
+npm install styled-components
+```
+
+## Importação
+Dentro do arquivo react que iremos usar o `styled-components` iremos importar o seguinte módulo:
+
+```jsx
+import styled from 'styled-components'
+
+const Button = styled.button`
+	background-color: red ;
+`
+```
 
