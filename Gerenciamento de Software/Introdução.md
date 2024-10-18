@@ -100,3 +100,26 @@ Existem sete níveis de teste de software, que são realizados em momentos difer
 6. **Teste Beta:** verifica o sistema de uma forma que *não tenha sido planejada*, sob o ponto de vista de um ***grande número de usuários***. É realizado por um subconjunto de usuários finais do sistema, que satisfaçam determinados critérios definidos pelo fornecedor do sistema.
 7. **Teste de Regressão**: verifica o sistema ***após alterações***, como correções de bugs ou implementação de novas funcionalidades. É realizado pela equipe de testes.
 
+## Tipos de Testes
+
+Os padrões de teste de software são instruções e práticas criadas para auxiliar equipes de testes a executar testes com qualidade. Alguns dos padrões mais comuns incluem:
+
+- **AAA (_Arrange-Act-Assert_):** é um padrão para organizar e formatar códigos em métodos de testes unitários, separando-os em etapas de preparação, execução e verificação.
+- **_Given-When-Then_:** é padrão de organização de casos de teste em cenários claros, dividindo-os em condições iniciais, ações executadas e resultados esperados.
+- **_Page Object_:** é um padrão de design que ajuda a reutilizar objetos de testes para facilitar a manutenção de testes de UI automatizados.
+- **_Data-Driven Testing_:** é um padrão que executa _scripts_ de testes que acessa dados de entradas e saídas previstas a partir de arquivos de dados.
+- **_Mocking_ e _Stubbing_:** é um padrão de teste em que objetos que ainda não foram criados são simulados para isolar componentes do sistema que possuem dependências externas e/ou fornecer respostas pré-definidas para chamadas de métodos.
+- **BDD (_Behavior Driven Development_):** é um padrão que enfatiza a colaboração entre desenvolvedores, testadores e _stakeholders_ que ajuda a criar cenários de teste usando vocabulário específico e enxuto, minimizando dificuldades de comunicação.
+- **TDD (_Test Driven Development_):** é uma metodologia para desenvolvimento e escrita de código, em que a codificação das funcionalidades começa a partir da escrita de testes unitários.
+
+Além dos padrões mencionados, é importante nos aprofundarmos na diversidade de contextos em que o teste de software é aplicado. Ao falarmos de sistemas baseados em arquiteturas cliente-servidor, os testes, geralmente, se concentram na comunicação entre clientes e servidores, buscando garantir que os dados sejam entregues corretamente e que os componentes do servidor estejam suscetíveis a lidar com várias solicitações simultâneas.  
+Para garantir que essas arquiteturas funcionem corretamente, uma variedade de testes pode ser realizada, que incluem:
+
+- Testes de Comunicação e Integração.
+- Testes de Desempenho e Escalabilidade.
+- Testes de Segurança.
+- Testes de Integração com Bancos de Dados.
+- Testes de Usabilidade.
+- Testes de Recuperação de Falhas.
+- Testes de Concorrência.
+
