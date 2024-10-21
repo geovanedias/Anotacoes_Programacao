@@ -123,3 +123,13 @@ Para garantir que essas arquiteturas funcionem corretamente, uma variedade de te
 - Testes de Recuperação de Falhas.
 - Testes de Concorrência.
 
+### Padrões para arquitetura cliente-servidor
+
+- **Testes de Comunicação e Integração:** a comunicação é um aspecto importantíssimo das arquiteturas cliente-servidor. Os testes devem garantir que os dados sejam transmitidos corretamente, que as solicitações dos clientes sejam tratadas de forma adequada e que as respostas dos servidores atendam às expectativas. Logo, isso envolve testar os protocolos de comunicação que estas arquiteturas utilizam, como HTTP, HTTPS e TCP/IP.
+- **Testes de Desempenho e Escalabilidade:** em sistemas de arquitetura cliente-servidor, a escalabilidade é essencial para lidar com um grande número de clientes. Os testes de desempenho verificam como o sistema se comporta sob carga, analisando se os servidores são capazes de lidar com múltiplas requisições e se os tempos de resposta dessas requisições são aceitáveis. Para esse tipo de teste, ferramentas de teste de carga, como: Apache JMeter, são utilizadas para simular cenários de alta demanda.
+- **Testes de Segurança:** segurança é um aspecto de extrema importância em sistemas de arquitetura cliente-servidor, pois muito comumente dados sensíveis são transmitidos. Para identificar e corrigir possíveis brechas na segurança, testes de penetração, ou _pentest_, são executados para identificar vulnerabilidades.
+- **Testes de Integração com Bancos de Dados:** a maioria dos sistemas cliente-servidor interagem com bancos de dados. Testes devem ser feitos para verificar se a integração entre a camada do servidor e o banco de dados está sendo executada corretamente, incluindo a capacidade de recuperação e a gravação de dados, ou seja, leitura e escrita de informações no banco.
+- **Testes de Usabilidade:** são essenciais quando o cliente em questão possuir uma interface para o usuário, como um aplicativo móvel ou uma página web. Esses testes têm por objetivo garantir que a interface é intuitiva, fácil de usar e atenda às necessidades do seu usuário.
+- **Testes de Recuperação de Falhas:** envolvem a simulação de falhas de rede, falhas de servidor e outros cenários de erro, com o intuito de garantir que o sistema é capaz de se recuperar adequadamente e manter a integridade dos dados.
+- **Testes de Concorrência:** envolve a simulação de um grande número de usuários acessando o sistema ao mesmo tempo. O objetivo é identificar problemas de concorrência, como condições de corrida, ou seja, conflitos no acesso de recursos compartilhados do sistema entre um ou mais usuários. 
+
