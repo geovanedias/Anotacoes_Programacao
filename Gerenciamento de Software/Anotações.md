@@ -133,3 +133,47 @@ Para garantir que essas arquiteturas funcionem corretamente, uma variedade de te
 - **Testes de Recuperação de Falhas:** envolvem a simulação de falhas de rede, falhas de servidor e outros cenários de erro, com o intuito de garantir que o sistema é capaz de se recuperar adequadamente e manter a integridade dos dados.
 - **Testes de Concorrência:** envolve a simulação de um grande número de usuários acessando o sistema ao mesmo tempo. O objetivo é identificar problemas de concorrência, como condições de corrida, ou seja, conflitos no acesso de recursos compartilhados do sistema entre um ou mais usuários. 
 
+---
+### Compreendendo caixa branca e caixa preta
+
+Agora que já sabemos o que são testes estruturais e funcionais (caixa branca e caixa preta, respectivamente), compreenderemos como funcionam as técnicas utilizadas em cada abordagem.  
+#### Em testes caixa branca, temos as seguintes técnicas: 
+
+**Teste de Instrução e Cobertura de Instrução:**
+
+- Cada instrução do código é executada pelo menos uma vez durante a execução dos testes. O objetivo é garantir que todas as instruções sejam testadas para verificar se estão funcionando conforme o esperado.
+- A cobertura de instrução é uma métrica usada para medir o quão bem o teste de instrução está cobrindo o código. Ela é expressa como uma porcentagem das instruções executadas em relação ao total de instruções no código.
+- A fórmula típica para calcular a cobertura de instrução é: 
+  **Cobertura de Instrução (%) = (Instruções Executadas / Total de Instruções) * 100**
+
+**Teste de Ramificação e Cobertura de Ramificação:**
+
+- O foco está nas decisões de controle de fluxo no código. Cada possível caminho ou ramificação dentro de estruturas condicionais, como declarações "if" e "else", deve ser percorrido durante os testes.
+- A Cobertura de Ramificação é uma métrica usada para medir o quão bem o teste de ramificação está cobrindo o código em termos de decisões de controle de fluxo. Ela é expressa como uma porcentagem das bifurcações de código que foram executadas em relação ao total de bifurcações possíveis.
+- A fórmula típica para calcular a cobertura de ramificação é:
+  **Cobertura de Ramificação (%) = (Bifurcações Executadas / Total de Bifurcações Possíveis) * 100**
+
+#### Em testes caixa preta, temos as seguintes técnicas:  
+
+**Particionamento de Equivalência:**
+
+- Visa reduzir a redundância e a complexidade nos casos de teste.
+- A ideia é dividir o espaço de entrada de um sistema em grupos ou partições de equivalência, em que cada grupo deve se comportar de maneira semelhante em relação ao sistema.
+- Em vez de criar casos de teste individuais para cada valor de entrada, você cria casos de teste que representam cada partição. Isso permite que você teste com eficiência diferentes cenários semelhantes, economizando tempo e recursos.
+
+**Análise de Valor de Limite:**
+
+- É uma técnica que se concentra em testar os limites dos valores de entrada de um sistema.
+- Ela identifica os valores de entrada que estão próximos aos limites de uma faixa aceitável e cria casos de teste para esses valores.
+
+**Teste de Tabelas de Decisão:**
+
+- É usado para testar a implementação dos requisitos do sistema que especificam como diferentes combinações de condições resultam em diferentes resultados.
+- Ele organiza as condições em uma tabela que lista todas as combinações possíveis de valores das condições.
+- Cada combinação na tabela é testada para garantir que o sistema se comporte corretamente em todas as situações possíveis.
+
+**Teste de Transição de Estado:**
+
+- É uma técnica usada, principalmente, em sistemas que têm estados diferentes e transitam entre esses estados durante a execução.
+- Ele se concentra em testar as transições entre os estados do sistema, verificando se as transições ocorrem de acordo com as especificações e se o sistema se comporta corretamente em cada estado.
+
