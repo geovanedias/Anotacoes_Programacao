@@ -21,10 +21,10 @@ export default function Hook() {
 	};
 	return(
 		<>
-		  <h2>{numero}</h2>
-		  <button onClick={diminuir}>-</button>
-		  <button onClick={() => {
-		    setNumero(numero + 1);
+			<h2>{numero}</h2>
+			<button onClick={diminuir}>-</button>
+			<button onClick={() => {
+			    setNumero(numero + 1);
 		    }}
 		  >+</button>
 		</>
@@ -99,3 +99,41 @@ setTimeout(()=>{
 >Importante, no exemplo é criado dentro da variável `msgRepetida` uma outra variável chamada `intervalo` que será interrompida dentro do método `setTimeout`.
 
 Todos esses métodos podem ser executados com a instrução sendo uma variável a parte para que o código fique mais limpo.
+
+---
+### map
+
+Método utilizado para mapear e imprimir os resultados de forma sequencial, como numa lista de objetos. É necessário criar a lógica do que será exibido ou então utilizar outro método para receber o objeto a ser impresso.
+
+A sintaxe do que deve ser retornada deve ser no estilo `HTML` e a estilização pode ser feita normalmente levando em conta que o `map` retornará os objetos em sequência, portando todos os elementos possuirão o mesmo estilo.
+
+```jsx
+<section>
+	{info.map((item) => (
+        <div key={item.nome}>
+	        <img src={item.imagem} alt="item.nome" />
+            <h2>{item.nome}</h2>
+            <p>{item.preco}</p>
+        </div>
+    ))}
+</section>
+```
+
+### filter
+
+>Método JavaScript que filtra elementos de um array.
+
+É necessário usar `useState` para criar um array que o `filter` irá usar para gerar o elemento filtrado. 
+
+```jsx
+const promocao = () => {
+	setFrutasFiltradas(
+		frutas.filter( (elemento) => {
+			return elemento.preco <= 8;
+		}
+	));
+};
+```
+
+Após o método retornar o objeto desejado ainda é necessário realizar a impressão do elemento que pode ser feito com o método `map` por exemplo.
+
