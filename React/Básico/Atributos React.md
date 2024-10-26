@@ -105,6 +105,12 @@ Todos esses métodos podem ser executados com a instrução sendo uma variável 
 
 Método utilizado para mapear e imprimir os resultados de forma sequencial, como numa lista de objetos. É necessário criar a lógica do que será exibido ou então utilizar outro método para receber o objeto a ser impresso.
 
+Para usarmos o `map` precisamos ter uma lista(array) de objetos que iremos ler e passar como parâmetro para o método `map`. Dentro do parênteses iremos usar um *arrow function* para retornar algo que queremos exibir.
+
+```js
+lista.map()
+```
+
 A sintaxe do que deve ser retornada deve ser no estilo `HTML` e a estilização pode ser feita normalmente levando em conta que o `map` retornará os objetos em sequência, portando todos os elementos possuirão o mesmo estilo.
 
 ```jsx
