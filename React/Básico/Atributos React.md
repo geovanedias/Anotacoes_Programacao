@@ -115,7 +115,7 @@ A sintaxe do que deve ser retornada deve ser no estilo `HTML` e a estilização 
 
 ```jsx
 <section>
-	{info.map((item) => (
+	{info.map( (item) => (
         <div key={item.nome}>
 	        <img src={item.imagem} alt="item.nome" />
             <h2>{item.nome}</h2>
@@ -142,4 +142,8 @@ const promocao = () => {
 ```
 
 Após o método retornar o objeto desejado ainda é necessário realizar a impressão do elemento que pode ser feito com o método `map` por exemplo.
+
+```html
+<button onClick={promocao}>Frutas em Promoção</button>
+```
 
