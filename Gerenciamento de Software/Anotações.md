@@ -177,3 +177,5 @@ Agora que já sabemos o que são testes estruturais e funcionais (caixa branca e
 - É uma técnica usada, principalmente, em sistemas que têm estados diferentes e transitam entre esses estados durante a execução.
 - Ele se concentra em testar as transições entre os estados do sistema, verificando se as transições ocorrem de acordo com as especificações e se o sistema se comporta corretamente em cada estado.
 
+---
+
