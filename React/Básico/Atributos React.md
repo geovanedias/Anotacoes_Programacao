@@ -33,28 +33,6 @@ export default function Hook() {
 ```
 
 --- 
-# Styled-Components
-
-É uma biblioteca de estilos baseada em CSS que permite que seja feito a estilização dentro do próprio arquivo do React.
-
-### Instalação:
-
-```shell
-npm install styled-components
-```
-
-## Importação
-Dentro do arquivo react que iremos usar o `styled-components` iremos importar o seguinte módulo:
-
-```jsx
-import styled from 'styled-components'
-
-const Button = styled.button`
-	background-color: red ;
-`
-```
-
----
 
 ## setTimeout, setInterval e clearInterval
 
@@ -101,7 +79,8 @@ setTimeout(()=>{
 Todos esses métodos podem ser executados com a instrução sendo uma variável a parte para que o código fique mais limpo.
 
 ---
-### map
+
+## map
 
 Método utilizado para mapear e imprimir os resultados de forma sequencial, como numa lista de objetos. É necessário criar a lógica do que será exibido ou então utilizar outro método para receber o objeto a ser impresso.
 
@@ -125,7 +104,9 @@ A sintaxe do que deve ser retornada deve ser no estilo `HTML` e a estilização 
 </section>
 ```
 
-### filter
+---
+
+## filter
 
 >Método JavaScript que filtra elementos de um array.
 
@@ -145,5 +126,35 @@ Após o método retornar o objeto desejado ainda é necessário realizar a impre
 
 ```html
 <button onClick={promocao}>Frutas em Promoção</button>
+```
+
+---
+
+## Props/Cards
+
+Vem de propriedades, é usado para transmitir dados de um componentes para outro, interligando-os.
+>A estilização pode ser usado tanto styled-components quanto Sass.
+
+Usamos props para criar tags padrões que serão reutilizadas mas cada vez que ela for chamada irá receber parâmetros diferentes. 
+
+Passo a passo:
+- Criar um arquivo componente, geralmente chamado de `Card`
+- Dentro desse arquivo é declarado a função padrão e dentro dela é declarado os parâmetros.
+- Retornamos uma tag que recebe esses parâmetros para serem customizados todas as vezes que iremos reutilizar esses props.
+
+```jsx
+export default function Card({artista, musica, foto, dia}) {
+  return (
+    <Section>
+      <h2>{artista} - {musica}</h2>
+      <img 
+        src={foto}
+        alt={`Foto do artista ${artista}`} 
+      />
+      <p>{dia}</p>
+    </Section>
+  );
+};
+
 ```
 
