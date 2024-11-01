@@ -8,6 +8,8 @@ Primeiro é criado uma função que cria o estado inicial do elemento e depois �
 
 É um hook do React que guarda uma informação mutável, podendo ser atualizada a depender da interação do usuário.
 
+A variável é criada usando dois parâmetros dentro de colchetes separados por vírgula onde o segundo, por convenção recebe o mesmo nome do primeiro acrescentado da palavra `set`antes do nome. O primeiro parâmetro é referente a variável em si e o segundo parâmetro é na realidade uma função que é chamada para alterar o valor daquela variável. Depois é declarado um sinal de equivalência seguido da função `useState()`, dentro desse parênteses pode ser declarado o valor padrão(default) para a variável.
+
 ```jsx
 import {useState} from "react";
 
