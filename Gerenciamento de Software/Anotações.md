@@ -214,8 +214,25 @@ Agora que já sabemos o que são testes estruturais e funcionais (caixa branca e
 1. Entenda o escopo do projeto. 
 2. Inclua os envolvidos na atividade de planejamento. 
 3. Reconheça que o planejamento é iterativo. 
-4. Faça estimativas baseadas no que conhece. 5. Considere os riscos ao definir o plano. 6. Seja realista. 7. Ajuste particularidades ao definir o plano. 8. Defina como pretende garantir a qualidade. 9. Descreva como acomodar as alterações. 10. Verifique o plano com frequência e faça os ajustes necessários  
-**Princípios da modelagem:** 1. Saiba que o objetivo principal da equipe de software é construir software, não criar modelos. 2. Seja objetivo; não crie mais modelos do que precisa. 3. Esforce-se ao máximo para produzir o modelo mais simples possível. 4. Construa modelos que facilitem alterações. 5. Estabeleça um propósito claro para cada modelo. 6. Adapte os modelos que desenvolveu ao sistema à disposição. 7. Crie modelos úteis, mas esqueça a construção de modelos perfeitos. 8. Não se torne dogmático quanto à sintaxe do modelo. Se ela consegue transmitir o conteúdo, a representação é secundária. 9. Se os instintos dizem que um modelo não está correto, mesmo parecendo correto no papel, provavelmente há motivos para se preocupar. 10. Obtenha feedback o quanto antes.  
+4. Faça estimativas baseadas no que conhece. 
+5. Considere os riscos ao definir o plano. 
+6. Seja realista. 
+7. Ajuste particularidades ao definir o plano. 
+8. Defina como pretende garantir a qualidade. 
+9. Descreva como acomodar as alterações. 
+10. Verifique o plano com frequência e faça os ajustes necessários  
+**Princípios da modelagem:** 
+1. Saiba que o objetivo principal da equipe de software é construir software, não criar modelos. 
+2. Seja objetivo; não crie mais modelos do que precisa. 
+3. Esforce-se ao máximo para produzir o modelo mais simples possível. 
+4. Construa modelos que facilitem alterações. 
+5. Estabeleça um propósito claro para cada modelo. 
+6. Adapte os modelos que desenvolveu ao sistema à disposição. 
+7. Crie modelos úteis, mas esqueça a construção de modelos perfeitos. 
+8. Não se torne dogmático quanto à sintaxe do modelo. 
+9. Se ela consegue transmitir o conteúdo, a representação é secundária. 
+10. Se os instintos dizem que um modelo não está correto, mesmo parecendo correto no papel, provavelmente há motivos para se preocupar. 
+11. Obtenha feedback o quanto antes.  
 **Princípios da construção:** 
 1. Todos os testes devem estar alinhados com os requisitos do cliente. 
 2. Os testes devem ser planejados muito antes de serem iniciados. 
@@ -226,7 +243,6 @@ Agora que já sabemos o que são testes estruturais e funcionais (caixa branca e
 7. Técnicas de testes estáticos podem gerar resultados importantes. 
 8. Rastreie defeitos e procure padrões em falhas descobertas pelos testes. 
 9. Inclua casos de teste que demonstrem que o software está se comportando corretamente.  
-
 **Princípios da disponibilização:** 
 1. As expectativas do cliente para o software devem ser gerenciadas. 
 2. Um pacote de entrega completo deve ser montado e testado. 
