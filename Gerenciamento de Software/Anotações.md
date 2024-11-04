@@ -179,3 +179,58 @@ Agora que já sabemos o que são testes estruturais e funcionais (caixa branca e
 
 ---
 
+## Princípios norteadores da prática de uma boa gerência
+
+**Princípios que orientam o processo:** 
+1. Seja ágil em todas as abordagens, tanto no modelo prescritivo como no ágil. 
+2. Mantenha o foco na qualidade do produto em cada etapa do desenvolvimento. 
+3. Esteja aberto para adaptações conforme as restrições do projeto. 
+4. Priorize a formação de uma equipe eficiente e auto organizada. 
+5. Estabeleça mecanismos claros para comunicação e coordenação. 
+6. Implemente práticas para o gerenciamento de mudanças. 
+7. Tenha planos de contingência para avaliar e mitigar riscos. 
+8. Produza artefatos que agreguem valor a outros processos ou tarefas. Esses princípios servem como um quadro de referência aplicável a qualquer metodologia de desenvolvimento de software.  
+**Princípios que orientam a prática:** 
+1. Divida e conquiste. 
+2. Compreenda o uso da abstração. 
+3. Esforce-se pela consistência. 
+4. Concentre-se na transferência de informações. 
+5. Construa software que apresente modularidade efetiva. 
+6. Verifique os padrões. 
+7. Quando possível, represente o problema e sua solução sob perspectivas diferentes. 
+8. Lembre-se de que alguém fará a manutenção do software. Esses princípios são essenciais independentemente das técnicas ou ferramentas usadas, pois não só guiam o desenvolvimento, mas também facilitam a manutenção futura do software.  
+**Princípios da comunicação:** 
+1. Ouça. 
+2. Prepare-se antes de se comunicar. 
+3. Saiba que alguém deve facilitar a atividade. 
+4. Saiba que comunicar-se pessoalmente é melhor. 
+5. Anote e documente as decisões. 
+6. Esforce-se para conseguir colaboração. 
+7. Mantenha o foco e crie módulos para a discussão. 
+8. Faltando clareza, desenhe. 
+9. (a) Uma vez de acordo, siga em frente; (b) se não chegar a um acordo, siga em frente; (c) se uma característica ou função não estiver clara e não puder ser elucidada no momento, siga em frente. 
+10. Negociação não é uma competição nem um jogo. Funciona melhor quando as duas partes saem ganhando.  
+**Princípios do planejamento:** 
+1. Entenda o escopo do projeto. 
+2. Inclua os envolvidos na atividade de planejamento. 
+3. Reconheça que o planejamento é iterativo. 
+4. Faça estimativas baseadas no que conhece. 5. Considere os riscos ao definir o plano. 6. Seja realista. 7. Ajuste particularidades ao definir o plano. 8. Defina como pretende garantir a qualidade. 9. Descreva como acomodar as alterações. 10. Verifique o plano com frequência e faça os ajustes necessários  
+**Princípios da modelagem:** 1. Saiba que o objetivo principal da equipe de software é construir software, não criar modelos. 2. Seja objetivo; não crie mais modelos do que precisa. 3. Esforce-se ao máximo para produzir o modelo mais simples possível. 4. Construa modelos que facilitem alterações. 5. Estabeleça um propósito claro para cada modelo. 6. Adapte os modelos que desenvolveu ao sistema à disposição. 7. Crie modelos úteis, mas esqueça a construção de modelos perfeitos. 8. Não se torne dogmático quanto à sintaxe do modelo. Se ela consegue transmitir o conteúdo, a representação é secundária. 9. Se os instintos dizem que um modelo não está correto, mesmo parecendo correto no papel, provavelmente há motivos para se preocupar. 10. Obtenha feedback o quanto antes.  
+**Princípios da construção:** 
+1. Todos os testes devem estar alinhados com os requisitos do cliente. 
+2. Os testes devem ser planejados muito antes de serem iniciados. 
+3. O princípio de Pareto se aplica a testes de software. 
+4. Os testes devem começar “no particular” e progredir para o teste “no geral”. 
+5. Testes exaustivos são impossíveis. 
+6. Aplique a cada módulo do sistema um teste equivalente à sua densidade de defeitos esperada. 
+7. Técnicas de testes estáticos podem gerar resultados importantes. 
+8. Rastreie defeitos e procure padrões em falhas descobertas pelos testes. 
+9. Inclua casos de teste que demonstrem que o software está se comportando corretamente.  
+
+**Princípios da disponibilização:** 
+1. As expectativas do cliente para o software devem ser gerenciadas. 
+2. Um pacote de entrega completo deve ser montado e testado. 
+3. É preciso estabelecer uma estrutura de suporte antes da entrega do software. 
+4. Material instrucional adequado deve ser fornecido aos usuários.
+5. Software com _bugs_ deve ser primeiramente corrigido e, depois, entregue.
+
