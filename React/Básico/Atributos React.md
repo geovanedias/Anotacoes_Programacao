@@ -160,3 +160,21 @@ export default function Card({artista, musica, foto, dia}) {
 
 ```
 
+---
+
+## Efeitos com useEffect
+
+```jsx
+import {useEffect} from "react";
+```
+
+`useEffect` é um hook do react que permite usar efeitos colaterais(ação/reação). Essa mudança ocorre a cada mudança de estado assim que é montado. 
+
+```jsx
+... App() {
+	useEffect(() => {
+		console.log(`Mensagem`);
+	},[variavel, dependencia]);
+};
+```
+
