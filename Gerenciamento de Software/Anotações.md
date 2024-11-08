@@ -271,27 +271,64 @@ O diagrama de Gantt também pode incluir elementos adicionais para enriquecer a 
 
 ![[Pasted image 20241107200441.png#center|650]]
 
+---
 ## Diagrama de Fluxo de Dados
 
-O termo diagrama de fluxo de dados (DFD) é uma representação gráfica usada na engenharia de software para modelar o fluxo de informações em um sistema. Este diagrama é uma representação gráfica que descreve o fluxo de informações dentro de um sistema ou entre sistemas, e enfoca entrada de dados, processamento de dados, armazenamento de dados e saída de dados em um sistema. Os DFDs são compostos por símbolos gráficos que representam processos, fluxo de dados, armazenamento de dados e entidades externas, bem como setas que indicam o fluxo de dados entre esses elementos.  
+O termo diagrama de fluxo de dados (**DFD**) é uma representação gráfica usada na engenharia de software para modelar o fluxo de informações em um sistema. Este diagrama é uma representação gráfica que descreve o *fluxo de informações* dentro de um sistema ou entre sistemas, e enfoca entrada de dados, processamento de dados, armazenamento de dados e saída de dados em um sistema. Os DFDs são compostos por símbolos gráficos que representam processos, fluxo de dados, armazenamento de dados e entidades externas, bem como setas que indicam o fluxo de dados entre esses elementos.  
 
 Os principais componentes de um DFD incluem:  
+
 - **Entidades externas:** representam fontes de dados ou destinos de dados externos ao sistema em questão. Essas entidades podem ser pessoas, outros sistemas, sensores etc.  
+  
 - **Processos:** são as funções ou atividades que transformam os dados de entrada em dados de saída. Os processos são representados por círculos ou elipses nos DFDs.  
+  
 - **Fluxo de dados:** são as setas que indicam a direção do fluxo de informações entre os componentes do sistema. Eles representam como os dados são transmitidos de uma parte do sistema para outra.  
+  
 - **Armazenamento de dados:** representam locais em que os dados são armazenados no sistema. Isso pode incluir bancos de dados, arquivos ou qualquer outra forma de armazenamento de dados.  
 
 Os DFDs são usados principalmente para entender e documentar o funcionamento de um sistema, identificar as interações entre os componentes e facilitar a comunicação entre desenvolvedores, analistas e outras partes interessadas no projeto de software. Eles são frequentemente usados como uma *etapa inicial na modelagem de sistemas* e podem ser refinados em níveis mais detalhados à medida que o projeto avança.
-
 Pressman e Maxim (2021) falam que os DFDs podem ser divididos em níveis para representar a complexidade do sistema de maneira hierárquica. Os principais *níveis de DFDs* são:
+
 - **DFD de contexto (nível 0):** este é o nível mais alto e descreve o sistema em sua totalidade, mostrando suas interações com entidades externas. Geralmente, é composto por um único processo que representa o sistema como um todo.  
+  
 - **DFD de nível 1, nível 2 etc.:** cada nível subsequente aprofunda a descrição do sistema em um nível crescente de detalhes. Os processos do nível superior são decompostos em processos mais detalhados, e os fluxos de dados são refinados à medida que o modelo se aprofunda.  
 
 Segundo Pressman e Maxim (2021), podem ser mencionadas algumas importâncias relacionadas ao *uso de DFDs*, que são:  
+
 - **Compreensão do sistema:** DFDs são ferramentas poderosas para entender como um sistema funciona. Eles ajudam a identificar os componentes do sistema, suas interações e como os dados fluem através deles.  
-**Comunicação eficaz:** os DFDs são úteis para comunicar ideias complexas de engenharia de software de forma clara e concisa para as partes interessadas, incluindo clientes, gerentes e membros da equipe de desenvolvimento.  
-**Análise de requisitos:** DFDs auxiliam na captura e na análise de requisitos do sistema, permitindo que os desenvolvedores entendam os fluxos de informações necessários para atender às necessidades do cliente.  
-**Design e implementação:** os DFDs podem servir como base para o projeto de sistemas, pois ajudam a identificar os principais componentes e fluxos de dados, orientando o desenvolvimento de software.  
-**Detecção de problemas:** ao modelar o sistema de forma gráfica, os DFDs podem ajudar a identificar possíveis problemas, gargalos ou inconsistências no design antes que o desenvolvimento comece.  
-**Documentação:** os DFDs fornecem uma documentação visual do sistema, que pode ser usada para referência futura, manutenção e treinamento de pessoal.  
+ 
+- **Comunicação eficaz:** os DFDs são úteis para comunicar ideias complexas de engenharia de software de forma clara e concisa para as partes interessadas, incluindo clientes, gerentes e membros da equipe de desenvolvimento.  
+ 
+- **Análise de requisitos:** DFDs auxiliam na captura e na análise de requisitos do sistema, permitindo que os desenvolvedores entendam os fluxos de informações necessários para atender às necessidades do cliente.
+
+- **Design e implementação:** os DFDs podem servir como base para o projeto de sistemas, pois ajudam a identificar os principais componentes e fluxos de dados, orientando o desenvolvimento de software.
+
+- **Detecção de problemas:** ao modelar o sistema de forma gráfica, os DFDs podem ajudar a identificar possíveis problemas, gargalos ou inconsistências no design antes que o desenvolvimento comece.  
+
+- **Documentação:** os DFDs fornecem uma documentação visual do sistema, que pode ser usada para referência futura, manutenção e treinamento de pessoal.  
+
 Em resumo, os diagramas de fluxo de dados são uma ferramenta valiosa na engenharia de software para modelar sistemas, comunicar ideias, analisar requisitos, projetar sistemas e garantir que o desenvolvimento de software seja direcionado de forma eficaz e eficiente para atender às necessidades dos usuários e das organizações. Eles desempenham um papel fundamental em várias fases do ciclo de vida do desenvolvimento de software, desde a concepção até a manutenção.
+
+![[Pasted image 20241108125650.png#center|700]]
+
+---
+## Diagrama de Atividades
+
+Um diagrama de atividades é um tipo de diagrama de UML (_Unified Modeling Language_ – linguagem de modelagem unificada) usado para modelar o comportamento de um sistema, processo ou fluxo de trabalho. Ele é amplamente utilizado na engenharia de software, na engenharia de sistemas e em várias outras disciplinas para visualizar e descrever a sequência de atividades, ações e decisões que ocorrem em um sistema ou processo. 
+
+Podemos mencionar alguns elementos-chave de um diagrama de atividades:
+
+- **Atividades:** são as tarefas ou ações que ocorrem no sistema ou processo. Cada atividade é representada por um retângulo com cantos arredondados.  
+
+- **Fluxo de controle:** linhas sólidas (setas) conectam as atividades, indicando a ordem em que as atividades são executadas. Isso representa o fluxo de controle do sistema.
+  
+- **Decisões:** diamantes são usados para representar pontos de decisão. Dependendo da condição, o fluxo pode seguir caminhos diferentes a partir de um ponto de decisão.
+
+- **Fusão de controle:** representada por um losango com linhas de entrada e uma linha de saída, a fusão de controle é usada para unir diferentes caminhos de fluxo de controle em um único caminho.
+
+- **Bifurcação de controle:** também representada por um losango com uma linha de entrada e várias linhas de saída, a bifurcação de controle é usada para dividir o fluxo de controle em vários caminhos.  
+  
+- **Nós iniciais e finais:** um círculo sólido é usado para representar o nó inicial, indicando onde o fluxo de controle começa. Um círculo com um anel sólido é usado para representar o nó final, indicando onde o fluxo de controle termina.  
+
+- **Partições:** são usadas para dividir o diagrama de atividades em diferentes áreas ou grupos funcionais, permitindo uma representação mais organizada de atividades em um sistema complexo.
+
