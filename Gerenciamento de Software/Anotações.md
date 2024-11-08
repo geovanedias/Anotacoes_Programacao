@@ -332,3 +332,5 @@ Podemos mencionar alguns elementos-chave de um diagrama de atividades:
 
 - **Partições:** são usadas para dividir o diagrama de atividades em diferentes áreas ou grupos funcionais, permitindo uma representação mais organizada de atividades em um sistema complexo.
 
+![[Pasted image 20241108133153.png#center|700]]
+
