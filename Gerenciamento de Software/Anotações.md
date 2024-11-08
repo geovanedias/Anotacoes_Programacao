@@ -250,3 +250,48 @@ Agora que já sabemos o que são testes estruturais e funcionais (caixa branca e
 4. Material instrucional adequado deve ser fornecido aos usuários.
 5. Software com _bugs_ deve ser primeiramente corrigido e, depois, entregue.
 
+---
+## Diagrama de Gantt
+
+É uma ferramenta gráfica que representa o cronograma de um projeto de forma visual. Ele exibe as atividades do projeto ao longo do tempo, permitindo que os gerentes de projeto e as equipes vejam as dependências entre as tarefas e compreendam a ordem em que devem ser executadas. É composto por duas dimensões principais que são:
+
+- **Eixo horizontal:** representa a linha do tempo do projeto, geralmente em dias, semanas ou meses, dependendo da escala de tempo escolhida.  
+- **Eixo vertical:** enumera as tarefas ou atividades do projeto.
+
+Cada tarefa é representada por uma barra horizontal no gráfico. A posição dessa barra ao longo do eixo horizontal indica quando a tarefa deve começar e quando deve ser concluída. A duração da tarefa é representada pelo comprimento da barra.
+
+O diagrama de Gantt também pode incluir elementos adicionais para enriquecer a representação do projeto:
+
+- **Marcos:** são pontos cruciais do projeto que representam eventos ou entregas importantes. Os marcos são representados como pontos no gráfico e ajudam a destacar os momentos-chave no cronograma do projeto.  
+- **Linhas de dependência:** são linhas que conectam as tarefas no gráfico para mostrar as relações de dependência entre elas. Isso ajuda a identificar quais tarefas precisam ser concluídas antes que outras possam começar, tornando a gestão de recursos e a programação mais eficientes.  
+- **Recursos:** além das tarefas e marcos, o diagrama de Gantt pode incluir informações a respeito dos recursos (como pessoas, equipamentos ou materiais) alocados a cada tarefa. Isso ajuda a garantir que os recursos certos estejam disponíveis quando necessário.  
+- **Legenda:** geralmente, é fornecida uma legenda que explica a codificação de cores, símbolos ou estilos usados no gráfico para representar diferentes tipos de tarefas, prioridades ou responsáveis.  
+- **Datas de início e término realizadas:** à medida que o projeto avança, as datas de início e término reais podem ser adicionadas ao diagrama de Gantt para comparar o progresso real com o planejado.  
+- **Escalas de tempo múltiplas:** em projetos complexos, é comum ter escalas de tempo diferentes em um único diagrama de Gantt. Isso permite uma visualização mais detalhada das tarefas de curto prazo e uma visão geral das tarefas de longo prazo.
+
+![[Pasted image 20241107200441.png#center|650]]
+
+## Diagrama de Fluxo de Dados
+
+O termo diagrama de fluxo de dados (DFD) é uma representação gráfica usada na engenharia de software para modelar o fluxo de informações em um sistema. Este diagrama é uma representação gráfica que descreve o fluxo de informações dentro de um sistema ou entre sistemas, e enfoca entrada de dados, processamento de dados, armazenamento de dados e saída de dados em um sistema. Os DFDs são compostos por símbolos gráficos que representam processos, fluxo de dados, armazenamento de dados e entidades externas, bem como setas que indicam o fluxo de dados entre esses elementos.  
+
+Os principais componentes de um DFD incluem:  
+- **Entidades externas:** representam fontes de dados ou destinos de dados externos ao sistema em questão. Essas entidades podem ser pessoas, outros sistemas, sensores etc.  
+- **Processos:** são as funções ou atividades que transformam os dados de entrada em dados de saída. Os processos são representados por círculos ou elipses nos DFDs.  
+- **Fluxo de dados:** são as setas que indicam a direção do fluxo de informações entre os componentes do sistema. Eles representam como os dados são transmitidos de uma parte do sistema para outra.  
+- **Armazenamento de dados:** representam locais em que os dados são armazenados no sistema. Isso pode incluir bancos de dados, arquivos ou qualquer outra forma de armazenamento de dados.  
+
+Os DFDs são usados principalmente para entender e documentar o funcionamento de um sistema, identificar as interações entre os componentes e facilitar a comunicação entre desenvolvedores, analistas e outras partes interessadas no projeto de software. Eles são frequentemente usados como uma *etapa inicial na modelagem de sistemas* e podem ser refinados em níveis mais detalhados à medida que o projeto avança.
+
+Pressman e Maxim (2021) falam que os DFDs podem ser divididos em níveis para representar a complexidade do sistema de maneira hierárquica. Os principais *níveis de DFDs* são:
+- **DFD de contexto (nível 0):** este é o nível mais alto e descreve o sistema em sua totalidade, mostrando suas interações com entidades externas. Geralmente, é composto por um único processo que representa o sistema como um todo.  
+- **DFD de nível 1, nível 2 etc.:** cada nível subsequente aprofunda a descrição do sistema em um nível crescente de detalhes. Os processos do nível superior são decompostos em processos mais detalhados, e os fluxos de dados são refinados à medida que o modelo se aprofunda.  
+
+Segundo Pressman e Maxim (2021), podem ser mencionadas algumas importâncias relacionadas ao *uso de DFDs*, que são:  
+- **Compreensão do sistema:** DFDs são ferramentas poderosas para entender como um sistema funciona. Eles ajudam a identificar os componentes do sistema, suas interações e como os dados fluem através deles.  
+**Comunicação eficaz:** os DFDs são úteis para comunicar ideias complexas de engenharia de software de forma clara e concisa para as partes interessadas, incluindo clientes, gerentes e membros da equipe de desenvolvimento.  
+**Análise de requisitos:** DFDs auxiliam na captura e na análise de requisitos do sistema, permitindo que os desenvolvedores entendam os fluxos de informações necessários para atender às necessidades do cliente.  
+**Design e implementação:** os DFDs podem servir como base para o projeto de sistemas, pois ajudam a identificar os principais componentes e fluxos de dados, orientando o desenvolvimento de software.  
+**Detecção de problemas:** ao modelar o sistema de forma gráfica, os DFDs podem ajudar a identificar possíveis problemas, gargalos ou inconsistências no design antes que o desenvolvimento comece.  
+**Documentação:** os DFDs fornecem uma documentação visual do sistema, que pode ser usada para referência futura, manutenção e treinamento de pessoal.  
+Em resumo, os diagramas de fluxo de dados são uma ferramenta valiosa na engenharia de software para modelar sistemas, comunicar ideias, analisar requisitos, projetar sistemas e garantir que o desenvolvimento de software seja direcionado de forma eficaz e eficiente para atender às necessidades dos usuários e das organizações. Eles desempenham um papel fundamental em várias fases do ciclo de vida do desenvolvimento de software, desde a concepção até a manutenção.
