@@ -119,14 +119,73 @@ Além dos padrões de projeto, existem outros conceitos importantes associados a
 **Espiral _vs_ Cascata:** a metodologia espiral é uma abordagem repetida que combina um elemento cascata com feedback contínuo. Ele inclui um ciclo de desenvolvimento no qual as equipes projetam, implementam e testam repetidamente. Ao contrário da cascata, que progride linearmente, o método espiral permite um ajuste fino e melhoria com base no feedback do cliente ao longo do caminho (ALVES, 2019).
 
 ---
+
+# Riscos de Projetos
+
+Uma boa análise de risco ajuda você a priorizar os mais importantes e desenvolver estratégias apropriadas de mitigação de riscos. Avaliar os riscos do seu projeto web é muito importante para determinar as contramedidas apropriadas.
+
+## Gerenciamento de Riscos
+
+- Identificar
+- Analisar
+- Avaliar
+- Mitigar
+- Monitorar continuamente
+
+### Ferramentas:
+
+**Matriz de risco:** a matriz de risco é uma ferramenta visual que resume a probabilidade e o impacto dos riscos em uma grade, permitindo que você avalie rapidamente a gravidade de um risco. Isso lhe ajuda a priorizar riscos e tomar decisões informadas.  
+**Software de gerenciamento de riscos:** existem várias soluções de software especificamente projetadas para gerenciamento de riscos. Essas ferramentas fornecem recursos como identificação de riscos, análise, avaliação, planejamento de mitigação de riscos e monitoramento contínuo. Elas facilitam a colaboração da equipe, fornecem relatórios detalhados e ajudam a automatizar tarefas relacionadas ao gerenciamento de riscos.  
+**Análise de cenários:** a análise de cenários é a criação de cenários hipotéticos que representam diferentes combinações de riscos e eventos futuros. Usando esta técnica, a equipe do projeto pode estimar como diferentes riscos interagem e qual impacto pode ocorrer. Isso pode ajudar a identificar mitigações adicionais ou adaptar estratégias existentes.
+
+---
+
+# UML
+
+**Classes:** as classes são os blocos básicos de construção da UML. Eles representam entidades ou conceitos do sistema que está sendo modelado e estão ligados a atributos (características) e operações (ações). Uma classe é representada graficamente por um retângulo dividido em três seções: nome da classe, atributos e operações (APPLEN, 2013).  
+
+**Objeto:** um objeto é uma instância de uma classe particular. Ele representa unidades concretas do sistema em um determinado ponto no tempo. Os objetos são representados graficamente como retângulos com o nome do objeto (APPLEN, 2013).  
+
+**Relacionamentos:** relacionamentos são conexões entre classes ou objetos em UML. Eles descrevem como as entidades se conectam e interagem. Os relacionamentos mais comuns em UML incluem associação, generalização, composição, agregação e dependência (APPLEN, 2013).  
+
+**Diagramas:** diagramas são representações gráficas de vários aspectos de um sistema modelado. A UML oferece uma variedade de diagramas, cada um com uma finalidade específica. Alguns dos diagramas mais comumente usados ​​são diagramas de casos de uso, diagramas de classes, diagramas de sequência, diagramas de atividades, diagramas de componentes, etc. (APPLEN, 2013).  
+
+**Atributos:** os atributos são características ou propriedades de uma classe que descrevem o estado da classe. Eles representam as informações contidas na classe. Os atributos podem ser do tipo de dados como texto, número, data, etc. e podem ter uma multiplicidade que indica a quantidade de valores atribuídos ao atributo (APPLEN, 2013).  
+
+**Operações:** operações são ações que podem ser executadas por uma classe. Eles representam o comportamento ou os serviços fornecidos pela classe. As operações podem ter parâmetros de entrada e valores de retorno (APPLEN, 2013).  
+
+**Pacotes:** os pacotes são usados ​​para organizar e agrupar itens relacionados em uma estrutura hierárquica. Eles ajudam a organizar e modularizar o sistema modelado, facilitando sua compreensão e manutenção.
+
+## Diagramas UML:
+
+**Diagrama de caso de uso:** este diagrama é utilizado para identificar os requisitos funcionais do sistema e mostrar as interações entre os atores (usuários) e os casos de uso (funcionalidade) do sistema. Isso o ajudará a entender os objetivos do sistema e a definir os requisitos. Técnicas como identificar os atores envolvidos, criar narrativas de casos de uso e analisar fluxos alternativos podem ser aplicadas à sua criação. Ferramentas comuns para criar diagramas de caso de uso incluem Enterprise Architect, Lucidchart e Visual Paradigm (DEENIS, 2014).  
+
+**Diagrama de classes:** este diagrama é usado para modelar a estrutura estática do sistema e representar as classes, seus atributos, métodos e os relacionamentos entre eles. Isso ajuda a visualizar as entidades do sistema e os relacionamentos entre elas. Técnicas como identificação de classes, definição de atributos e métodos e aplicação de relacionamentos como associações, agregações e generalizações são comumente usadas (DEENIS, 2014).  
+
+**Diagrama de sequência:** este diagrama representa as interações entre os objetos ao longo do tempo e mostra a sequência de mensagens trocadas entre os objetos. É útil entender o fluxo de operações em um cenário específico. Técnicas como identificação dos objetos envolvidos, definição das mensagens trocadas e ordenação cronológica dessas mensagens podem ser aplicadas (DEENIS, 2014).  
+
+**Diagrama de atividades:** este diagrama é usado para modelar o fluxo de atividades em um processo ou procedimento. Isso ajuda você a entender o comportamento dinâmico do seu sistema. Técnicas como identificação de atividades, definição de fluxos de trabalho e especificação de critérios de decisão podem ser aplicadas (DEENIS, 2014).  
+
+**Diagrama de componentes:** este diagrama representa a estrutura dos componentes físicos do sistema, bibliotecas, módulos e pacotes. Isso ajuda a entender as dependências entre os componentes e sua configuração física. Técnicas como identificação de componentes, especificação de suas interfaces e definição de dependências entre componentes podem ser aplicadas (DEENIS, 2014).  
+
+**Diagrama de implantação:** este diagrama mostra a distribuição física dos componentes do sistema em vários nós de hardware, como servidores e dispositivos. Isso ajudará você a entender a infraestrutura necessária para executar seu sistema. Técnicas como identificação de nós de implantação, especificação de componentes e definição de conexões entre componentes podem ser aplicadas (DEENIS, 2014).
+
+#### Associação:
+Representar relacionamentos
+#### Enumeração
+Representar conjuntos fixos
+#### Tipos primitivos
+Definir atributos de classe
+
+---
 ### Glossário:
 
-**IHC** - Interação Homem-Computador
+**IHC** - Interação Homem-Computador.
 
 ***Brainstorming*** - técnica amplamente utilizada no processo de levantamento de requisitos. Consiste em discussões em grupo nas quais os membros da equipe tentam apresentar o máximo de ideias e soluções possíveis para um determinado problema. No contexto de uma especificação de requisitos para um projeto web, o _brainstorming_ pode ser usado para identificar e considerar os vários recursos e propriedades necessários para o sistema (ALVES, 2019). 
 >O _brainstorming_ pode gerar ideias e soluções criativas, enquanto a análise de requisitos garante a qualidade e consistência das especificações.
 
-**Editores de texto:** os editores de texto são ferramentas básicas amplamente utilizadas na documentação de projetos. Eles permitem criar e formatar documentos de texto, adicionar imagens, tabelas e outros elementos visuais. Exemplos populares são Microsoft Word, Google Docs e LibreOffice Writer. Essas ferramentas são ideais para criar documentos detalhados, como especificações de requisitos, manuais do usuário e relatórios.  
+**Editores de texto:** os editores de texto são ferramentas básicas amplamente utilizadas na documentação de projetos. Eles permitem criar e formatar documentos de texto, adicionar imagens, tabelas e outros elementos visuais. Exemplos populares são Microsoft Word, Google Docs e LibreOffice Writer. Essas ferramentas são ideais para criar documentos detalhados, como especificações de requisitos, manuais do usuário e relatórios.
 
 **Diagramas:** ferramentas de diagramação como Microsoft Visio, Lucidchart e Draw.io são amplamente usadas para criar diagramas visuais que ajudam a ilustrar arquitetura, fluxo de informações, relacionamentos de componentes e outros aspectos do design. Essas ferramentas fornecem uma variedade de formas e símbolos predefinidos que facilitam a criação de diagramas claros e compreensíveis.  
 
@@ -149,4 +208,6 @@ Além dos padrões de projeto, existem outros conceitos importantes associados a
 **Lean:** a metodologia Lean se concentra na eliminação de desperdícios e na maximização do valor entregue. Focada na melhoria contínua e para otimizar os processos. O Lean incentiva a colaboração e a identificação de atividades sem valor agregado para melhorar a eficiência e a qualidade do produto final.
 
 **DevOps:** é uma abordagem que combina desenvolvimento de software (Dev) e operações (Ops). O objetivo é reunir equipes de desenvolvimento e operações para acelerar a entrega de software e melhorar a colaboração. O DevOps enfatiza a automação de processos, monitoramento contínuo e melhoria contínua.
+
+**Notação BPMN**: é uma ferramenta poderosa para mapeamento de processos porque permite criar diagramas intuitivos e fáceis de entender. Por meio de ícones, símbolos e fluxos, você pode representar as atividades, eventos, decisões, fluxos de informações e responsabilidades envolvidos em seu processo. Essa notação facilita a comunicação entre as equipes e fornece uma visão clara e objetiva do processo (APPLEN, 2013).
 
