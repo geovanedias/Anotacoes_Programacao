@@ -134,10 +134,20 @@ Para garantir que essas arquiteturas funcionem corretamente, uma variedade de te
 - **Testes de Concorrência:** envolve a simulação de um grande número de usuários acessando o sistema ao mesmo tempo. O objetivo é identificar problemas de concorrência, como condições de corrida, ou seja, conflitos no acesso de recursos compartilhados do sistema entre um ou mais usuários. 
 
 ---
-### Compreendendo caixa branca e caixa preta
+## Caixa branca e caixa preta
 
-Agora que já sabemos o que são testes estruturais e funcionais (caixa branca e caixa preta, respectivamente), compreenderemos como funcionam as técnicas utilizadas em cada abordagem.  
-#### Em testes caixa branca, temos as seguintes técnicas: 
+### Métricas
+
+As métricas são as medidas que devem ser feitas no sistema. Quase sempre são numéricas (contadores), que registram valores quantitativos e realizam cálculos para gerarem estatísticas, mas, em alguns casos, são métricas de _string_. Para monitorar um sistema, é criado e adicionado um código que expõe o estado interno dele.  
+As métricas de monitoramento variam de acordo com a necessidade particular de cada organização. No geral, mede-se:  
+
+•  **Latência**: tempo de execução, espera e resposta de atendimento de uma solicitação.  
+•  **Tráfego**: medida da carga de trabalho, da demanda que se exige do sistema. Qual é a média de solicitações, tempo e demanda da CPU.  
+•  **Erros**: mensura as taxas de solicitações com falhas, sejam parciais ou completas.  
+•  **Saturação**: controle dos recursos que precisam ser mais restritos (controle de memória ou restrição de E/S, por exemplo), medição de carga de trabalho em níveis mais altos (o sistema suporta um tráfego maior?) ou, ainda, identificar a capacidade de armazenamento de um disco.   
+•  **Disponibilidade de servidores:** quantificar quantos servidores estão ativos ou inativos em uma rede.  
+•  **Métricas de segurança**: definição dos computadores que estão com softwares antivírus instalados, _patches_ de segurança ativos, checar as intrusões, autenticações e autorizações, entre outras.
+### Em testes caixa branca, temos as seguintes técnicas: 
 
 **Teste de Instrução e Cobertura de Instrução:**
 
