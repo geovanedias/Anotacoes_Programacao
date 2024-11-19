@@ -4,5 +4,6 @@
   "showViewHeader": true,
   "enabledCssSnippets": [
     "center-images"
-  ]
+  ],
+  "monospaceFontFamily": "Hurmit Nerd Font"
 }
