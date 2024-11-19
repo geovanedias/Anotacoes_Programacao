@@ -77,6 +77,7 @@ Essas formas de estimativas podem utilizar algumas técnicas, que são:
 
 >Métricas de software são medidas quantitativas utilizadas para avaliar características do desenvolvimento de software, permitindo análises objetivas e tomadas de decisão informadas (Pressman; Maxim, 2014).
 
+---
 ## Tipos de métricas
 
 - **Métricas diretas:** chamadas também de fundamentais ou básicas, são medidas quantitativas obtidas por meio da avaliação de atributos observáveis, tipicamente determinada por processos de quantificação (exemplos: custo de projeto, tempo de desenvolvimento e quantidade de defeitos encontrados).
@@ -87,6 +88,17 @@ Essas formas de estimativas podem utilizar algumas técnicas, que são:
 - **Métricas de qualidade:** são um conjunto de indicadores utilizados para avaliar a conformidade do software com os requisitos e padrões estabelecidos pelo cliente (exemplos: taxa de defeitos e tempo médio de correção de defeitos).
 - **Métricas técnicas:** indicadores utilizados para avaliar as características intrínsecas do software, concentrando-se nos aspectos técnicos e estruturais do código e das soluções implementadas (exemplos: complexidade ciclomática, índice de manutenibilidade).
 
+### Métricas
+
+As métricas são as medidas que devem ser feitas no sistema. Quase sempre são numéricas (contadores), que registram valores quantitativos e realizam cálculos para gerarem estatísticas, mas, em alguns casos, são métricas de _string_. Para monitorar um sistema, é criado e adicionado um código que expõe o estado interno dele.  
+As métricas de monitoramento variam de acordo com a necessidade particular de cada organização. No geral, mede-se:  
+
+- **Latência**: tempo de execução, espera e resposta de atendimento de uma solicitação.  
+- **Tráfego**: medida da carga de trabalho, da demanda que se exige do sistema. Qual é a média de solicitações, tempo e demanda da CPU.  
+- **Erros**: mensura as taxas de solicitações com falhas, sejam parciais ou completas.  
+- **Saturação**: controle dos recursos que precisam ser mais restritos (controle de memória ou restrição de E/S, por exemplo), medição de carga de trabalho em níveis mais altos (o sistema suporta um tráfego maior?) ou, ainda, identificar a capacidade de armazenamento de um disco.   
+- **Disponibilidade de servidores:** quantificar quantos servidores estão ativos ou inativos em uma rede.  
+- **Métricas de segurança**: definição dos computadores que estão com softwares antivírus instalados, _patches_ de segurança ativos, checar as intrusões, autenticações e autorizações, entre outras.
 ## Níveis de Teste de Software
 
 Níveis de teste, os quais são grupos de atividades de teste que são organizadas e gerenciadas em conjunto. Cada nível de teste é uma instância do processo de teste, realizado em relação ao software em um determinado estágio de desenvolvimento, desde componentes individuais até sistemas completos (CTFL Syllabus, 2023).  
@@ -136,17 +148,7 @@ Para garantir que essas arquiteturas funcionem corretamente, uma variedade de te
 ---
 ## Caixa branca e caixa preta
 
-### Métricas
 
-As métricas são as medidas que devem ser feitas no sistema. Quase sempre são numéricas (contadores), que registram valores quantitativos e realizam cálculos para gerarem estatísticas, mas, em alguns casos, são métricas de _string_. Para monitorar um sistema, é criado e adicionado um código que expõe o estado interno dele.  
-As métricas de monitoramento variam de acordo com a necessidade particular de cada organização. No geral, mede-se:  
-
-•  **Latência**: tempo de execução, espera e resposta de atendimento de uma solicitação.  
-•  **Tráfego**: medida da carga de trabalho, da demanda que se exige do sistema. Qual é a média de solicitações, tempo e demanda da CPU.  
-•  **Erros**: mensura as taxas de solicitações com falhas, sejam parciais ou completas.  
-•  **Saturação**: controle dos recursos que precisam ser mais restritos (controle de memória ou restrição de E/S, por exemplo), medição de carga de trabalho em níveis mais altos (o sistema suporta um tráfego maior?) ou, ainda, identificar a capacidade de armazenamento de um disco.   
-•  **Disponibilidade de servidores:** quantificar quantos servidores estão ativos ou inativos em uma rede.  
-•  **Métricas de segurança**: definição dos computadores que estão com softwares antivírus instalados, _patches_ de segurança ativos, checar as intrusões, autenticações e autorizações, entre outras.
 ### Em testes caixa branca, temos as seguintes técnicas: 
 
 **Teste de Instrução e Cobertura de Instrução:**
