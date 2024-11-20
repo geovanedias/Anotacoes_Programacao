@@ -48,7 +48,7 @@ O **grau de incerteza** e os **riscos** estão nas fases iniciais de um proj
 
 **Requisitos não funcionais**: esses requisitos abordam as características não relacionadas às funcionalidades diretas do sistema, mas que são igualmente importantes. Eles tratam de aspectos como desempenho, segurança, usabilidade, confiabilidade e escalabilidade. Por exemplo, requisitos não funcionais podem incluir "tempo de resposta do sistema inferior a 2 segundos", "acesso seguro aos dados do usuário" e "interface intuitiva e de fácil aprendizado".
 
-## Tipos de requisitos para projeto
+### Tipos de requisitos para projeto
 
 **Requisitos de negócio**: esses requisitos estão relacionados aos objetivos e às estratégias de negócio da organização. Eles refletem as necessidades do cliente e a visão geral do sistema dentro do contexto organizacional.  
 
@@ -56,7 +56,7 @@ O **grau de incerteza** e os **riscos** estão nas fases iniciais de um proj
 
 **Requisitos de sistema**: esses requisitos definem as características e restrições do sistema como um todo. Eles incluem requisitos de hardware, software, rede, segurança e outros aspectos relacionados à infraestrutura do sistema.
 
-## A importância da análise de requisitos para o projeto
+### A importância da análise de requisitos para o projeto
 
 - Evitar retrabalho
 - Sincronizar expectativas
