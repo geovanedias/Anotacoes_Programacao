@@ -42,3 +42,5 @@ E não esgotamos aqui as ferramentas de monitoramento, podemos citar Data Dog, N
 
 As métricas e ferramentas de monitoração diferirão de acordo com a necessidade de cada empresa (cliente), mas, com a dinâmica e a importância dos computadores nos negócios de qualquer empresa, é imprescindível que se utilize da monitoração, seja para controle de infraestrutura, de aplicações ou até de negócios. Com o monitoramento, os mecanismos de notificações e os alertas, é possível perceber tudo o que está acontecendo na rede. Assim, é plausível projetar sistemas que fiquem disponíveis 24 horas, tomar decisões quando houver necessidade de aumento de escala, fazer backups seguros, monitorar unidades remotas e ambientes de virtualização, garantir a segurança dos seus ativos, usar dashboards para visualizar dados de forma mais eficiente e se adequar de forma flexível às mudanças, sempre presentes, nos processos tecnológicos.  
 
+## Pipeline de mudanças
+
