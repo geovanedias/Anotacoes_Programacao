@@ -59,7 +59,12 @@ No caso do termo C/D, ele assume duas abordagens:
 >Cuidado, pois existe muita confusão com os termos _Continuos Delivery_ (Entrega Contínua) e _Continuos Deployment_ (Implantação Contínua). Se você configurou sua pipeline para usar o código integrado nos estágios anteriores, testou e criou uma versão pronta para a produção, mas não aplica em produção de maneira automatizada, ou necessita de alguma aprovação para fazê-lo, você não tem _Continuos Deployment_ configurado na sua pipeline.
 
 ## SCM Git
+
+Ver pasta Git
+
 ### Hospedagem centralizada de código-fonte
 
 - **GitHub**: é um repositório e, ao mesmo tempo, uma rede social, o qual permite que qualquer pessoa possa enviar seu código para ele usando o Git, e ficará disponível para toda a comunidade. O GitHub foi concebido seguindo os princípios do Open Source, ou código aberto, que, basicamente, enfatiza a colaboração da comunidade e a liberdade de compartilhar o código com todos. Porém, muitas vezes, você não pode compartilhar o código da sua aplicação assim e precisa de um repositório privado, para isso, o GitHub tem um serviço pago, que permite que você crie seus códigos e controle o acesso a eles.
-- **BitBucket**: 
+- **BitBucket**: permite que você crie até cinco repositórios privados por projeto na conta gratuita.
+- **GitLab**: Com sua versão “Community”, permite que você instale localmente um servidor de SCM e de CI, sendo uma grande opção para quem deseja ter uma ferramenta de CI completa e repositórios privados.
+

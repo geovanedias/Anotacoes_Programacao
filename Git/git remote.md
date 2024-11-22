@@ -1,8 +1,8 @@
 Para adicionar um remoto é usado o comando:
 
-```git
+```shell
 git init
 
-git remote add origin <urlDoRepositorio>
+git remote add origin <urlDoRepositorio.git>
 ```
 
