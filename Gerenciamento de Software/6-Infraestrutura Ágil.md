@@ -42,5 +42,24 @@ E não esgotamos aqui as ferramentas de monitoramento, podemos citar Data Dog, N
 
 As métricas e ferramentas de monitoração diferirão de acordo com a necessidade de cada empresa (cliente), mas, com a dinâmica e a importância dos computadores nos negócios de qualquer empresa, é imprescindível que se utilize da monitoração, seja para controle de infraestrutura, de aplicações ou até de negócios. Com o monitoramento, os mecanismos de notificações e os alertas, é possível perceber tudo o que está acontecendo na rede. Assim, é plausível projetar sistemas que fiquem disponíveis 24 horas, tomar decisões quando houver necessidade de aumento de escala, fazer backups seguros, monitorar unidades remotas e ambientes de virtualização, garantir a segurança dos seus ativos, usar dashboards para visualizar dados de forma mais eficiente e se adequar de forma flexível às mudanças, sempre presentes, nos processos tecnológicos.  
 
-## Pipeline de mudanças
+## Integração Contínua (CI)
 
+>A integração contínua é uma prática de desenvolvimento de software em que os membros de uma equipe integram seu trabalho com frequência, geralmente cada pessoa se integra pelo menos diariamente - levando a várias integrações por dia. Cada integração é verificada por um build automatizado (incluindo teste) para detectar erros de integração o mais rápido possível.
+>(FOWLER, 2006, [s. p.])
+
+Para que exista integração contínua, não é obrigatório o uso de ferramentas, porém essas integrações entre os vários desenvolvedores podem gerar conflitos no código e, para evitar isso, utilizam-se amplamente as ***ferramentas de controle de versões*** (**SCM**), como CVS, SVN e Git – o mais utilizado hoje em dia.  
+Para resumir em uma frase simples, a integração contínua é a etapa em que várias pessoas diferentes geram códigos, os quais, depois, são mesclados em um código único, gerando, assim. a possibilidade de um trabalho descentralizado e focado entre vários colaboradores.
+
+## Entrega Contínua e Implantação Contínua (C/D)
+
+No caso do termo C/D, ele assume duas abordagens: 
+- _Continuos Delivery_, ou entrega contínua, seria quando o código está integrado o suficiente, maduro e testado, e é liberada uma versão (_release_) segura para implantação do software para a produção, mas necessita de uma aprovação para que isso ocorra;
+-  *Continuos Deployment*, ou implantação contínua, seria a automação de todo o processo de entrega desse software em produção, sem interação ou aprovação.
+
+>Cuidado, pois existe muita confusão com os termos _Continuos Delivery_ (Entrega Contínua) e _Continuos Deployment_ (Implantação Contínua). Se você configurou sua pipeline para usar o código integrado nos estágios anteriores, testou e criou uma versão pronta para a produção, mas não aplica em produção de maneira automatizada, ou necessita de alguma aprovação para fazê-lo, você não tem _Continuos Deployment_ configurado na sua pipeline.
+
+## SCM Git
+### Hospedagem centralizada de código-fonte
+
+- **GitHub**: é um repositório e, ao mesmo tempo, uma rede social, o qual permite que qualquer pessoa possa enviar seu código para ele usando o Git, e ficará disponível para toda a comunidade. O GitHub foi concebido seguindo os princípios do Open Source, ou código aberto, que, basicamente, enfatiza a colaboração da comunidade e a liberdade de compartilhar o código com todos. Porém, muitas vezes, você não pode compartilhar o código da sua aplicação assim e precisa de um repositório privado, para isso, o GitHub tem um serviço pago, que permite que você crie seus códigos e controle o acesso a eles.
+- **BitBucket**: 
