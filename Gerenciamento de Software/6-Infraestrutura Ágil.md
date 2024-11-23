@@ -70,4 +70,98 @@ Ver pasta Git
 
 # Hospedar uma API usando docker
 
-==Pesquisar no GPT e montar uma lista do passo a passo==
+>Um container Linux é um conjunto de processos isolados do SO que executam um ou mais serviços exclusivos em diversos ambientes diferentes (GARCIA; PEREIRA, 2019).
+
+### Passo a passo para hospedar uma API usando Docker
+
+1. **Instalar o Docker**
+    - Baixe e instale o Docker em sua máquina.
+    - Certifique-se de que o Docker está funcionando corretamente executando `docker --version` no terminal.
+    
+1. **Criar ou obter o código da API**
+    - Certifique-se de que sua API esteja funcionando localmente.
+    - Exemplo: um servidor Node.js com Express.
+      
+3. **Criar um arquivo `Dockerfile` no diretório do projeto**  
+    Este arquivo define como a API será empacotada em um contêiner. Exemplo para Node.js:
+    
+    ```dockerfile
+    # Use uma imagem base do Node.js
+    FROM node:16
+    
+    # Defina o diretório de trabalho dentro do contêiner
+    WORKDIR /app
+    
+    # Copie os arquivos necessários
+    COPY package*.json ./
+    RUN npm install
+    
+    # Copie o restante do código
+    COPY . .
+    
+    # Exponha a porta usada pela API
+    EXPOSE 3000
+    
+    # Comando para iniciar a API
+    CMD ["npm", "start"]
+    ```
+    
+4. **Criar o arquivo `.dockerignore` (opcional)**  
+    Exclua arquivos desnecessários no contêiner para torná-lo mais leve. Exemplo:
+    
+    ```
+    node_modules
+    .env
+    .git
+    ```
+    
+5. **Construir a imagem Docker**  
+    No terminal, execute:
+    
+    ```bash
+    docker build -t minha-api .
+    ```
+    
+    - `-t minha-api`: Nome da imagem.
+    - O ponto (`.`) indica o diretório atual.
+6. **Executar o contêiner Docker**  
+    Inicie o contêiner com a API:
+    
+    ```bash
+    docker run -d -p 3000:3000 minha-api
+    ```
+    
+    - `-d`: Executa em modo "detached" (segundo plano).
+    - `-p 3000:3000`: Mapeia a porta local (3000) para a porta do contêiner.
+      
+7. **Testar a API hospedada**
+    - Acesse a API pelo navegador ou com ferramentas como Postman em:
+        
+        ```
+        http://localhost:3000
+        ```
+        
+8. **Publicar a imagem (opcional)**
+    - Caso queira disponibilizar sua API, publique no **Docker Hub**:
+        
+        ```bash
+        docker login
+        docker tag minha-api meu-usuario/minha-api
+        docker push meu-usuario/minha-api
+        ```
+        
+    - Assim, qualquer pessoa pode rodar sua API com `docker pull`.
+      
+9. **Opcional: Usar `docker-compose` para ambientes complexos**  
+    Crie um arquivo `docker-compose.yml` para gerenciar dependências (banco de dados, por exemplo).
+    
+10. **Hospedar em um servidor remoto (opcional)**
+    - Use plataformas como AWS, DigitalOcean ou Heroku.
+    - Configure o Docker no servidor remoto e execute os comandos acima para hospedar a API online.
+
+## Ambiente de homologação
+
+A homologação é uma forma de se garantir que a versão que será enviada para a produção é exatamente o que foi desenvolvido e que nada está falhando. Além de validar se todas as funcionalidades desenvolvidas funcionam corretamente (SALVADOR, 2015).
+
+Nesse passo, podemos criar um item a mais na nossa pipeline, que enviará aquela versão ao ambiente de homologação e executará sua aplicação para rodar uma bateria de testes, validando se o que foi desenvolvido não “quebrou” a aplicação e é exatamente o que se pretendia fazer.  
+Claro que, como estamos falando de construção de infraestrutura como código, precisamos codificá-la e criar uma infraestrutura semelhante à de produção, para simularmos que a nossa aplicação está funcionando corretamente.
