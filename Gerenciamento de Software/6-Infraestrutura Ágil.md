@@ -68,3 +68,6 @@ Ver pasta Git
 - **BitBucket**: permite que você crie até cinco repositórios privados por projeto na conta gratuita.
 - **GitLab**: Com sua versão “Community”, permite que você instale localmente um servidor de SCM e de CI, sendo uma grande opção para quem deseja ter uma ferramenta de CI completa e repositórios privados.
 
+# Hospedar uma API usando docker
+
+==Pesquisar no GPT e montar uma lista do passo a passo==
