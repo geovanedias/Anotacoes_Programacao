@@ -70,9 +70,13 @@ Ver pasta Git
 
 # Hospedar uma API usando docker
 
+## Containers 
+
+O contêiner é, de maneira simplificada, uma forma de isolarmos o hardware no qual rodaremos nossa aplicação, tornando o software e seu ambiente o mais abstraído possível. Para isso, o contêiner usa de isolamento de recursos do sistema operacional (SO) e do hardware (GARCIA; PEREIRA, 2019), fazendo com que o hardware em si seja apenas um transportador de uma aplicação, não influindo nela.
+
 >Um container Linux é um conjunto de processos isolados do SO que executam um ou mais serviços exclusivos em diversos ambientes diferentes (GARCIA; PEREIRA, 2019).
 
-### Passo a passo para hospedar uma API usando Docker
+## Passo a passo para hospedar uma API usando Docker
 
 1. **Instalar o Docker**
     - Baixe e instale o Docker em sua máquina.

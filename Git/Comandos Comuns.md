@@ -34,3 +34,8 @@ Para baixar mudanças do GitHub para o local
 Usado para fazer as configurações no git.
 	ver [[git config]]
 
+### Documentação oficial:
+
+- [Documentação](https://git-scm.com/docs)
+- [Livro Oficial](https://git-scm.com/book/pt-br/)
+
