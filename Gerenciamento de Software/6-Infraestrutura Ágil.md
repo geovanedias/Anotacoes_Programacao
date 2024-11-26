@@ -174,10 +174,24 @@ Logo, criamos uma integração com o repositório centralizado da nossa aplicaç
 Poderíamos incluir um ambiente de testes automatizados, scanners de vulnerabilidade e o _deployment_ da aplicação em produção, formando, assim, o CD (_Continuos Deployment_), e teríamos um ambiente de CI/CD completo, porém o que fizemos mostra como podemos integrar o código da nossa infraestrutura ágil, usando o Terraform com o código da aplicação em si, cumprindo um ambiente de DevOps mínimo.  
 Como mencionado, não existe uma fórmula para a criação das ferramentas utilizadas, isso deve ser decidido em reunião das partes envolvidas, levando os conceitos de integração e colaboração pregados pelo DevOps como premissas, pois ninguém melhor para dizer qual tecnologia usar do que todos os envolvidos, desde a área de desenvolvimento até a de operações, resolvendo o que é melhor para o uso dentro dos requisitos exigidos.
 
-## Passos na implantação do DevOps:
+### Passos na implantação do DevOps:
 
 - **Criação dos ambientes**: não podemos esperar semanas ou meses para termos ambientes criados tanto para testes quanto para a produção, precisamos agilizar esse processo o máximo possível.  
 - **Instalação do código**: da mesma forma que o item anterior, para termos agilidade na instalação da aplicação ( _deployment_ ), não podemos depender de centenas de ações manuais e correções de configuração para só então termos a aplicação utilizável e testável em produção. Precisamos tornar a instalação o menos dependente possível do software e com menos manipulações de configuração do ambiente de testes para o de produção. Dessa forma, temos que ter um entregável ( _package_ ) da aplicação, já pronta em homologação, para ser utilizável em produção.
 - **Testes na aplicação**: claro que nenhum dos itens citados funcionará como o esperado se, antes de aplicarmos em produção, não testarmos para garantir que o código que está sendo instalado em produção é confiável e não permitirá que problemas graves sejam entregues ao cliente final, gerando prejuízos financeiros e de imagem à empresa. Para que isso também não seja um impedimento das entregas, todo o processo deve ser automatizado.  
 - **Arquitetura da aplicação**: não podemos esquecer que construir aplicações que possibilitem atualizações frequentes não podem ser construídos como serviços únicos, não permitindo que sejam feitas adequações em sua arquitetura, por serem grandes monolitos, em que qualquer leve alteração pode causar uma falha sistêmica. Por isso, a adoção de microsserviços no DevOps é praticamente unânime atualmente.
+
+## Técnicas para implantação em produção
+
+**_Roll Deployments_**: essas implantações são as mais simples de se usar, pois, basicamente, apenas se preocupam com o _downtime_ da aplicação. Nelas, a nova versão da aplicação é implantada, mas a antiga ainda convive no ambiente e vai sendo “rolada” para fora do ambiente à medida que as cópias da nova versão são implementadas com sucesso. Importante dizer que isso é feito de maneira automática. 
+
+Os sistemas e as ferramentas, quando configurados para isso, conseguem avaliar se a versão nova é estável e trocará automaticamente a versão antiga pela nova, até que todas as cópias da aplicação sejam da nova versão. Isso faz com que os usuários não percebam a mudança, pois, mesmo que eles acessem a aplicação durante a rolagem, ainda receberão a resposta de uma aplicação, seja da cópia antiga ou da nova.
+
+**_Blue-green Deployments_**: esse tipo de implantação já se preocupa em avaliar a resposta da aplicação durante um tempo para verificar se a nova versão se mantém estável e pode substituir por completo a antiga. Para isso, implanta-se a versão nova, e ela convive com a antiga o tempo todo. Diferente da técnica de “roll”, ela não retira as versões antigas, mantém as duas e usa um balanceador de carga (_Load Balancer_), que direcionará alguns usuários para o deploy antigo “azul” e outros para o “verde”, até que a equipe avalie se mantém a nova ou a antiga.
+
+**_Canary Deployments_**: a implantação canário é a mais avançada de todas, pois ela é uma melhoria da _Blue-green_, permitindo um controle de quantos usuários utilizarão a versão nova e quantos utilizarão a antiga. Por exemplo, 30% receberão a cópia nova da aplicação, e 70%, a cópia da antiga. Ao avaliar se a resposta é positiva para uma parcela dos usuários, pode-se estender a versão nova para o restante. Ainda dentro dessa abordagem, em um controle maior, pode-se liberar uma versão da aplicação baseada no próprio usuário, como liberar 25% para mulheres entre 20 e 30 anos, por exemplo. Isso permite um controle da implantação a nível de experiência do usuário. Também, por ser a mais avançada, tem um nível de complexidade de configuração das ferramentas mais alto.
+
+# _Rollback_ e _Rollforward_
+
+_Rollback_ é um nome em inglês que significa retorno ao estado anterior da aplicação, e _rollforward_ seria aplicar uma correção, mas não retomar à versão anterior, apenas criar a correção da falha e aplicar outra versão já com a correção.
 
