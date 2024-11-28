@@ -231,3 +231,17 @@ Por isso, surgiram ferramentas chamadas de _Application Performance Monitoring_
 
 Fechando todo o ciclo de monitoração, temos o sistema de alertas, que serve, basicamente, para informar quando um item do monitoramento estiver com problemas e fora dos parâmetros considerados normais. Devemos configurar os limites previamente para que o sistema saiba quando é considerado um problema ou não.
 
+>==Importante==: métricas são os itens usados para criar as regras de alerta, como a quantidade de uso de CPU de um servidor, mas o limite (*threshold*) é o analista que configura caso a caso. Portanto, podemos ter diferentes métricas em casos de alertas diferentes.
+
+### Observabilidade vs Monitoramento
+
+Diante desse cenário de microsserviços, surge um debate sobre o monitoramento já não ser mais suficiente para atingir o objetivo de prever falhas. Surge, então, o termo “observabilidade”, que propõe usar os monitoramentos para identificar e depurar, dentro dos microsserviços, as possíveis falhas e problemas.
+O sistema de monitoramento deve responder a duas perguntas:   
+1.  O que está quebrado?   
+2.  Por quê?
+
+Ao combinar itens, como inspeção de sistemas com depuração de aplicação, infraestrutura, exceções e travamentos e inspeção de tráfegos, temos uma visão holística do todo.A observabilidade em si não significa um monitoramento melhorado, mas uma combinação de elementos monitorados que, juntos, podem trazer uma visão mais completa do todo, um complementa o outro. Ela é uma capacidade de entender os estados internos dos sistemas, ou seja, você usa as saídas do monitoramento e consegue extrair deles as informações que ajudam a melhorar os sistemas como um todo e, para isso, você precisa conhecer muito bem o que deveria ser a resposta aceitável e o que não está bem e pode ser melhorado.   
+Podemos dizer que a observabilidade é como unificar as visões, tanto das aplicações e do negócio quanto da infraestrutura e das operações (Figura 2.39), como na ideia de unificação do time de Dev e Operações pregada pelo DevOps.
+
+### Malha de serviços
+
