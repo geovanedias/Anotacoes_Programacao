@@ -245,3 +245,9 @@ Podemos dizer que a observabilidade é como unificar as visões, tanto das aplic
 
 ### Malha de serviços
 
+Ele ajuda muito a monitorar e encontrar defeitos não tão aparentes como em outros sistemas de monitoramento. Para sermos completos com o termo, o _Service Mesh_ em si não é apenas para monitoramento, ele é usado como uma forma de **controle granular** dos microsserviços, como fazer _deployment_ canário e _blue/green_.
+
+---
+
+# Implantação de Containers
+
