@@ -205,3 +205,29 @@ E aliado a todo esse sistema devemos pensar em criar alertas, que nos avisarão
 
 ## Métricas
 
+O surgimento do DevOps está intrinsicamente ligado ao advento da computação em nuvem (_cloud computing_), porém não é exclusivo dela. Uma empresa pode muito bem possuir sua infraestrutura interna, conhecida como _on-premises_, e ainda utilizar a cultura DevOps. Atualmente, muitas empresas adotaram o modelo híbrido, em que parte da infra está no _on-premises_ e parte está no _cloud computing_.  
+Todas essas abordagens têm suas diferenças, vejamos algumas. Quando monitoramos infra _on-premises_, nos preocupamos muito com a parte física de cada equipamento e servidor. Portanto, devemos nos preocupar com itens, como:
+
+- **Uso de CPU e memória**: não devemos deixar que os aplicativos esgotem todo o recurso computacional dos servidores antes de tomarmos uma ação.   
+- **Espaço disponível em disco**: temos que saber preventivamente se um disco está ficando cheio, pois isso pode causar a parada de todo o ambiente.  
+- **Disponibilidade de componentes de rede**: _switches_ e _firewalls_ podem falhar e, se isso acontecer, temos que ter uma forma de contornar o problema rapidamente. Porém, isso só será possível se tivermos um monitoramento nesses equipamentos para saber quando eles vierem a falhar.
+
+Um outro conceito que alterou também a maneira como o monitoramento é feito é a arquitetura de microsserviço. Antigamente, os sistemas eram construídos de maneira única, provendo todos em um único serviço no final. Agora, o conceito mais utilizado é o de separar a aplicação em pequenos serviços, como na Figura 2.33, cada um com uma função, e eles se falarão internamente para prover a resposta ao usuário
+
+![[Pasted image 20241128112709.png#center|600]]
+
+### Monitorando *logs*
+
+Todo e qualquer sistema gera informações sobre seu funcionamento, que são utilizadas pelos times de operações como uma poderosa ferramenta. São os chamados _logs_, os quais fornecem pistas sobre um possível problema com algum sistema inoperante. Para isso, os sistemas de logs, geralmente, fornecem uma saída padrão, em arquivo de texto, com tudo que o sistema fez ao iniciar, seja de sucesso ou erro. Esse arquivo é consultado como uma forma de encontrar pistas sobre os problemas.
+
+Um bom sistema de monitoramento inclui gerenciar esses logs em um local único para centralizar a análise, fazer correlações de problemas com outros sistemas e possibilitar encontrar falhas relacionadas.
+
+### Monitorando aplicações
+
+as aplicações, hoje, rodam, basicamente, com arquitetura de microsserviços, que faz com o que a monitoração tradicional seja alterada para uma que consiga analisar traços e relacionamentos internos que uma aplicação faz.  
+Por isso, surgiram ferramentas chamadas de _Application Performance Monitoring_ (**APM**), ou Monitoramento de Performance de Aplicação. Elas fornecem uma gama de visualizações e interações entre as aplicações internas, capazes de monitorar quanto tempo uma determinada ação dentro de sistema está levando, quais classes e itens são chamados internamente, etc. As ferramentas de APM são o que há de mais avançado dentro do conceito de monitoramento.
+
+### Alertas  
+
+Fechando todo o ciclo de monitoração, temos o sistema de alertas, que serve, basicamente, para informar quando um item do monitoramento estiver com problemas e fora dos parâmetros considerados normais. Devemos configurar os limites previamente para que o sistema saiba quando é considerado um problema ou não.
+
