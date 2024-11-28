@@ -81,11 +81,11 @@ O contêiner é, de maneira simplificada, uma forma de isolarmos o hardware no q
 1. **Instalar o Docker**
     - Baixe e instale o Docker em sua máquina.
     - Certifique-se de que o Docker está funcionando corretamente executando `docker --version` no terminal.
-    
-1. **Criar ou obter o código da API**
+
+2. **Criar ou obter o código da API**
     - Certifique-se de que sua API esteja funcionando localmente.
     - Exemplo: um servidor Node.js com Express.
-      
+
 3. **Criar um arquivo `Dockerfile` no diretório do projeto**  
     Este arquivo define como a API será empacotada em um contêiner. Exemplo para Node.js:
     
@@ -109,7 +109,7 @@ O contêiner é, de maneira simplificada, uma forma de isolarmos o hardware no q
     # Comando para iniciar a API
     CMD ["npm", "start"]
     ```
-    
+
 4. **Criar o arquivo `.dockerignore` (opcional)**  
     Exclua arquivos desnecessários no contêiner para torná-lo mais leve. Exemplo:
     
@@ -128,6 +128,7 @@ O contêiner é, de maneira simplificada, uma forma de isolarmos o hardware no q
     
     - `-t minha-api`: Nome da imagem.
     - O ponto (`.`) indica o diretório atual.
+
 6. **Executar o contêiner Docker**  
     Inicie o contêiner com a API:
     
@@ -137,17 +138,16 @@ O contêiner é, de maneira simplificada, uma forma de isolarmos o hardware no q
     
     - `-d`: Executa em modo "detached" (segundo plano).
     - `-p 3000:3000`: Mapeia a porta local (3000) para a porta do contêiner.
-      
+  
 7. **Testar a API hospedada**
     - Acesse a API pelo navegador ou com ferramentas como Postman em:
         
         ```
         http://localhost:3000
         ```
-        
+
 8. **Publicar a imagem (opcional)**
     - Caso queira disponibilizar sua API, publique no **Docker Hub**:
-        
         ```bash
         docker login
         docker tag minha-api meu-usuario/minha-api
@@ -155,10 +155,10 @@ O contêiner é, de maneira simplificada, uma forma de isolarmos o hardware no q
         ```
         
     - Assim, qualquer pessoa pode rodar sua API com `docker pull`.
-      
+  
 9. **Opcional: Usar `docker-compose` para ambientes complexos**  
     Crie um arquivo `docker-compose.yml` para gerenciar dependências (banco de dados, por exemplo).
-    
+
 10. **Hospedar em um servidor remoto (opcional)**
     - Use plataformas como AWS, DigitalOcean ou Heroku.
     - Configure o Docker no servidor remoto e execute os comandos acima para hospedar a API online.
@@ -194,4 +194,8 @@ Os sistemas e as ferramentas, quando configurados para isso, conseguem avaliar s
 # _Rollback_ e _Rollforward_
 
 _Rollback_ é um nome em inglês que significa retorno ao estado anterior da aplicação, e _rollforward_ seria aplicar uma correção, mas não retomar à versão anterior, apenas criar a correção da falha e aplicar outra versão já com a correção.
+
+---
+
+# Monitoramento de Serviços
 
