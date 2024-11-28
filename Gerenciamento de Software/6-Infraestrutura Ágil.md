@@ -199,3 +199,9 @@ _Rollback_ é um nome em inglês que significa retorno ao estado anterior da ap
 
 # Monitoramento de Serviços
 
+Existem diversos tipos de monitoramento, para diversos tipos de abordagens e ambientes, por isso, precisamos verificar quais são ideais para cada tipo de infraestrutura e arquitetura de sistemas utilizada.  
+Importante, também, escolher o que monitorar, já que existem diversos itens que podem ser utilizados como métricas. Devemos saber quais utilizar, tendo em mente como fazer uma separação inteligente, que traga assertividade ao monitoramento.  
+E aliado a todo esse sistema devemos pensar em criar alertas, que nos avisarão em caso de falhas, e definir as políticas deles, para que possamos atingir os objetivos de sermos avisados somente se um item crítico ao funcionamento das aplicações estiver com problema e evitar o envio excessivo de alertas, com coisas banais misturadas a informações críticas, causando um efeito indesejado de recebermos alertas demais e não conseguirmos diferenciar o que é crítico do que não é.
+
+## Métricas
+
