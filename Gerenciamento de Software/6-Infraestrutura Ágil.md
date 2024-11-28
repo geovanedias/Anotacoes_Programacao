@@ -254,3 +254,34 @@ Ele ajuda muito a monitorar e encontrar defeitos não tão aparentes como em ou
 Muitos confundem os containers com máquinas virtuais, no entanto, eles não funcionam tal qual a virtualização que conhecemos. Uma das diferenças é que o container compartilha o mesmo Kernel do Sistema Operacional. Em um sistema como o Linux, por exemplo, a modularidade característica de seu Kernel permite provisionamentos de sistemas mais enxutos e com economia de recursos.  
 
 Ou seja, “***containers têm recursos isolados de CPU, memória e rede enquanto compartilham o kernel do sistema operacional. Eles hospedam código-fonte, ferramentas de sistema e bibliotecas***. Diferem-se de formas específicas das máquinas virtuais (VMs), mas podemos pensar neles como iterações leves de VMs”
+
+Outra diferença é a forma como ele pode ser **provisionado**. Em uma máquina virtual você pode criar um ambiente que pode se valer de várias ferramentas (PHP, MSQL, Apache, dentre outros), tudo rodando no mesmo SO; já os containers *assumem apenas uma função*, isolando os processos de cada ferramenta. A vantagem é que facilita bastante a escalabilidade, consequentemente, a performance e flexibilidade dos processos.
+
+>Quando estamos utilizando máquinas virtuais, nós emulamos um novo sistema operacional e todo o seu hardware utilizando mais recursos da máquina host, o que não ocorre quando utilizamos containers, pois os recursos são compartilhados. O ganho óbvio disso é a capacidade de rodar mais containers em um único host, se comparado com a quantidade que se conseguiria com máquinas virtuais.    
+  (VITALINO; CASTRO, 2016, p. 13)
+
+### Container vs Docker
+
+São conceitos diferentes, o container é um ambiente isolado, o Docker é uma plataforma de implementação de containers que usa um esquema de camadas, montadas a partir das técnicas de Copy-On-Write, que é um procedimento que permite compartilhar dados entre camadas, mas só é possível alocar um novo recurso a partir do momento em que esteja modificado. Na prática, funciona assim: a cópia de um arquivo é mandada para uma camada superior, são visualizadas somente as informações modificadas dessa camada, no entanto, o arquivo original permanece em uma camada inferior e pode ser visualizado, caso se exclua a camada sobreposta.
+
+### Kubernetes (K8S)
+
+É um sistema open source de orquestração de containers que automatiza deploy, facilita o escalonamento e gerencia aplicações. Dentre as suas muitas características destaca-se a capacidade de trabalhar com atualizações diversas nas aplicações. Ele permite que se altere novos releases da aplicação com muito mais frequência e de forma automática. Com o Kubernetes é possível agendar a implantação de uma versão nova e, se ocorrer problema, reverter tudo de forma automática, sem comprometer a disponibilidade da aplicação.   
+No Kubernetes, vários containers rodam em uma única aplicação, balanceando de acordo com as requisições. Na prática, uma aplicação pode aumentar rapidamente e exponencialmente a sua capacidade.
+
+Com o Kubernetes é possível que se faça implantações e atualizações de forma rápida e a todo instante. Passar de um container para vários rapidamente, o que chamamos de *escalonamento dinâmico*. Também conta com uma busca de dispositivos e serviços de forma automática (*Service Discovery*), faz o *balanceamento de carga* e, se associado a uma malha de serviço no cluster, como o *Istio*, pode interromper a comunicação entre front-end e back-end se uma falha for detectada no back-end (*circuit breaker*), dentre outros serviços.
+
+Dentre os principais **benefícios** em usar o kubernetes destacam-se: a automatização de implantações e atualizações de aplicações; a facilidade para escalonar aplicativos em containers; a capacidade de operar containers em diferentes hosts; a otimização do uso do hardware, reduzindo custos e o suporte de carga para diversas aplicações.
+
+#### Docker Swarm  
+
+O orquestrador já vem instalado com o Docker e permite a construção de clusters de containers de forma nativa, usando balanceamento de carga (*loadbalancer*) e *failover*. Você cria clusters facilmente indicando os hosts que serão supervisionados; quando criar um novo container, por conta do balanceamento de carga, ele direcionará ao host que possuir a menor carga. “A estrutura se resume em um manager e diversos _workers_. O _manager_ orquestra os containeres e distribui em hosts workers, os workers hospedam o container” (VITALINO; CASTRO, 2016).  
+Docker Swarm é, portanto, outra forma de orquestrar seus containers através da criação de um cluster com alta disponibilidade, balanceamento de carga e comunicação criptografada, tudo isso nativo, sem esforço e dificuldade.
+
+#### Docker EE (Enterprise Edition)  
+
+Embora o Docker Swarm seja também um orquestrador, o Docker EE atenderá melhor a demanda do mundo corporativo com mais eficiência e velocidade. Isso acontece por conta da solução *Docker Universal Control Plane* (**UCP**), que auxilia no gerenciamento de inúmeros clusters e aplicativos por meio de uma interface simples. Dentre as tarefas do Docker EE estão: analisar as imagens nos repositórios para verificar se estão livres de vulnerabilidades, conectar os containers a volumes, administrar a maneira com os containers se comunicam entre si e externamente, controlar a autenticidade dos usuários, fazer registros das imagens, etc. (FREITAS, 2021).
+### OpenShift  
+
+É uma plataforma de gerenciamento e orquestração de containers que faz monitoramento, automação, gera relatórios e integração com outras ferramentas. Foi desenvolvida pela Red Hat, uma empresa especialista nesse mercado, que oferece também a versão Enterprise do produto, o *Red Hat OpenShift Container Platform*, que tem as mesmas funções, mas para grande escala e maior segurança. Dentre as suas características estão: desenvolvimento, hospedagem, escalonamento e entrega de aplicações ágeis na nuvem, redução de burocracia, criação de ambientes de testes, elevação do poder de processamento dos servidores da empresa, melhor aproveitamento dos recursos computacionais, redução de custos, flexibilidade aos sistemas, etc. (EVEO, 2017). 
+
