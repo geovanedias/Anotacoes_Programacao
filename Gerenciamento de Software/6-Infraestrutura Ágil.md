@@ -249,5 +249,8 @@ Ele ajuda muito a monitorar e encontrar defeitos não tão aparentes como em ou
 
 ---
 
-# Implantação de Containers
+# Containers
 
+Muitos confundem os containers com máquinas virtuais, no entanto, eles não funcionam tal qual a virtualização que conhecemos. Uma das diferenças é que o container compartilha o mesmo Kernel do Sistema Operacional. Em um sistema como o Linux, por exemplo, a modularidade característica de seu Kernel permite provisionamentos de sistemas mais enxutos e com economia de recursos.  
+
+Ou seja, “***containers têm recursos isolados de CPU, memória e rede enquanto compartilham o kernel do sistema operacional. Eles hospedam código-fonte, ferramentas de sistema e bibliotecas***. Diferem-se de formas específicas das máquinas virtuais (VMs), mas podemos pensar neles como iterações leves de VMs”
