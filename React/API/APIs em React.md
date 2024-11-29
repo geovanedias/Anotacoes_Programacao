@@ -15,7 +15,7 @@ npm install axios
 
 Método que realiza uma requisição HTTP/S para obter um dado de uma API.
 
-```jsx
+```jsx 
 const getDados = async () => {
 	const Dados = await axios.get("https://...");
 };

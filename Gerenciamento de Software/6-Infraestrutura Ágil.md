@@ -142,9 +142,9 @@ O contêiner é, de maneira simplificada, uma forma de isolarmos o hardware no q
 7. **Testar a API hospedada**
     - Acesse a API pelo navegador ou com ferramentas como Postman em:
         
-        ```
-        http://localhost:3000
-        ```
+    ```
+    http://localhost:3000
+    ```
 
 8. **Publicar a imagem (opcional)**
     - Caso queira disponibilizar sua API, publique no **Docker Hub**:
@@ -291,7 +291,7 @@ Containers Dockers permitem a padronização e facilitam a replicação de suas
 
 Passos para criar um arquivo Dockerfile para o Apache:
 
-```
+```dockerfile title:"Criando um Dockerfile"
 #mkdir /root/dockerfile
 
 #cd /root/docekerfile
@@ -339,3 +339,43 @@ Para executar o container utilizando a imagem, digite:
 ```
 #docker container run -ti teste/:1.0
 ```
+
+Caso você queira usar uma imagem armazenada no repositório Docker Hub, o comando é:
+
+```
+docker pull (nome da imagem)
+```
+
+Se fizermos um teste com uma imagem: “Hello World”, digitaríamos assim:
+
+```
+docker pull hello-world
+```
+
+Para abrir a imagem, o comando é:
+
+```
+docker run hello-world
+```
+
+---
+
+# Monitoramento de Containers
+
+A partir do momento em que aumenta a quantidade de containers implantados, aumenta também a dificuldade em os monitorar. Quando levamos essa problemática para as nuvens, nuvens híbridas, por exemplo, nas quais os containers aparecem tanto em nuvens públicas como privadas, o monitoramento fica ainda mais comprometido. Mas o fato é que o monitoramento de containers não deve ser menosprezado, é imprescindível que se crie formas de analisar, localizar erros e tomar decisões a partir de eventos gerados pelos containers.
+
+Plataformas como o Docker, por exemplo, que operam por meio de camadas, permitem com facilidade na movimentação e dimensionamento dos containers, o que é ótimo para os desenvolvedores, mas um problema para gerenciar o que está acontecendo.
+
+O monitoramento de containers, portanto, consiste em: 
+- Identificar em quais hosts os containers estão executando; 
+- Isolar containers que apresentam problemas para corrigi-los; 
+- Detalhar e controlar o consumo de memória do servidor; 
+- Quantificar o número total de containers e os que estão ativos; 
+- Investigar os detalhes de cada container a fim de analisar o seu desempenho; 
+- Acompanhar, distribuir ou restringir a quantidade usada de CPU; 
+- Apurar problemas de comunicação e troca de recursos, analisando o tráfego de rede; 
+- Rastrear métricas de desempenho; 
+- Identificar problemas no desempenho, implementar soluções e fazer análises periódicas de desempenho que possam ajudar a prever tendências.
+
+## Ambiente e Infraestrutura de Containers
+
