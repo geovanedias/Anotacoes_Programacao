@@ -286,3 +286,56 @@ Embora o Docker Swarm seja também um orquestrador, o Docker EE atenderá melhor
 É uma plataforma de gerenciamento e orquestração de containers que faz monitoramento, automação, gera relatórios e integração com outras ferramentas. Foi desenvolvida pela Red Hat, uma empresa especialista nesse mercado, que oferece também a versão Enterprise do produto, o *Red Hat OpenShift Container Platform*, que tem as mesmas funções, mas para grande escala e maior segurança. Dentre as suas características estão: desenvolvimento, hospedagem, escalonamento e entrega de aplicações ágeis na nuvem, redução de burocracia, criação de ambientes de testes, elevação do poder de processamento dos servidores da empresa, melhor aproveitamento dos recursos computacionais, redução de custos, flexibilidade aos sistemas, etc. (EVEO, 2017). 
 
 ### Replicação e padronização de containers Dockers
+
+Containers Dockers permitem a padronização e facilitam a replicação de suas imagens. Uma vez que essas imagens são construídas por meio de arquivos de definição, já se tem um determinado padrão. Assim, facilita o escalonamento da estrutura, utilizando replicações dessa imagem.
+
+Passos para criar um arquivo Dockerfile para o Apache:
+
+```
+#mkdir /root/dockerfile
+
+#cd /root/docekerfile
+#mkdir apache
+#cd apache
+
+#vim Dockerfile
+FROM debian
+RUN apt-get update && apt-get install -y apache2 && apt-get clean
+ENV APACHE_LOCK_DIR=“/var/lock”
+ENV APACHE_PID_FILE=“/var/run/apache2.pid”
+ENV APACHE_RUN_USER=“www-data”
+ENV APACHE_RUN_GROUP=“www-data”
+ENV APACHE_LOG_DIR=“/var/log/apache2”
+LABEL description=“Webserver”
+VOLUME /var/www/html/
+EXPOSE 80
+```
+#### Significado das linhas de comandos:
+
+**FROM**: Indica a imagem que serviu de base. Caso o propósito fosse servir uma aplicação Java, por exemplo, poderíamos criar uma imagem para que, quando fôssemos rodar o container, seria a própria aplicação JAVA. Nesse caso, o mínimo que precisaríamos ter era um sistema operacional com um JDK instalado. No FROM podemos pesquisar uma imagem que tenha as configurações que precisamos.
+
+**RUN**: é a lista dos comandos que devem ser executados na criação da imagem (a criação de uma camada nova no container).
+- `apt-get update`: fará com que ele pegue os pacotes mais recentes do repositório.  
+- `&& apt-get install -y`: o parâmetro -y fará com que, no momento da construção da imagem, tudo aconteça de forma automática, sem a necessidade de nenhuma confirmação sua. No caso, o “y” é o yes, já informando que a instalação pode ser feita sem precisar confirmar.  
+- `&& apt-get clean`: Ele vai limpar tudo o que foi utilizado para a instalação.
+
+**ENV**: É a definição das variáveis do ambiente. As variáveis que usamos são variáveis do Apache, usadas para que funcione perfeitamente dentro do container, ou seja, essas variáveis diferem em cada tipo de aplicação usada.  
+
+**LABEL**: Adiciona uma metadata à imagem, como descrição, versão, etc.  
+
+**VOLUME**: Define um volume a ser montado no container. No nosso exemplo, é o local dos arquivos do nosso site; no Debian, os arquivos ficam nesse diretório informado acima.   
+
+**EXPOSE**: é a porta onde o container se comunica; 80 é a porta do webservice.
+
+Depois de criado o arquivo, basta construir a imagem, certifique-se de que você está no mesmo diretório onde foi criada a imagem e digite o comando:  
+
+```script
+#docker build -t teste:1.0.
+```
+
+O parâmetro -t serve para definir o nome da versão do container que estamos criando. O nome pode ser qualquer um.  
+Para executar o container utilizando a imagem, digite:  
+
+```
+#docker container run -ti teste/:1.0
+```
