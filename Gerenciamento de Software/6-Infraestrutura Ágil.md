@@ -396,4 +396,7 @@ Uma solução poderia ser o Kubernetes, que monitora todos os containers no clus
 
 ---
 
-# Inf Ág em Cloud e E
+# Inf. Ág em Cloud e Escalonamento automático
+
+Cloud Computing não substitui o DevOps. Embora tenham características similares, o DevOps está mais ligado a pessoas e processos, e a Cloud aos recursos disponíveis para facilitar as práticas.
+
