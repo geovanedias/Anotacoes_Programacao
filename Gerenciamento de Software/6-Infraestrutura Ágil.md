@@ -379,3 +379,21 @@ O monitoramento de containers, portanto, consiste em:
 
 ## Ambiente e Infraestrutura de Containers
 
+A transformação digital pressionou as empresas a encararem mudanças em sua infraestrutura. Passou-se a tratar a **infraestrutura como código**, o que possibilitou a redução de gastos e velocidade na entrega dos produtos. *Um ambiente gerido de forma correta possibilita a testagem de softwares com mais facilidade e, assim, implantações estáveis e que podem ser reaproveitadas*.
+
+No hardware as infraestruturas modernas passaram a virtualizar as máquinas físicas, tendo reduções consideráveis com gastos na compra de equipamentos. Com a infraestrutura de nuvem pública, passou-se a terceirizar a manutenção e o provisionamento de servidores e redes, um ganho de tempo incomparável a o que se tinha antes, quando era necessário aguardar semanas para um novo servidor ser provisionado para continuar um projeto.
+
+No software, evidencia-se uma transição de construções monolíticas para o desmembramento em camadas, o que impulsionou arquiteturas orientadas por serviços (SOAs, *Service Oriented Architectures*), tipo de design que permite que seus componentes sejam reutilizáveis através de uma interface de compartilhamento em rede; as SOAs, por sua vez, evoluíram para serviços Web, arquiteturas orientadas por eventos e para os microsserviços, que dominam as estratégias de implementação para aplicações no mercado de desenvolvimento de software atualmente (MAZMANOV, 2020).
+
+## Métricas e verificações de integridade
+
+Os endpoints de métricas dos containers não são estáticos.  O uso de um serviço Kubernetes não forneceria endpoints eficientes, pois são necessárias estatísticas mais concentradas em containers separados, em vez de agrupados.
+
+Outro problema de monitoramento de containers são as verificações de integridade. Os endpoints de integridade implantados de maneira tradicional costumam ter endereços de rede **estáticos**, quando os containers são programados para execuções **dinâmicas** nos nós.
+Uma solução poderia ser o Kubernetes, que monitora todos os containers no cluster e responde as verificações de integridade implantadas, excluindo e reiniciando os pods.
+
+> Exemplificando: “A instrumentação da verificação de integridade proporciona diversos níveis de eficácia. Por exemplo, uma aplicação pode expor um controlador isolado que retorna um código de resposta HTTP 200 ao ser chamado. Essa verificação de integridade é útil em muitos casos, mas é capaz de detectar apenas determinados tipos de problemas. Se a conexão de uma aplicação com o banco de dados não for íntegra, uma verificação superficial no endpoint provavelmente não detectará esse problema” (GORDON, 2018, p. 3).
+
+---
+
+# Inf Ág em Cloud e E
