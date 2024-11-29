@@ -400,3 +400,37 @@ Uma solução poderia ser o Kubernetes, que monitora todos os containers no clus
 
 Cloud Computing não substitui o DevOps. Embora tenham características similares, o DevOps está mais ligado a pessoas e processos, e a Cloud aos recursos disponíveis para facilitar as práticas.
 
+Tem como principal característica evitar a dependência de um único recurso de hardware (que pode ficar obsoleto), facilitando a prospecção de recursos computacionais que podem ser acessados de forma online através da Internet.
+
+A Computação em Nuvens surge a partir dos estudos sobre virtualização de servidores, softwares orientados a serviços e gestões de grandes instalações, como Data Centers. Esse modelo eficaz utiliza-se de softwares, acessos, armazenamentos e processos de dados em meio a diferentes dispositivos e tecnologias Web (RODRIGUES; GALDINO; NETO, 2019).
+
+A Computação em Nuvens traz diversos benefícios para as empresas, dentre eles, destacamos: a redução de custos, maior produtividade, competitividade, mobilidade, disponibilidade e escalabilidade. Essas, por sua vez, são também características das infraestruturas ágeis.
+Os serviços de computação na nuvem são divididos em três classes, que levam em consideração o nível de abstração do recurso provido e o modelo de serviço do provedor:
+- **Infraestrutura como um serviço** - IasS: é um modelo no qual as partes referentes aos servidores, processamentos e memórias são oferecidas por um provedor que possibilita ao cliente um mecanismo de virtualização que tem controle sobre máquinas virtuais, armazenamento, aplicações instaladas e um controle limitado dos recursos de rede. Assim, o usuário não precisa adquirir hardware e softwares básicos, ele passa a usar uma infraestrutura virtualizada para desenvolver suas aplicações pagando como se fosse um serviço.
+- **Plataforma como Serviço** (PaaS): É uma plataforma que possibilita o uso de ferramentas de desenvolvimento de softwares oferecidos por um provedor de serviços. Utilizando a Internet como meio de acesso, os desenvolvedores criam aplicações e armazenam dados de forma compartilhada através de uma plataforma.
+- **Software como Serviço** (SaaS): é a classe mais comum. Nesse modelo o usuário usa todas as funcionalidades de um sistema de forma remota, sem a necessidade de instalação, ambiente para execução, manutenção e upgrades. A aplicação completa é ofertada e acessível ao cliente por um determinado preço.
+
+Além das classes, é importante enfatizar que as nuvens podem ser classificadas em: 
+- **Privadas**, quando opera para uma única instituição; 
+- **Comunitária**, ou seja, pode ser dividida entre várias organizações; 
+- **Pública**, quando é de responsabilidade de uma organização que vende os serviços, mas é disponível para o público; 
+- **Híbrida**, quando usa mais de um tipo de nuvem.
+
+## Infraestrutura baseada em Plataforma como Serviço (PaaS)
+
+A economia com as abstrações de SO, o uso middleware (softwares que fornecem serviços e recursos comuns em aplicações) e Data Centers trazem agilidade e possibilitam uma modernização nos trabalhos desenvolvidos.
+
+Além da estrutura de desenvolvimento na qual o desenvolvedor pode compilar, desenvolver e personalizar aplicações baseadas nas nuvens, a outra vantagem é poder usar os recursos das nuvens como escalabilidade, disponibilidade, redução de codificação, dentre outros. Outro uso muito comum de PaaS é a análise ou business intelligence, ou seja, algumas plataformas permitem análise e mineração de dados.
+
+Dentre as **vantagens** do PaaS, temos a redução do tempo de codificação, já que existem componentes pré-codificados que podem ser inseridos no projeto; facilita o desenvolvimento em diferentes plataformas; permite ao usuário o uso de ferramentas sofisticadas; facilita o trabalho remoto, já que tudo é feito na Internet, e gerencia o ciclo de vida do aplicativo, dando suporte a todas as fases do desenvolvimento.
+
+### Elasticidade e escalabilidade
+
+Trata-se da capacidade de um sistema expandir e contrair a sua infraestrutura de acordo com uma demanda específica. Recursos de memória, armazenamento e processamento são alterados para mais ou para menos, conforme a necessidade do sistema. Essa característica propicia a ilusão de que os recursos computacionais são infinitos, os usuários têm a expectativa de que a nuvem seja capaz de fornecer rapidamente recursos em qualquer quantidade e a qualquer momento. É esperado que os recursos adicionais possam ser providos, possivelmente de forma automática, quando ocorre o aumento da demanda e retidos, no caso da diminuição desta demanda (BUYYA; GOSCINSKI; BROBERG, 2011).
+
+>Elasticidade é um termo que muitos acreditam ser sinônimo de escalabilidade, mas não é. A diferença, como os nomes sugerem, é que, enquanto a *escalabilidade* em nuvem refere-se à facilidade de crescimento dos recursos disponibilizados, a *elasticidade* é uma forma de ajustar os recursos de acordo com a demanda.
+
+Utilização ***On-demand*** diz respeito à instalação de novas instâncias em um curto período de tempo que será cobrado por hora do cliente. Para economizar recursos, a ativação e desligamento de máquinas é feito de forma otimizada, e o cliente paga de acordo com o tempo em que uma máquina estiver operando. Esse monitoramento pode ser feito através de relatórios.
+
+Há dois tipos de escalonamentos automáticos: **vertical** e **horizontal**. O horizontal adiciona ou remove instâncias de recursos computacionais associados à aplicação, ou seja, adiciona ou remove computadores para uma aplicação de software distribuída; e o vertical aumenta ou diminui características dos recursos computacionais, como tempo, núcleo de CPU, memória Ram ou largura de banda da rede.
+
