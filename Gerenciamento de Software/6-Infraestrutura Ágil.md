@@ -285,3 +285,4 @@ Embora o Docker Swarm seja também um orquestrador, o Docker EE atenderá melhor
 
 É uma plataforma de gerenciamento e orquestração de containers que faz monitoramento, automação, gera relatórios e integração com outras ferramentas. Foi desenvolvida pela Red Hat, uma empresa especialista nesse mercado, que oferece também a versão Enterprise do produto, o *Red Hat OpenShift Container Platform*, que tem as mesmas funções, mas para grande escala e maior segurança. Dentre as suas características estão: desenvolvimento, hospedagem, escalonamento e entrega de aplicações ágeis na nuvem, redução de burocracia, criação de ambientes de testes, elevação do poder de processamento dos servidores da empresa, melhor aproveitamento dos recursos computacionais, redução de custos, flexibilidade aos sistemas, etc. (EVEO, 2017). 
 
+### Replicação e padronização de containers Dockers
