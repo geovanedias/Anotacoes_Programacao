@@ -434,3 +434,51 @@ Utilização ***On-demand*** diz respeito à instalação de novas instâncias e
 
 Há dois tipos de escalonamentos automáticos: **vertical** e **horizontal**. O horizontal adiciona ou remove instâncias de recursos computacionais associados à aplicação, ou seja, adiciona ou remove computadores para uma aplicação de software distribuída; e o vertical aumenta ou diminui características dos recursos computacionais, como tempo, núcleo de CPU, memória Ram ou largura de banda da rede.
 
+O aumento e a diminuição de recursos podem resultar em problemas de ***over-provisioning*** (sobreprovisionamento) quando um sistema provê mais recursos do que o necessário ou ***under-provisioning*** (subprovisionamento), quando um sistema provê menos recursos que o necessário. Um sistema elástico será mais eficiente quando apresentar menos possibilidades que elevem a under ou over-provisioning.
+
+#### Toda a ação é automática, porém algumas de modo *reativo* e outras de modo *proativo*:
+
+No modo **reativo**, como o nome sugere, as ações acontecem de acordo com reações a limiares ou regras estabelecidas, que podem ser a carga de trabalho ou a utilização de recursos, adaptando-se às mudanças necessárias.
+Os limiares do modo reativo também diferem, em **estáticos** ou **dinâmicos**, sendo o primeiro mais usado. O modo estático compara as métricas e aciona o autoscaling quando o limiar é atingido. Por exemplo, se o consumo de uma CPU atingir 80% durante cinco minutos, aumente os recursos. O dinâmico opera de acordo com a demanda.
+
+O modo **proativo** necessita adotar técnicas de *predição* que antecipem demandas futuras e sirvam para o acionamento do *autoscaling* com base nessas informações. Uma abordagem usada é a de análise de séries temporais para identificar padrões de repetição, que estima recursos necessários para lidar com a carga de trabalho antes que a demanda aconteça.
+ A abordagem proativa conta com a ajuda de técnicas, como: 
+ 
+- **média móvel** (analisa os dados obtendo a média dos últimos períodos e projetando o último valor médio no futuro)
+- **auto-regressão** (classificação que prevê um número ao invés de uma categoria) 
+-  **aprendizagem de máquina** (na qual o sistema analisa uma série de dados e deduz o conhecimento que será usado posteriormente).
+
+---
+
+# ==TERMINAR DE LER==
+
+## Testes:
+
+- **Unitários** Esse teste é o mais básico que se pode criar em uma aplicação, e diz respeito principalmente à funcionalidade que se está desenvolvendo. Pode ser um método ou até uma classe toda, o importante aqui é passar valores diferentes para essa unidade e testar se o retorno é o esperado.
+- **Integração** Nos testes de integração, o foco é nas relações das classes em si, as que já existem no sistema e as que estão entrando (PRESSMAN; MAXIM, 2016). Por exemplo, se você está desenvolvendo uma nova funcionalidade que envia e-mail aos clientes, se determinado evento ocorrer, todas as classes envolvidas no seu código devem ser testadas, como cadastro do cliente, recuperação desses dados em um banco de dados, o evento que dispara os e-mails, etc.
+- **Funcionais** Nesses testes o foco é verificar como o sistema se comporta quando dados inesperados forem passados a ele (PRESSMAN; MAXIM, 2016), por exemplo, quando uma função que faz multiplicação receber o valor “zero”, que é impossível de se calcular, ou quando um campo de e-mail receber um endereço inválido.
+- **Desempenhos** Chamado também de teste de stress e carga, serve para testar cargas altíssimas no sistema e observar seu comportamento. Geralmente, é feito em sistemas web, para verificar até onde o sistema consegue receber e tratar requisições de maneira correta até que falhe.
+- **Fim a Fim** São também conhecidos como testes de sistema, ou end-to-end, que servem para testar o sistema como um todo (PRESSMAN; MAXIM, 2016). Esse teste é muito custoso em tempo, e geralmente é feito em mudanças críticas que alteram a versão da aplicação e que mudam o funcionamento do sistema como um todo.
+
+## Test Driven Development - TDD
+
+Podemos dizer que o TDD foi a primeira técnica de desenvolvimento focada exclusivamente em testes, mas a ideia central aqui não é criar testes e, sim, como o próprio nome diz, orientar todo o desenvolvimento de softwares por testes (ANICHE, 2014).
+
+como podemos escrever testes antes de termos um código? Parece complicado, mas, na verdade, é bem simples, focando os esforços nos requisitos, ou seja, no que o sistema tem que fazer, antes de desenvolver o código propriamente dito.  
+
+Os passos do TDD são:  
+
+- Crie um teste que valide o requisito;  
+- Crie o código que passe no teste;  
+- Refatore o código, atualizando-o.
+
+## BDD – Desenvolvimento Orientado a Comportamento 
+
+O BDD é uma evolução do TDD, levando em conta uma série de problemas enfrentados pelos desenvolvedores, proposto primeiramente por North (2006). O autor relata os problemas reais enfrentados ao tentar usar a técnica do TDD.
+
+Foi proposta uma forma de descrever as funcionalidades da seguinte forma:
+- **Funcionalidade** Descrever o que a funcionalidade deve fazer
+- **Como** Quem executa essa funcionalidade
+- **Eu quero** O que e essa pessoa espera da funcionalidade
+- **De modo que** a descrição do resultado que se espera alcançar com a funcionalidade
+
