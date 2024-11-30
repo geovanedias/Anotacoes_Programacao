@@ -482,3 +482,20 @@ Foi proposta uma forma de descrever as funcionalidades da seguinte forma:
 - **Eu quero** O que e essa pessoa espera da funcionalidade
 - **De modo que** a descrição do resultado que se espera alcançar com a funcionalidade
 
+## DevSecOps
+![[Pasted image 20241129210215.png]]
+
+### Análise de Composição de Software (SCA)   
+
+Todo software desenvolvido, atualmente, utiliza bibliotecas que não são por padrão criadas pelo desenvolvedor. Usar itens que já foram criados auxilia na produtividade, já que não é necessário ficar quebrando a cabeça para inventar aquilo que já existe. Sabendo disso, entendemos também que essas bibliotecas importadas para o código podem conter vulnerabilidades.
+
+Whitesource | FOSSA | Sonatype | BackDuck
+### Varredura de segurança de banco de dados   
+
+Essas ferramentas fazem uma varredura em banco de dados para verificar falhas que podem afetar a sua segurança, como versões desatualizadas, patches não aplicados, senhas fracas, erros de configuração, problemas com ACL (listas de controle de acesso), e muito mais. Podemos citar:  
+
+- Scuba;
+- MSSQL DataMask;  
+- BSQL Hacker;  
+- Oracle auditing tools.
+
