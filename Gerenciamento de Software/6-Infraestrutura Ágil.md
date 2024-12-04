@@ -310,6 +310,7 @@ LABEL description=“Webserver”
 VOLUME /var/www/html/
 EXPOSE 80
 ```
+
 #### Significado das linhas de comandos:
 
 **FROM**: Indica a imagem que serviu de base. Caso o propósito fosse servir uma aplicação Java, por exemplo, poderíamos criar uma imagem para que, quando fôssemos rodar o container, seria a própria aplicação JAVA. Nesse caso, o mínimo que precisaríamos ter era um sistema operacional com um JDK instalado. No FROM podemos pesquisar uma imagem que tenha as configurações que precisamos.
