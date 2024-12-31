@@ -17,7 +17,7 @@ npm install
 ```
 
 Após a instalação e dentro da podemos usar o comando:
-```
+```shell
 npm run dev
 ```
 Para que o Vite possa renderizar o projeto em um host local.
@@ -57,7 +57,7 @@ export default function App() {
 
 ### Instalar Sass
 
-```node
+```sh
 npm install sass
 ```
 # Reset de estilo em React

@@ -3,11 +3,11 @@ Podemos utilizar o método de corte `[:x]` para selecionar apenas os x primeiros
 
 Utilizando o método `.split` podemos definir um caractere específico para ser o ponto de corte da string.
 ex: 
-```python:n
+```python
 txt = "Olá, mundo"
 x = txt.split(", ")
 print(x)
-['Olá', 'mundo']
+>>>['Olá', 'mundo']
 ```
 
 ---

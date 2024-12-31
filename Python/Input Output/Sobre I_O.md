@@ -2,7 +2,7 @@
 
 Em Python existe um módulo chamado **sys** que fornece utilidades para interagir com o sistema, uma das utilidades por exemplo é verificar em qual plataforma o programa está sendo executado:
 
-```
+```py
 >>> import sys
 >>> print(sys.platform)
 'linux'
@@ -12,7 +12,7 @@ Em Python existe um módulo chamado **sys** que fornece utilidades para intera
 
 No módulo `sys` também encontramos o objeto `stdout` que é o responsável por se comunicar via texto com a respectiva interface.
 
-```
+```py
 >>> import sys
 >>> sys.stdout
 <_io.TextIOWrapper name='<stdout>' mode='w' encoding='utf-8'>
@@ -20,7 +20,7 @@ No módulo `sys` também encontramos o objeto `stdout` que é o responsável
 
 Este objeto é um **file descriptor** e em sistemas Linux por exemplo, tudo é baseado em descritores de arquivos, nós podemos escrever neste descritor e o resultado será a impressão da mensagem na tela, repare que este objeto respeita a tabela de caracteres UTF-8 que nós aprendemos na aula sobre textos.
 
-```
+```py
 >>> import sys
 >>> quantidade_de_chars = sys.stdout.write("Bruno")
 'Bruno'
@@ -32,7 +32,7 @@ A saída da escrita em um objeto `int` contendo a quantidade de caracteres que
 
 Nós raramente precisaremos usar `sys.stdout` diretamente pois o Python oferece uma abstração com usabilidade melhor, que é a nossa já conhecida função print.
 
-```
+```py
 >>> help(print)
 print(value, ..., sep=' ', end='\n', file=sys.stdout, flush=False)
 ```
@@ -41,7 +41,7 @@ Repare que `print` recebe um parâmetro `file` que por padrão é o `sys.st
 
 Nós podemos, apenas a título de curiosidade, substituir o argumento `file` por qualquer outro objeto que seja um **file descriptor**.
 
-```
+```py
 >>> print("Hello", file=open("hello.txt", "a"))
 ```
 
