@@ -7,10 +7,9 @@ let <nome> = <valor>;
 
 ## const
 
-```js
+```js title:"Cria uma Constante"
 const <nome> = <valor>`
 ```
-> Cria uma constante
 
 ### var
 
