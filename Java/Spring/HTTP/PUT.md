@@ -29,3 +29,9 @@ public void atualizarInformacoes(@Valid DadosAtualizarMedico dados) {
 
 Note que diferente do cadastro as atualizações precisam passar por uma checagem para verificar se os campos a serem alterados são existentes `{java}!= null)`.
 
+---
+
+
+> [!NOTE] PUT vs PATCH
+> Existe outra alternativa de atualizar dados através do método PATCH. Ver mais em [[PUT vs PATCH]].
+
