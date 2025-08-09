@@ -1,0 +1,1 @@
+Adicionar as anotações `{C} @DeleteMapping("/{id}")` e  criar o método de exclusão 
