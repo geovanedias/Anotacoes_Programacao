@@ -49,6 +49,7 @@ O erro 503 significa que o serviço acessado está temporariamente indisponível
 | 200    | Ok                                   | GET                   |
 | 201    | Um registro foi criado               | POST                  |
 | 204    | Requisição processada e sem conteúdo | DELETE                |
+| 400    | Erro na validação de dados           |                       |
 | 500    | Erro no servidor interno             | Exception/erro na API |
 
 Ao invés de retornar vazio deve ser usado o `{java} ResponseEntity`:
@@ -56,13 +57,16 @@ Ao invés de retornar vazio deve ser usado o `{java} ResponseEntity`:
 ```java title:"Requisição GET" 
 @GetMapping  
 public ResponseEntity<Page<DadosListagemPaciente>> listar(
-	@PageableDefault(page = 0,
+	@PageableDefault(
+		page = 0,
 		size = 10,
 		sort = {"nome"}) Pageable paginacao) {  
-    var page = repository
-	    .findAllByAtivoTrue(paginacao)
-	    .map(DadosListagemPaciente::new);
-	return ResponseEntity(page);
+		
+	    var page = repository
+		    .findAllByAtivoTrue(paginacao)
+		    .map(DadosListagemPaciente::new);
+		
+		return ResponseEntity(page);
 }
 ```
 
@@ -104,6 +108,8 @@ public ResponseEntity detalhar(@PathVariable Long id){
 
 # Tratamento de erros
 
+## Erro 404, Not Found
+
 Quando um erro ocorre em uma requisição, por padrão uma Stack Trace é retornada, porém não é ideal retornar uma Stack Trace por que isso pode expor dados sensíveis ou até mesmo facilitar uma brecha no sistema. Para evitar esse tipo de retorno é necessário adicionar a seguinte propriedade no `application.properties`:
 
 `server.error.include-stacktrace = never`
@@ -112,7 +118,32 @@ Quando um erro ocorre em uma requisição, por padrão uma Stack Trace é retorn
 
 Qualquer erro não tratado o Spring relata um erro 500 "Internal server error" . Geralmente, queremos que todo erro de "não encontrado" seja categorizado como 404, para isso usamos o seguinte tratamento. 
 
-Ao invés de cada método estar dentro de um `try`/`catch`, um tratamento ideal de erro deve ser criado para cada tipo de erro e não para cada método, deixando o código mais limpo.
+Ao invés de cada método estar dentro de um `try`/`catch`, um tratamento ideal de erro deve ser criado para cada tipo de erro e não para cada método, deixando o código mais limpo. Então, por convenção, criamos uma classe tratadora de erros dentro do pacote `infra` e usamos as seguintes anotações:
+
+```java title:"TratadorDeErros.java"
+@RestControllerAdvice
+public class TratadorDeErros {
+	
+	@ExceptionHandler(EntityNotFoundException.class)
+	public ResponseEntity tratarErro404() {
+		return ResponseEntity.notFound().build();
+	}
+}
+```
+
+## Erro 400, dados inválidos
+
+Quando o erro 400, validação falhou, o Spring retorna todos os detalhes de todos os erros encontrados o que pode ser excelente para debugar durante a produção pode gerar vazamento funcionamento interno da API. Portanto, para esse tipo de erro, usamos o erro 400 "`MethodArgumentNotValid`".
+
+```java title:"TratadorDeErros.java"
+@ExceptionHandler(MethodArgumentNotValidException.class)
+public ResponseEntity tratarErro400(MethodArgumentNotValidException ex) {
+	var erros = ex.getFieldErros();
+	
+	return ResponseEntity.badRequest().build();
+}
+```
+
 # Autenticação/Autorização
 
 
