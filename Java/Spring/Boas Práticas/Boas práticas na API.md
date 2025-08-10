@@ -14,7 +14,20 @@ Usando retornos específicos para cada operação feita pela API:
 | 204    | Requisição processada e sem conteúdo | DELETE       |
 |        |                                      |              |
 
-Ao invés de retornar vazio deve ser usado o `{java} ResponseEntity` 
+Ao invés de retornar vazio deve ser usado o `{java} ResponseEntity`:
+
+```java title:"Requisição GET" 
+@GetMapping  
+public ResponseEntity<Page<DadosListagemPaciente>> listar(
+	@PageableDefault(page = 0,
+		size = 10,
+		sort = {"nome"}) Pageable paginacao) {  
+    return repository
+	    .findAllByAtivoTrue(paginacao)
+	    .map(DadosListagemPaciente::new);  
+}
+```
+
 # Tratamento de erros
 
 
