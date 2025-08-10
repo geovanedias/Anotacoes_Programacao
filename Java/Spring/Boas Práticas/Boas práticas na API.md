@@ -36,8 +36,26 @@ public ResponseEntity<Page<DadosListagemPaciente>> listar(
 
 ### Devolvendo o código 201
 
-Devolve no corpo da resposta os **dados** do novo recurso/registro criado e um **cabeçalho** do protocolo HTTP (Location).
-`{java}return Response`
+Devolve no corpo da resposta os **dados** do novo recurso/registro criado e um **cabeçalho** do protocolo HTTP (Location):
+`{java}return ResponseEntity.created(uri).body(dto);`
+
+```java 
+public ResponseEntity cadastrar(
+	@RequestBody 
+	@Valid 
+	DadosCadastroMedico dados, UriComponentsBuilder uriBuilder) {
+	
+	var medico = new Medico(dados);
+	repository.save(medico);
+	
+	var uri = uriBuilder.path("/medicos/{id}")
+		.buildAndExpand(medico.getId()).toUri();
+
+	return ResponseEntity.created(uri)
+		.body(new DadosDetalhamentoMedico(medico));
+}
+```
+
 # Tratamento de erros
 
 
