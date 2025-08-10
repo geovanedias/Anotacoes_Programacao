@@ -44,11 +44,12 @@ O erro 503 significa que o serviço acessado está temporariamente indisponível
 
 > Ver mais em [HTTP Cats](https://http.cat/).
 
-| Código | Retorno                              | Método comum |
-| ------ | ------------------------------------ | ------------ |
-| 200    | Ok                                   | GET          |
-| 201    | Um registro foi criado               | POST         |
-| 204    | Requisição processada e sem conteúdo | DELETE       |
+| Código | Retorno                              | Método comum          |
+| ------ | ------------------------------------ | --------------------- |
+| 200    | Ok                                   | GET                   |
+| 201    | Um registro foi criado               | POST                  |
+| 204    | Requisição processada e sem conteúdo | DELETE                |
+| 500    | Erro no servidor interno             | Exception/erro na API |
 
 Ao invés de retornar vazio deve ser usado o `{java} ResponseEntity`:
 
@@ -93,7 +94,7 @@ public ResponseEntity cadastrar(
 
 ### Detalhando registros
 
-```java title:'Detalhar uma entidade'
+```java title:'Detalhar uma entidade, GET'
 @GetMapping("/{id}")
 public ResponseEntity detalhar(@PathVariable Long id){
 	var medico = repository.getReferenceById(id);
@@ -103,8 +104,15 @@ public ResponseEntity detalhar(@PathVariable Long id){
 
 # Tratamento de erros
 
+Quando um erro ocorre em uma requisição, por padrão uma Stack Trace é retornada, porém não é ideal retornar uma Stack Trace por que isso pode expor dados sensíveis ou até mesmo facilitar uma brecha no sistema. Para evitar esse tipo de retorno é necessário adicionar a seguinte propriedade no `application.properties`:
 
+`server.error.include-stacktrace = never`
 
+> Mais detalhes em [docs.spring.io](https://docs.spring.io/spring-boot/appendix/application-properties/index.html).
+
+Qualquer erro não tratado o Spring relata um erro 500 "Internal server error" . Geralmente, queremos que todo erro de "não encontrado" seja categorizado como 404, para isso usamos o seguinte tratamento. 
+
+Ao invés de cada método estar dentro de um `try`/`catch`, um tratamento ideal de erro deve ser criado para cada tipo de erro e não para cada método, deixando o código mais limpo.
 # Autenticação/Autorização
 
 
