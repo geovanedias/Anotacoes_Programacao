@@ -88,5 +88,5 @@ switch(linguagem) {
 }
 ```
 
-É perceptivel a adição de uma palavra `break`. Sem essa instrução, ele continuará executando todos os outros blocos de código abaixo da correspondência encontrada, causando o que conhecemos como "**Efeito Cascata** (ou *fall-through*)". Com isso o fluxo continuará para o próximo caso.
+É perceptível a adição de uma palavra `break`. Sem essa instrução, ele continuará executando todos os outros blocos de código abaixo da correspondência encontrada, causando o que conhecemos como "**Efeito Cascata** (ou *fall-through*)". Com isso o fluxo continuará para o próximo caso.
 

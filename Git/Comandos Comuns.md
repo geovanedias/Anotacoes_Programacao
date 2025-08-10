@@ -18,21 +18,24 @@ git commit -m "Mensagem"
 Para confirmar uma alteração e marcar um **checkpoint** no histórico do repositório
 	Alternativamente pode ser usado o [[git commit -p]]
 
-```shell
+```shell title:"Troca a mensagem do commit"
+git commit --amend "Nova mensagem"
+```
+
+```shell title:"Para enviar as mudanças locais para o GitHub"
 git push
 ```
-Para enviar as mudanças locais para o GitHub
 
-```shell
+
+```shell title:"Para baixar mudanças do GitHub para o local"
 git pull
 ```
-Para baixar mudanças do GitHub para o local
 
- ```shell
+
+ ```shell title:"Usado para fazer as configurações iniciais do git."
  git config
  ```
-Usado para fazer as configurações no git.
-	ver [[git config]]
+> ver [[git config]]
 
 ### Documentação oficial:
 

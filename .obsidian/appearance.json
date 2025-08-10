@@ -6,5 +6,6 @@
     "center-images"
   ],
   "monospaceFontFamily": "Hurmit Nerd Font",
-  "textFontFamily": ""
+  "textFontFamily": "Inter,Lexend",
+  "interfaceFontFamily": "Lexend,Inter"
 }
