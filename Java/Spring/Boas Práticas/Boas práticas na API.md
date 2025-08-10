@@ -120,7 +120,7 @@ Qualquer erro não tratado o Spring relata um erro 500 "Internal server error" .
 
 Ao invés de cada método estar dentro de um `try`/`catch`, um tratamento ideal de erro deve ser criado para cada tipo de erro e não para cada método, deixando o código mais limpo. Então, por convenção, criamos uma classe tratadora de erros dentro do pacote `infra` e usamos as seguintes anotações:
 
-```java title:"TratadorDeErros.java"
+```java title:"TratadorDeErros.java - Erro 404"
 @RestControllerAdvice
 public class TratadorDeErros {
 	
@@ -133,9 +133,9 @@ public class TratadorDeErros {
 
 ## Erro 400, dados inválidos
 
-Quando o erro 400, validação falhou, o Spring retorna todos os detalhes de todos os erros encontrados o que pode ser excelente para debugar durante a produção pode gerar vazamento funcionamento interno da API. Portanto, para esse tipo de erro, usamos o erro 400 "`MethodArgumentNotValid`".
+Quando o erro 400, validação falhou, o Spring retorna todos os detalhes de todos os erros encontrados o que pode ser excelente para debugar durante a produç5ão pode gerar vazamento funcionamento interno da API. Portanto, para esse tipo de erro, usamos o erro 400 "`MethodArgumentNotValid`".
 
-```java title:"TratadorDeErros.java"
+```java title:"TratadorDeErros.java - Erro 400"
 @ExceptionHandler(MethodArgumentNotValidException.class)
 public ResponseEntity tratarErro400(MethodArgumentNotValidException ex) {
 	var erros = ex.getFieldErros();
