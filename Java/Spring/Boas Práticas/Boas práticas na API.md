@@ -140,9 +140,29 @@ Quando o erro 400, validação falhou, o Spring retorna todos os detalhes de tod
 public ResponseEntity tratarErro400(MethodArgumentNotValidException ex) {
 	var erros = ex.getFieldErros();
 	
-	return ResponseEntity.badRequest().build();
+	return ResponseEntity.badRequest.body(
+		erros.stream()
+			.map(DadosErroValidacao::new)
+			.toList());
+	);
+}
+
+// DTO deve retornar somente "campo" e "mensagem"
+private record DadosErroValidacao(String campo, String mensagem) { 
+	public DadosErroValidacao(FieldError erro) {
+		this(erro.getField(), erro.getDefaultMessage());
+	}
 }
 ```
+
+
+
+> [!Tip] Traduzindo mensagem de erro
+> No protocolo HTTP existe um cabeçalho chamado **Accept-Language**, que serve para indicar ao servidor o idioma de preferência do cliente disparando a requisição. Podemos utilizar esse cabeçalho para indicar ao Spring o idioma desejado, para que então na integração com o Bean Validation ele busque as mensagens de acordo com o idioma indicado.
+> 
+> Em várias ferramentas HTTP, existe uma opção chamada **Header** que podemos incluir cabeçalhos a serem enviados na requisição. Se adicionarmos o header **Accept-Language** com o valor **pt-br**, as mensagens de erro do Bean Validation serão automaticamente devolvidas em português.
+
+
 
 # Autenticação/Autorização
 
