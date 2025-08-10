@@ -74,7 +74,7 @@ public ResponseEntity<Page<DadosListagemPaciente>> listar(
 Devolve no corpo da resposta os **dados** do novo recurso/registro criado e um **cabeçalho** do protocolo HTTP (Location):
 `{java}return ResponseEntity.created(uri).body(dto);`
 
-```java 
+```java title:"Requisição POST"
 public ResponseEntity cadastrar(
 	@RequestBody 
 	@Valid 
@@ -88,6 +88,16 @@ public ResponseEntity cadastrar(
 
 	return ResponseEntity.created(uri)
 		.body(new DadosDetalhamentoMedico(medico));
+}
+```
+
+### Detalhando registros
+
+```java title:'Detalhar uma entidade'
+@GetMapping("/{id}")
+public ResponseEntity detalhar(@PathVariable Long id){
+	var medico = repository.getReferenceById(id);
+	return ResponseEntity.ok(new DadosDetalhamentoMedico(medico));
 }
 ```
 
