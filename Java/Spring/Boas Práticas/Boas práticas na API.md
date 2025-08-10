@@ -6,13 +6,14 @@
 
 ## Tratamento através do retorno
 
-Usando retornos específicos para cada operação feita pela API:
+Quando usamos os métodos HTTP esses métodos normalmente retornam algum objeto, geralmente Json, isso faz com que o Spring devolva o código 200 automaticamente. Porém, o ideal seria retornar códigos específicos para cada operação feita pela API:
 
 
 | Código | Retorno                              | Método comum |
 | ------ | ------------------------------------ | ------------ |
+| 200    | Ok                                   | GET          |
 | 204    | Requisição processada e sem conteúdo | DELETE       |
-|        |                                      |              |
+| 201    | Um registro foi criado               | POST         |
 
 Ao invés de retornar vazio deve ser usado o `{java} ResponseEntity`:
 
@@ -22,12 +23,21 @@ public ResponseEntity<Page<DadosListagemPaciente>> listar(
 	@PageableDefault(page = 0,
 		size = 10,
 		sort = {"nome"}) Pageable paginacao) {  
-    return repository
+    var page = repository
 	    .findAllByAtivoTrue(paginacao)
-	    .map(DadosListagemPaciente::new);  
+	    .map(DadosListagemPaciente::new);
+	return ResponseEntity(page);
 }
 ```
 
+
+> [!Important] RequestEntity no método PUT
+> No método PUT é altamente recomendado que seja criado um novo DTO para que não seja retornado a entidade diretamente.
+
+### Devolvendo o código 201
+
+Devolve no corpo da resposta os **dados** do novo recurso/registro criado e um **cabeçalho** do protocolo HTTP (Location).
+`{java}return Response`
 # Tratamento de erros
 
 
