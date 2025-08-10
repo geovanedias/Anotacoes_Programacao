@@ -46,7 +46,7 @@ if (x > 5) {
 Ver mais em [[Operadores e Expressões]].
 
 ---
-# Operador Ternário
+# Condicional Ternário
 
 O operador ternário tem esse nome pois é o único em JavaScript que utiliza três _operandos_:
 
