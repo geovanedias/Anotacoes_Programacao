@@ -236,7 +236,17 @@ Classe de autenticação:
 
 ```java title:"AuthService.jav"
 @Service
-public class AuthService implements UserDetailService {}
+public class AuthService implements UserDetailService {
+
+	@Autowired
+	private UsuarioRepository repository;
+
+	@Override
+	public UserDetails loadUserByUsername(String username) 
+	throws UsernameNotFoundException {
+		return repository.findByLogin(username);
+	}
+}
 
 ```
 
