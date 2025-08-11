@@ -173,6 +173,7 @@ private record DadosErroValidacao(String campo, String mensagem) {
 > Em várias ferramentas HTTP, existe uma opção chamada **Header** que podemos incluir cabeçalhos a serem enviados na requisição. Se adicionarmos o header **Accept-Language** com o valor **pt-br**, as mensagens de erro do Bean Validation serão automaticamente devolvidas em português.
 
 
+---
 
 # Autenticação/Autorização
 
@@ -209,7 +210,7 @@ Ao rodar o projeto pela primeira vez após adicionar as dependências o SS reali
 ### Alterações necessárias para usar Spring Security
 
 - Criar uma tabela no banco de dados onde serão guardados os usuários e senhas.
--  Fazer a migration para criar a tabela de usuários:
+- Fazer a migration para criar a tabela de usuários:
 
 ```sql title:Vx__create-table-usuarios.sql
 create table usuarios(
@@ -229,7 +230,19 @@ Os principais algoritmos recomendados atualmente são:
 - **Argon2**
 - **PBKDF2**
 
+O algoritmo Bcrypt além de ser bastante popular já é implementada dentro do Spring Security.
 
+Classe de autenticação:
+
+```java title:"AuthService.jav"
+@Service
+public class AuthService implements UserDetailService {}
+
+```
+
+
+
+---
 
 # Tokens JWT
 
