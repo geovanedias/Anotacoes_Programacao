@@ -203,7 +203,33 @@ Dependência Maven:
 Ao rodar o projeto pela primeira vez após adicionar as dependências o SS realiza as seguintes:
 
 - Cria uma senha aleatória para desenvolvimento, *essa senha não deve ser suada em produção*
-- Ele bloqueia toda requisiç
+- Ele bloqueia toda requisição feita à API 
+- Adiciona um formulário de configuração com o nome de usuário: `user` e a senha é impressa no console da aplicação
+
+### Alterações necessárias para usar Spring Security
+
+- Criar uma tabela no banco de dados onde serão guardados os usuários e senhas.
+-  Fazer a migration para criar a tabela de usuários:
+
+```sql title:Vx__create-table-usuarios.sql
+create table usuarios(
+	
+	id bigint not null auto_increment primary key,
+	login varchar(100) not null,
+	senha varchar(255) not null
+)
+```
+
+Os algoritmos de _hashing_ devem ser de **mão única**, ou seja, *não deve ser possível obter o texto original a partir de um hash*. Dessa forma, para saber se um usuário digitou a senha correta ao tentar se autenticar em uma aplicação, devemos pegar a senha que foi digitada por ele e gerar o _hash_ dela, para então realizar a comparação com o _hash_ que está armazenado no banco de dados.
+
+Os principais algoritmos recomendados atualmente são:
+
+- **Bcrypt**
+- **Scrypt**
+- **Argon2**
+- **PBKDF2**
+
+
 
 # Tokens JWT
 
