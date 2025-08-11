@@ -6,7 +6,7 @@
 
 ## Tratamento através do retorno
 
-Quando usamos os métodos HTTP esses métodos normalmente retornam algum objeto, geralmente Json, isso faz com que o Spring devolva o código 200 automaticamente. Porém, o ideal seria retornar códigos específicos para cada operação feita pela API:
+Quando usamos os métodos HTTP esses métodos normalmente retornam algum objeto, geralmente json, isso faz com que o Spring devolva o código 200 automaticamente. Porém, o ideal seria retornar códigos específicos para cada operação feita pela API:
 
 ### Categoria de códigos HTTP
 
@@ -57,7 +57,6 @@ Ao invés de retornar vazio deve ser usado o `{java} ResponseEntity`:
 ```java title:"Requisição GET" hl:2,9
 @GetMapping  
 public ResponseEntity<Page<DadosListagemPaciente>> listar(
-<<<<<<< HEAD
 		@PageableDefault(page = 0,
 		size = 10,
 		sort = {"nome"}) Pageable paginacao
@@ -66,7 +65,7 @@ public ResponseEntity<Page<DadosListagemPaciente>> listar(
 	    .map(DadosListagemPaciente::new);
 	return ResponseEntity.ok(page);
 	
-=======
+	
 	@PageableDefault(
 		page = 0,
 		size = 10,
@@ -100,7 +99,7 @@ public ResponseEntity cadastrar(
 	
 	var uri = uriBuilder.path("/medicos/{id}")
 		.buildAndExpand(medico.getId()).toUri();
-
+	
 	return ResponseEntity.created(uri)
 		.body(new DadosDetalhamentoMedico(medico));
 }
@@ -113,7 +112,7 @@ public ResponseEntity cadastrar(
 public ResponseEntity detalhar(@PathVariable Long id){
 	var medico = repository.getReferenceById(id);
 	return ResponseEntity.ok(new DadosDetalhamentoMedico(medico));
->>>>>>> origin/main
+	
 }
 ```
 
