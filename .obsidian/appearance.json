@@ -7,5 +7,6 @@
   ],
   "monospaceFontFamily": "Hurmit Nerd Font",
   "textFontFamily": "Inter,Lexend",
-  "interfaceFontFamily": "Lexend,Inter"
+  "interfaceFontFamily": "Lexend,Inter",
+  "baseFontSize": 14
 }
