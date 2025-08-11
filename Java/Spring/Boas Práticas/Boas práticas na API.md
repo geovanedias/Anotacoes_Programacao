@@ -179,10 +179,32 @@ private record DadosErroValidacao(String campo, String mensagem) {
 Módulo Spring Security
 - Controle de autenticação
 - Autorização (Controle de acesso)
-- Proteção contra ataques (CSRF, clickjacking, etc)
-- JWT (tokens)
+- Proteção contra ataques (CSRF, click jacking, etc)
+- JWT (Json Web Token)
 
-Numa aplicação tradicional é do tipo *Stateful* já uma API Rest é *Stateless*.
+Numa aplicação tradicional é do tipo *Stateful* já uma API Rest é *Stateless* - não guada estado de login.
+
+## Spring Security
+
+Dependência Maven: 
+
+```xml title:"pom.xml"
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-security</artifactId>
+</dependency>
+<dependency>
+    <groupId>org.springframework.security</groupId>
+    <artifactId>spring-security-test</artifactId>
+	<scope>test</scope>
+</dependency>
+```
+
+Ao rodar o projeto pela primeira vez após adicionar as dependências o SS realiza as seguintes:
+
+- Cria uma senha aleatória para desenvolvimento, *essa senha não deve ser suada em produção*
+- Ele bloqueia toda requisiç
 
 # Tokens JWT
+
 
