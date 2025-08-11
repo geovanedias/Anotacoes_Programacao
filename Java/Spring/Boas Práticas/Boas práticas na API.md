@@ -166,7 +166,13 @@ private record DadosErroValidacao(String campo, String mensagem) {
 
 # Autenticação/Autorização
 
+Módulo Spring Security
+- Controle de autenticação
+- Autorização (Controle de acesso)
+- Proteção contra ataques (CSRF, clickjacking, etc)
+- JWT (tokens)
 
+Numa aplicação tradicional é do tipo *Stateful* já uma API Rest é *Stateless*.
 
 # Tokens JWT
 
