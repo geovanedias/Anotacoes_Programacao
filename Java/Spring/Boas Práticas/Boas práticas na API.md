@@ -16,15 +16,17 @@ Usando retornos específicos para cada operação feita pela API:
 
 Ao invés de retornar vazio deve ser usado o `{java} ResponseEntity`:
 
-```java title:"Requisição GET" 
+```java title:"Requisição GET" hl:2,9
 @GetMapping  
 public ResponseEntity<Page<DadosListagemPaciente>> listar(
-	@PageableDefault(page = 0,
+		@PageableDefault(page = 0,
 		size = 10,
-		sort = {"nome"}) Pageable paginacao) {  
-    return repository
-	    .findAllByAtivoTrue(paginacao)
-	    .map(DadosListagemPaciente::new);  
+		sort = {"nome"}) Pageable paginacao
+	) {  
+    var page = repository.findAllByAtivoTrue(paginacao)
+	    .map(DadosListagemPaciente::new);
+	return ResponseEntity.ok(page);
+	
 }
 ```
 
