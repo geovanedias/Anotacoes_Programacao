@@ -270,13 +270,12 @@ A classe `{java}SecurityConfigurations` do Spring faz o controle de acesso, ela 
 
 ## Bean
 
-`{java}@Bean` -> Um **`@Bean`** no Spring é um objeto que é instanciado, montado e gerenciado pelo **contêiner de IoC (Inversão de Controle) do Spring**. É um dos conceitos fundamentais do framework.
+`{java}@Bean` -> Um **`@Bean`** no Spring é um objeto que é instanciado, montado e gerenciado pelo **contêiner de IoC (Inversão de Controle) do Spring**. É um dos conceitos fundamentais do framework. O `@Bean` serve para exportar uma classe para o Spring, fazendo com que ele consiga carregá-la e realize a sua injeção de dependência em outras classes.
 
 Um @Bean é:
 
 - Um objeto que o Spring cria e gerencia
 - Um componente que pode ser injetado em outras partes da aplicação
-- A unidade básica de um aplicativo Spring
 
 ### Quando um objeto se torna um Bean?
 
@@ -305,10 +304,50 @@ public class SecurityConfigurations {
 
 ## Controle de Autenticação
 
-É feito criando uma requisição onde é pedido um token de acesso que deve ser validado. O Spring usa a classe `AuthenticationManager` que é instanciado com uma anotação `@Autowired`.
+>Na classe controller
+
+É feito criando uma requisição onde é pedido um token de acesso que deve ser validado. O Spring usa a classe `AuthenticationManager` que é instanciado com uma anotação `@Autowired`. Essa classe precisa ser configurada dentro da classe de configuração de segurança ao adicionar:
+
+```java title:"SecurityConfigurations.java"
+// ...
+@Bean
+public AuthenticationManager authenticationManager(AuthenticationConfiguration configuration) throws Exception {
+	return configuration.getAuthenticationManager();
+}
+```
+
+`{java}UsernamePasswordAuthenticationToken(dados.login(), dados.senha())` -> DTO do Spring que converte os dados de usuário do nosso banco de dados para um objeto que ele possa controlar.
+
+```java title:"AuthController.java"
+@RestController
+@RequestMapping("/login")
+public class AuthController {
+
+	@Autowired
+	private AuthenticationManager manager;
+
+	@PostMapping
+	public ResponseEntiry efetuarLogin(@Request)
+}
+// Completar depois
+```
 
 ---
 
+# Hashing em senhas
+
+Por questões de segurança as senhas devem ser armazenadas encriptadas e quando o usuário for realizar login deve ser comparado o hash daquela senha com o hash armazenado no banco de dados.
+
+`SecuriyConfiguration.java` -> adicionar o `{java}@Bean PasswordEncoder`:
+
+```java title:"SecurityConfigurations.java"
+@Bean
+public PasswordEncoder passwordEncoder() {
+	return new BCryptPasswordEncoder();
+}
+```
+
+---
 # Tokens JWT
 
 
