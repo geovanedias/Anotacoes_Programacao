@@ -264,7 +264,32 @@ Para conhecer mais detalhes e entender melhor como montar consultas dinâmicas c
 
 ## Configuração de Segurança
 
-Por ser uma configuração mais extensa e complexa esse tipo de configuração é feito dentro do Java, através de classes e objetos. Geralmente criamos um pacote `infra.security` para armazenar esse tipo de classe e chamamos essa classe de `SecurityConfigurations.java`, dentro dela usamos a anotação `{java}@Configuration` e o `{java}@EnableWebSe`
+Por ser uma configuração mais extensa e complexa esse tipo de configuração é feito dentro do Java, através de classes e objetos. Geralmente criamos um pacote `infra.security` para armazenar esse tipo de classe e chamamos essa classe de `SecurityConfigurations.java`, dentro dela usamos as anotações `{java}@Configuration` e `{java}@EnableWebSecurity`.
+
+A classe `{java}SecurityConfigurations` do Spring faz o controle de acesso, ela deve receber um objeto do tipo `{java} HttpSecurity`. Dentro do objeto HttpSecurity fazemos uma série de configurações como se fosse uma stream.
+
+`{java}@Bean` -> Expõe o retorno da função
+
+```java title:"SecurityConfigurations.java"
+@Configuration
+@EnableWebSecurity
+public class SecurityConfigurations {
+	
+	@Bean
+	public SecurityFilterChain securityFilterChain(HttpSecurity http) 
+	throws Exception {
+    return http.csrf(
+	    csrf -> csrf.disable())
+            .sessionManagement(
+	            sm -> sm.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
+            .build();
+	}
+}
+```
+
+## Controle de Autenticação
+
+É feito criando uma requisição onde é pedido um token de acesso que deve ser validado
 
 ---
 
