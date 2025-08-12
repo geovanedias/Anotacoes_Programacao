@@ -236,7 +236,7 @@ Classe de autenticação:
 
 ```java title:"AuthService.jav"
 @Service
-public class AuthService implements UserDetailService {
+public class AuthService implements UserDetailService { // interface 
 
 	@Autowired
 	private UsuarioRepository repository;
@@ -250,7 +250,21 @@ public class AuthService implements UserDetailService {
 
 ```
 
+Repositório JPA:
 
+```java
+public interface UsuarioRepository extends JpaRepository<Usuario, Long> {
+	UserDetails findByLogin(String login);
+}
+```
+
+Existem algumas palavras reservadas que devemos utilizar nos nomes dos métodos, como o `findBy` e o `existsBy`, para indicar ao Spring Data como ele deve montar a consulta que desejamos. Esse recurso é bastante flexível, podendo ser um pouco complexo devido às diversas possibilidades existentes.
+
+Para conhecer mais detalhes e entender melhor como montar consultas dinâmicas com o Spring Data, acesse a sua [documentação oficial](https://docs.spring.io/spring-data/jpa/reference/jpa/query-methods.html).
+
+## Configuração de Segurança
+
+Por ser uma configuração mais extensa e complexa esse tipo de configuração é feito dentro do Java, através de classes e objetos. Geralmente criamos um pacote `infra.security` para armazenar esse tipo de classe e chamamos essa classe de `SecurityConfigurations.java`, dentro dela usamos a anotação `{java}@Configuration` e o `{java}@EnableWebSe`
 
 ---
 
