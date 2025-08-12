@@ -268,7 +268,23 @@ Por ser uma configuração mais extensa e complexa esse tipo de configuração �
 
 A classe `{java}SecurityConfigurations` do Spring faz o controle de acesso, ela deve receber um objeto do tipo `{java} HttpSecurity`. Dentro do objeto HttpSecurity fazemos uma série de configurações como se fosse uma stream.
 
-`{java}@Bean` -> Expõe o retorno da função
+## Bean
+
+`{java}@Bean` -> Um **`@Bean`** no Spring é um objeto que é instanciado, montado e gerenciado pelo **contêiner de IoC (Inversão de Controle) do Spring**. É um dos conceitos fundamentais do framework.
+
+Um @Bean é:
+
+- Um objeto que o Spring cria e gerencia
+- Um componente que pode ser injetado em outras partes da aplicação
+- A unidade básica de um aplicativo Spring
+
+### Quando um objeto se torna um Bean?
+
+- Quando é produzido por um método anotado com `@Bean`
+- Quando o Spring registra esse objeto em seu contexto de aplicação
+- Quando pode ser injetado em outros componentes via `@Autowired`
+
+Resumindo: `@Bean` *transforma objetos comuns em componentes gerenciados pelo Spring*, permitindo injeção de dependência e ciclo de vida controlado.
 
 ```java title:"SecurityConfigurations.java"
 @Configuration
@@ -289,7 +305,7 @@ public class SecurityConfigurations {
 
 ## Controle de Autenticação
 
-É feito criando uma requisição onde é pedido um token de acesso que deve ser validado
+É feito criando uma requisição onde é pedido um token de acesso que deve ser validado. O Spring usa a classe `AuthenticationManager` que é instanciado com uma anotação `@Autowired`.
 
 ---
 
