@@ -348,6 +348,11 @@ public PasswordEncoder passwordEncoder() {
 ```
 
 ---
-# Tokens JWT
+# Tokens JWT (JSON Web Tokens)
 
+**_JSON Web Token_**, ou JWT, é um padrão utilizado para a geração de _tokens_, que nada mais são do que Strings, representando, de maneira segura, informações que serão compartilhadas entre dois sistemas. Você pode conhecer melhor sobre esse padrão em seu [site oficial](https://jwt.io/introduction) ou no artigo da [Alura](https://www.alura.com.br/artigos/o-que-e-json-web-tokens).
+
+## Gerando tokens JWT
+
+Criamos um novo serviço dentro do pacote `security`
 
