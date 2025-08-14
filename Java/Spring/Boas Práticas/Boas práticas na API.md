@@ -354,5 +354,7 @@ public PasswordEncoder passwordEncoder() {
 
 ## Gerando tokens JWT
 
-Criamos um novo serviço dentro do pacote `security`
+Criamos um novo serviço dentro do pacote `security` que gera os JWT.
+
+## Controle de acesso, interceptando requisições
 
