@@ -423,3 +423,6 @@ public class SecurityFilter extends OncePerRequestFilter {
 }
 
 ```
+
+
+O token de acesso deve ser enviado via um cabeçalho na requisição.
