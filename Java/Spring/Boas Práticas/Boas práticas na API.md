@@ -429,3 +429,85 @@ public class SecurityFilter extends OncePerRequestFilter {
 
 
 O token de acesso deve ser enviado via um cabeçalho na requisição.
+
+### Possíveis erros 403
+
+- Erro ao recuperar o token JWT:
+
+Na classe `SecurityFilter` foi criado o método `recuperarToken`:
+
+```java
+private String recuperarToken(HttpServletRequest request) {
+    var authorizationHeader = request.getHeader("Authorization");
+    if (authorizationHeader != null) {
+        return authorizationHeader.replace("Bearer ", "");
+    }
+    return null;
+}
+```
+
+Repare que existe um **espaço em branco** após a palavra Bearer. Um erro comum é esquecer de colocar esse espaço em branco e deixar o código assim:
+
+`{java}return authorizationHeader.replace("Bearer", "");`
+
+Verifique se você cometeu esse erro no seu código! Uma dica é utilizar também o método **trim** para apagar os espaços em branco da String:
+
+`{java}return authorizationHeader.replace("Bearer ", "").trim();`
+
+Issuer diferente ao gerar o token
+
+Na classe `TokenService` foram criados os métodos `gerarToken` e `getSubject`:
+
+```java title:TokenService.java hl:5,18
+public String gerarToken(Usuario usuario) {
+    try {
+        var algoritmo = Algorithm.HMAC256(secret);
+        return JWT.create()
+                .withIssuer("API Voll.med")
+                .withSubject(usuario.getLogin())
+                .withExpiresAt(dataExpiracao())
+                .sign(algoritmo);
+    } catch (JWTCreationException exception){
+        throw new RuntimeException("erro ao gerar token jwt", exception);
+    }
+}
+
+public String getSubject(String tokenJWT) {
+    try {
+        var algoritmo = Algorithm.HMAC256(secret);
+        return JWT.require(algoritmo)
+                .withIssuer("API Voll.med")
+                .build()
+                .verify(tokenJWT)
+                .getSubject();
+    } catch (JWTVerificationException exception) {
+        throw new RuntimeException("Token JWT inválido ou expirado!");
+    }
+}
+```
+
+> Tanto no método `gerarToken` quanto no `getSubject` o issuer deve ser **exatamente o mesmo**. Um erro comum é digitar o issuer diferente em cada método, por exemplo, em um método com letra maiúscula e no outro com letra minúscula.
+
+### Controle de acesso por anotações
+
+Outra maneira de restringir o acesso a determinadas funcionalidades, com base no perfil dos usuários, é com a utilização de um recurso do Spring Security conhecido como **Method Security**, que funciona com a utilização de anotações em métodos:
+
+```java
+@GetMapping("/{id}")
+@Secured("ROLE_ADMIN")
+public ResponseEntity detalhar(@PathVariable Long id) {
+    var medico = repository.getReferenceById(id);
+    return ResponseEntity.ok(new DadosDetalhamentoMedico(medico));
+}
+```
+
+No exemplo de código anterior o método foi anotado com `@Secured("ROLE_ADMIN")`, para que apenas usuários com o perfil **ADMIN** possam disparar requisições para detalhar um médico. A anotação `@Secured` pode ser adicionada em métodos individuais ou mesmo na classe, que seria o equivalente a adicioná-la em **todos** os métodos.
+
+**Atenção!** Por padrão esse recurso vem desabilitado no spring Security, sendo que para o utilizar devemos adicionar a seguinte anotação na classe `Securityconfigurations` do projeto:
+
+```java
+@EnableMethodSecurity(securedEnabled = true)
+```
+
+Você pode conhecer mais detalhes sobre o recurso de method security na documentação do Spring Security, disponível em: [https://docs.spring.io/spring-security/reference/servlet/authorization/method-security.html](https://docs.spring.io/spring-security/reference/servlet/authorization/method-security.html)
+
