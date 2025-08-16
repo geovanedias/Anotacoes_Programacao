@@ -13,8 +13,6 @@
 ### Criando Datas
 
 ```java
-import java.time.LocalDate;
-
 public class ExemploLocalDate {
     public static void main(String[] args) {
         // Data atual
@@ -57,8 +55,6 @@ int dia = data.getDayOfMonth(); // 16
 ```
 
 ```java title:"Formatando Datas"
-import java.time.format.DateTimeFormatter;
-
 LocalDate data = LocalDate.now();
 
 // Formatando
@@ -81,8 +77,6 @@ System.out.println("Convertida: " + convertida);
 ### Criando Horas
 
 ```java 
-import java.time.LocalTime;
-
 public class ExemploLocalTime {
     public static void main(String[] args) {
         // Hora atual do sistema
@@ -124,8 +118,6 @@ int ns = hora.getNano();      // nanossegundos
 ```
 
 ```java title:"Formatando horários"
-import java.time.format.DateTimeFormatter;
-
 LocalTime hora = LocalTime.of(9, 5, 12);
 
 // Formatando
@@ -136,5 +128,86 @@ System.out.println("Formatada: " + formatada); // 09:05:12
 // Convertendo de String para LocalTime
 LocalTime convertida = LocalTime.parse("23:45:00", formatter);
 System.out.println("Convertida: " + convertida);
+```
+
+## Classe `{java} LocalDateTime`
+
+- Representa **data + hora** (ano, mês, dia, hora, minuto, segundo, nanossegundos).
+- **Não possui fuso horário** (se precisar, usa-se `ZonedDateTime`).
+- É **imutável** e **thread-safe**.
+- Muito útil para registros de eventos, logs, timestamps de banco de dados, etc.
+
+### Criando Data e Hora 
+
+```Java
+public class ExemploLocalDateTime {
+    public static void main(String[] args) {
+        // Data e hora atuais
+        LocalDateTime agora = LocalDateTime.now();
+        System.out.println("Agora: " + agora);
+		
+        // Data e hora específicas
+        LocalDateTime dataHora = LocalDateTime.of(2025, 8, 16, 14, 30, 45);
+        System.out.println("Data e hora específicas: " + dataHora);
+		
+        // A partir de String (formato ISO: yyyy-MM-ddTHH:mm:ss)
+        LocalDateTime parseada = LocalDateTime.parse("2025-12-25T10:15:30");
+        System.out.println("Parseada: " + parseada);
+    }
+}
+```
+
+### Operações com Data e Hora
+
+```java title:Operações
+LocalDateTime agora = LocalDateTime.now();
+
+// Somar / Subtrair tempo
+LocalDateTime semanaQueVem = agora.plusWeeks(1);
+LocalDateTime ontem = agora.minusDays(1);
+LocalDateTime daquiUmaHora = agora.plusHours(1);
+
+// Comparações
+boolean antes = agora.isBefore(semanaQueVem); // true
+boolean depois = agora.isAfter(ontem);        // true
+```
+
+```java title:"Acessando componentes"
+LocalDateTime dt = LocalDateTime.of(2025, 8, 16, 22, 15, 45);
+
+int ano = dt.getYear();        // 2025
+int mes = dt.getMonthValue();  // 8
+int dia = dt.getDayOfMonth();  // 16
+int hora = dt.getHour();       // 22
+int minuto = dt.getMinute();   // 15
+int segundo = dt.getSecond();  // 45
+```
+
+```java title:"Formatando data e hora"
+LocalDateTime dt = LocalDateTime.of(2025, 8, 16, 9, 5, 12);
+
+// Formatando (padrão customizado)
+DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
+String formatada = dt.format(formatter);
+System.out.println("Formatada: " + formatada); // 16/08/2025 09:05:12
+
+// Convertendo de String para LocalDateTime
+LocalDateTime convertida = LocalDateTime.parse("16/08/2025 09:05:12", formatter);
+System.out.println("Convertida: " + convertida);
+```
+
+### Interoperabilidade
+É possível converter entre `LocalDate`, `LocalTime` e `LocalDateTime` facilmente:
+
+```java title:"Convertendo datas e horas"
+LocalDate data = LocalDate.now();
+LocalTime hora = LocalTime.now();
+
+// Criando LocalDateTime a partir de LocalDate + LocalTime
+LocalDateTime dt = LocalDateTime.of(data, hora);
+
+// Extraindo partes
+LocalDate soData = dt.toLocalDate();
+LocalTime soHora = dt.toLocalTime();
 ```
 
