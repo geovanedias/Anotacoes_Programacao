@@ -28,13 +28,16 @@ public class SpringDocConfigurations {
 					.type(SecurityScheme.Type.HTTP)
 					.scheme("bearer")
 					.bearerFormat("JWT")));
+				
 			// metadata
 			.info(new Info()
 				.title("Voll.med API")
 				.description("API Rest da aplicação Voll.med, contendo as funcionalidades de CRUD de médicos e de pacientes, além de agendamento e cancelamento de consultas")
+				
 			.contact(new Contact()
 				.name("Time Backend")
 				.email("backend@voll.med"))
+				
 			.license(new License()
 				.name("Apache 2.0")
 				.url("http://voll.med/api/licenca")));
