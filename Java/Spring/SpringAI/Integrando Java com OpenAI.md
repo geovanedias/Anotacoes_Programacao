@@ -236,4 +236,23 @@ Por exemplo, a propriedade `spring.ai.retry.max-attempts` define quantas tentati
 
 Outros parâmetros incluem o intervalo de tempo entre tentativas, que é de 2 segundos, e o multiplicador, que inicia em 10 segundos e multiplica esse valor por 2 a cada nova tentativa. O parâmetro máximo é 5 nesse caso. Além disso, o intervalo máximo de tempo que essas requisições podem levar é de 3 minutos, entre outras propriedades disponíveis.
 
-Ver mais em
+# Logging
+
+Ver mais em [logging](https://docs.spring.io/spring-ai/reference/api/chatclient.html#_logging)
+
+To enable logging, add the `SimpleLoggerAdvisor` to the advisor chain when creating your ChatClient. It’s recommended to add it toward the end of the chain:
+
+```java
+ChatResponse response = ChatClient.create(chatModel).prompt()
+        .advisors(new SimpleLoggerAdvisor())
+        .user("Tell me a joke?")
+        .call()
+        .chatResponse();
+```
+
+To see the logs, set the logging level for the advisor package to `DEBUG`:
+
+`logging.level.org.springframework.ai.chat.client.advisor=DEBUG`
+
+Add this to your `application.properties` or `application.yaml` file.
+
