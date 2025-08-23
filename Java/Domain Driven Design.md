@@ -1,3 +1,27 @@
+## Relação entre Controller, Service, Repository, Entity e DTO
+
+- A _Entity_ representa o _modelo de domínio_, ou seja, o objeto que mapeia uma tabela do banco de dados. Ela é a base da aplicação, contendo os dados principais e, quando necessário, comportamentos relacionados a esse domínio.
+
+- O _Repository_ atua como _camada de persistência_. Ele fornece a interface para salvar, atualizar, buscar e excluir _Entities_. Dessa forma, o código da aplicação não precisa lidar diretamente com SQL ou detalhes do banco de dados.
+
+- O _Service_ é a camada responsável por centralizar a _lógica de negócio_. Ele recebe os dados enviados pelo _Controller_ (normalmente via _DTO_), aplica as regras do domínio e interage com o _Repository_ para persistir ou consultar informações.
+
+- O _Controller_ é a porta de entrada da aplicação. Ele recebe as requisições HTTP, converte os dados em _DTOs_, chama os métodos da camada _Service_ e retorna uma resposta para o cliente. O _Controller_ não deve conter lógica de negócio, apenas orquestrar o fluxo de entrada e saída.
+
+- O _DTO_ funciona como um _contrato de dados_ entre a API e o mundo externo. Ele transporta informações sem expor diretamente a _Entity_. Assim, a estrutura da _Entity_ fica protegida e desacoplada da interface pública da aplicação.
+
+### Fluxo resumido
+
+1. O cliente envia uma requisição HTTP (ex.: `POST /usuarios`).
+2. O _Controller_ recebe a requisição e converte os dados em um _DTO_.
+3. O _Controller_ passa esse _DTO_ para o _Service_.
+4. O _Service_ transforma o _DTO_ em uma _Entity_, aplica as regras de negócio e chama o _Repository_.
+5. O _Repository_ salva ou consulta a _Entity_ no banco de dados.
+6. O _Service_ retorna o resultado para o _Controller_.
+7. O _Controller_ transforma a resposta em um _DTO_ e envia de volta ao cliente.
+
+---
+
 ## Records
 
 - Criar `Records` facilita a criação de **objetos imutáveis** no Java.
